@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+body{
+    font-family: sans-serif;
+}
+
+.navbar{
+    height: 100px;
+    background:#8a98d4;
+}
+
+
+#products{
+    /* height: 100vh; */
+    background-color: rgb(86, 105, 135);
+
+}
+
+.productscontainer{
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    /* background: black; */
+
+    position: relative;
+}
+
+.productmenus{
+    position: absolute;
+    top: -10px;
+    
+}
+
+.productlines{
+    width: 70px;
+    height: 4px;
+    background-color: #8a98d4;
+    border-radius: 30px;
+
+}
+
+.productstitle{
+    font-family: 'Caveat', cursive;
+}
+
+
+
+
+.productmenus .list-unstyled .productitems{
+    border-radius: 30px;
+    padding: 5px 15px;
+    transition: background-color .5s;
+    
+}
+
+.productitems:hover{
+    background-color: #8a98d4;
+}
+
+.productitems a{
+    font-size: small;
+}
+
+.activepd{
+    background-color: #8a98d4;
+
+}
+
+.pditems{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+
+
+.salecontainer{
+    position: relative;
+    overflow: hidden;
+    transition: all 1s;
+
+}
+
+
+
+.salecontainer:hover{
+    opacity: .8;
+}
+
+
+.saleproducts{
+    background-color: rgb(86, 105, 150);
+    overflow-y: hidden;
+
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+
+
+.saleproducts span{
+    font-family: 'Caveat', cursive;
+    font-size: 20px;
+    color: rgb(62, 54, 6);
+}
+
+.saleproducts img{
+    width: 200px;
+    height: 200px;
+}
+
+.saleproducts .card-body{
+    width: 100%;
+    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.9));
+    position: absolute;
+    bottom: 0;
+
+    transition: all .5s;
+}
+
+.salecontainer:hover .saleproducts .card-body{
+    transform: translateY(100%);
+}
+
+.cardhover{
+    width: 91%;
+    background:#f4f4f4;
+    transition: all 1s;
+    /* transform: translateY(100%); */
+    position: absolute;
+}
+
+.salecontainer:hover .cardhover{
+    transform: translateY(-100%);
+    
+}
