@@ -3,24 +3,43 @@ const getpditems = document.querySelectorAll('.pditems');
 
 pdfilter('all');
 function pdfilter(idx){
-   console.log(idx)
 
+  
+   
+   
+ 
    
   
 
   for(var i = 0; i < getpditems.length; i++){
+
+  
+  
+
     // console.log(getpditems[i].className.split(' ').indexOf(idx))
-    console.log(getpditems[i].className.split(' ').indexOf(idx) > -1)
+    console.log(getpditems[i].className.split(' ').indexOf(idx) === -1)
+    
     let pditemspl = getpditems[i].className.split(' ');
+      
+
+     console.log(pditemspl[6] === idx)
+     if(pditemspl[6] === idx){
+      console.log( getpditems[i].classList.add('all'))
+     }
+
+    showfilter(getpditems[i],'show')
+     
 
 
-
-    removeshowfilter(getpditems[i],'show');
-
-     if(pditemspl.indexOf(idx) > -1){
-      showfilter(getpditems[i],'show')
+     if(pditemspl.indexOf(idx) === -1){
+      removeshowfilter(getpditems[i],'show');
 
     }
+
+
+
+    
+      
   }
 
 }
@@ -35,11 +54,12 @@ function showfilter(getpditem,show){
   const getshow = show.split(' ');
 
   for(var s =0; s < getshow.length;s++){
-    // console.log(getshow[s])
+    
 
-   console.log(pditemspl.indexOf(getshow[s]))
-    if(pditemspl.indexOf(getshow[s]) > -1){
-      getpditem.classList.remove('show')
+   console.log(pditemspl.indexOf(getshow[s]) === -1)
+
+    if(pditemspl.indexOf(getshow[s]) === -1){
+      getpditem.classList.add('show')
       // pditemspl.splice(pditemspl.indexOf(getshow[s]),1);
     }
   }
@@ -49,17 +69,18 @@ function showfilter(getpditem,show){
 
 function removeshowfilter(getpditem,show){
   const pditemspl = getpditem.className.split(' ');
-  // console.log(pditemspl)
+
   const getshow = show.split(' ');
 
    for(var s =0; s < getshow.length;s++){
-    //  console.log(getshow[s])
+  
 
-    // console.log(pditemspl.indexOf(getshow[s]) === -1)
-     if(pditemspl.indexOf(getshow[s]) === -1 ){
-      // getpditem.classList.remove('show')
+    console.log(pditemspl.indexOf(getshow[s]) < -1)
 
-       getpditem.className += " "+getshow[s]
+     if(pditemspl.indexOf(getshow[s]) > -1 ){
+      getpditem.classList.remove('show')
+
+      //  getpditem.className += " "+getshow[s]
      }
    }
 }
