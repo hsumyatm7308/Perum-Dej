@@ -1,3 +1,12 @@
+// Start Navbar 
+
+
+// End Navbar 
+
+
+
+
+// Start Products Sectionn 
 
 const getpditems = document.querySelectorAll('.pditems');
 
@@ -5,18 +14,8 @@ pdfilter('all');
 function pdfilter(idx){
 
   
-   
-   
- 
-   
-  
-
   for(var i = 0; i < getpditems.length; i++){
-
-  
-  
-
-    // console.log(getpditems[i].className.split(' ').indexOf(idx))
+        
     console.log(getpditems[i].className.split(' ').indexOf(idx) === -1)
     
     let pditemspl = getpditems[i].className.split(' ');
@@ -27,25 +26,16 @@ function pdfilter(idx){
       console.log( getpditems[i].classList.add('all'))
      }
 
-    showfilter(getpditems[i],'show')
-     
-
+     showfilter(getpditems[i],'show')
 
      if(pditemspl.indexOf(idx) === -1){
       removeshowfilter(getpditems[i],'show');
 
-    }
-
-
-
-    
+    }   
       
   }
 
 }
-
-
-
 
 
 function showfilter(getpditem,show){
@@ -95,3 +85,5 @@ for(var i = 0 ; i < getproductitems.length ; i++){
      this.className += " activepd";
   })
 }
+
+// End Products Section 
