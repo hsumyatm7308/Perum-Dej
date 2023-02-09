@@ -5,8 +5,38 @@ body{
 }
 
 .navbar{
-    height: 100px;
+    /* height: 100px; */
     background:#8a98d4;
+    position: absolute;
+    z-index: 1;
+}
+
+.navbar-nav .nav-list-item:hover a{
+    opacity: .8;
+    border-bottom: 2px solid #121314;
+
+    transition: all .5s;
+}
+
+
+
+input[type="search"]{
+    color: #776464;
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #d6d2d2;
+
+}
+
+
+
+.nav-item a i{
+    color: #ffff;
+}
+
+.nav-item a i:hover{
+    color: #776464;
 }
 
 
@@ -14,6 +44,18 @@ body{
     background-color: rgb(86, 105, 135);
 
 }
+
+
+.menubar{
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+}
+
+
+
+
+
 
 .productscontainer{
     height: 130px;
@@ -70,9 +112,10 @@ body{
 
 
 .salecontainer{
-    position: relative;
     overflow: hidden;
     transition: all 1s;
+
+    position: relative;
 
 }
 
@@ -80,6 +123,7 @@ body{
 
 .salecontainer:hover{
     opacity: .8;
+    cursor: pointer;
 }
 
 
@@ -100,10 +144,10 @@ body{
     color: rgb(62, 54, 6);
 }
 
-.saleproducts img{
+/* .saleproducts img{
     width: 200px;
     height: 200px;
-}
+} */
 
 .saleproducts .card-body{
     width: 100%;
@@ -119,7 +163,7 @@ body{
 }
 
 .cardhover{
-    width: 91%;
+    width: 92.3%;
     background:#f4f4f4;
     transition: all 1s;
     /* transform: translateY(100%); */
