@@ -1,7 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
 body{
     font-family: sans-serif;
+
 }
 
 .navbar{
@@ -53,22 +59,13 @@ input[type="search"]{
 
 
 
+
+/* Start Products Section  */
+
 #products{
     background-color: rgb(86, 105, 135);
 
 }
-
-
-.menubar{
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-}
-
-
-
-
-
 
 .productscontainer{
     height: 130px;
@@ -199,3 +196,62 @@ input[type="search"]{
 .show{
     display: block;
 }
+
+
+
+/* Start Login Form  */
+
+
+
+.loginform{
+    width: 50%;
+    height: 60%;
+    background-color: #5a5e6f;
+    border: 2px solid #4c4f5a;
+    box-shadow: 5px 5px 10px #4c4f5a;
+
+    
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+
+
+
+    transform: translate(-50%,-50%);
+
+    z-index: 2;
+
+
+}
+
+.model{
+    /* display: none; */
+}
+
+
+.loginform form input {
+    font-size: 12px;
+}
+
+
+.form-group{
+   margin-left: 10%;
+}
+
+.form-control{
+  
+    width: 90%;
+
+}
+
+.loginform .btncontainer{
+    margin-right: 10%;
+    display: flex;
+    justify-content: end;
+}
+
+.btncontainer .btn{
+    padding: 2px 7px;
+} 
