@@ -201,34 +201,41 @@ input[type="search"]{
 
 /* Start Login Form  */
 
+.modalcontainer{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5));
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 
-.loginform{
-    width: 50%;
-    height: 60%;
-    background-color: #5a5e6f;
-    border: 2px solid #4c4f5a;
-    box-shadow: 5px 5px 10px #4c4f5a;
-
-    
-
-    position: absolute;
-    left: 50%;
-    top: 50%;
-
-
-
-
-    transform: translate(-50%,-50%);
+    position: fixed;
+    left: 0;
+    top: 0;
 
     z-index: 2;
 
+    overflow: hidden;
+
+    
+}
+
+
+
+.loginform{
+    width: 40%;
+    height: 55%;
+    background-color: #5a5e6f;
+    border: 2px solid #4c4f5a;
+    box-shadow: 5px 5px 5px #4c4f5a;
 
 }
 
-.model{
+/* .model{ */
     /* display: none; */
-}
+/* } */
 
 
 .loginform form input {
@@ -255,3 +262,7 @@ input[type="search"]{
 .btncontainer .btn{
     padding: 2px 7px;
 } 
+
+.btncontainer .btn:hover{
+    opacity: .8;
+}
