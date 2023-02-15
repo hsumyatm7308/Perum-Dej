@@ -32,6 +32,10 @@ function pdfilter(idx){
       removeshowfilter(getpditems[i],'show');
 
     }   
+
+
+
+    
       
   }
 
@@ -87,3 +91,49 @@ for(var i = 0 ; i < getproductitems.length ; i++){
 }
 
 // End Products Section 
+
+
+// Start Login Form 
+const getpassword = document.getElementById('password');
+const getcopassword = document.getElementById('copassword')
+const getshowpassword = document.getElementById('show_password');
+const getshowcopassword = document.getElementById('show_copassword');
+
+
+
+  getshowpassword.addEventListener('click',function(){
+    console.log(
+    )
+     console.log(getpassword.type)
+   
+     if(getpassword.type === "password"){
+       getpassword.setAttribute('type','text');
+       getshowpassword.innerHTML = '<span class="" id ="show_password"> <i class="fa-solid fa-lock-open"></i> hide password</span>'
+
+     }else{
+       getpassword.setAttribute('type','password')
+       getshowpassword.innerHTML = `<span class="" id ="show_password"> <i class="fa-solid fa-lock"></i> show password</span>`
+   
+     }
+   })
+
+
+   
+
+  getshowcopassword.addEventListener('click',function(){
+    
+   
+     if(getcopassword.type === "password"){
+       getcopassword.setAttribute('type','text');
+       getshowcopassword.innerHTML = `<span id="show_copassword">  <i class="fa-solid fa-lock-open"></i> hide password</span>`
+     }else{
+       getcopassword.setAttribute('type','password')
+       getshowcopassword.innerHTML = `<span id="show_copassword">  <i class="fa-solid fa-lock"></i> show password</span>`
+   
+     }
+   })
+
+
+  
+
+// End Login Form 
