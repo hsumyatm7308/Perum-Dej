@@ -201,6 +201,8 @@ input[type="search"]{
 
 /* Start Login Form  */
 
+
+
 .modalcontainer{
     width: 100%;
     height: 100vh;
@@ -222,6 +224,12 @@ input[type="search"]{
     
 }
 
+#modalcontainer{
+    visibility: visible;
+}
+
+
+
 
 
 .loginform{
@@ -231,11 +239,9 @@ input[type="search"]{
     border: 2px solid #4c4f5a;
     box-shadow: 5px 5px 5px #4c4f5a;
 
+    transform: translate(15%);
 }
 
-/* .model{ */
-    /* display: none; */
-/* } */
 
 
 .loginform form input {
@@ -265,4 +271,19 @@ input[type="search"]{
 
 .btncontainer .btn:hover{
     opacity: .8;
+}
+
+
+.alertbox{
+    width: 200px;
+    color: #fff;
+    background-color: #121314;
+
+    text-align: center;
+    
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    z-index: 5;
 }
