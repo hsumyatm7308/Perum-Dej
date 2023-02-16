@@ -93,17 +93,33 @@ for(var i = 0 ; i < getproductitems.length ; i++){
 // End Products Section 
 
 
+
 // Start Login Form 
+const getmodalcontainer = document.getElementById('modalcontainer')
+const getname = document.getElementById('fname');
+const getemail = document.getElementById('email')
+
 const getpassword = document.getElementById('password');
 const getcopassword = document.getElementById('copassword')
 const getshowpassword = document.getElementById('show_password');
 const getshowcopassword = document.getElementById('show_copassword');
 
 
+window.onclick = function(e){
+
+  if(e.target === getmodalcontainer){
+    getmodalcontainer.style.display = "none"
+  }
+ }
+
+
+
 
   getshowpassword.addEventListener('click',function(){
-    console.log(
-    )
+
+    
+   console.log(getname.value)
+    
      console.log(getpassword.type)
    
      if(getpassword.type === "password"){
@@ -131,9 +147,60 @@ const getshowcopassword = document.getElementById('show_copassword');
        getshowcopassword.innerHTML = `<span id="show_copassword">  <i class="fa-solid fa-lock"></i> show password</span>`
    
      }
+
+
+
+  
    })
 
 
+
+ 
+   
+
+  const getcanclebtn = document.getElementById('cancle')
+  getcanclebtn.addEventListener('click',function(){
+    getmodalcontainer.style.display = "none"
+  })
+
+
+
+  const signupbtn = document.getElementById('singup');
+  
+  signupbtn.addEventListener('click',function(e){
+    console.log(getpassword.value)
+    localStorage.setItem("name",getname.value)
+    localStorage.setItem("email",getemail.value)
+    localStorage.setItem("password",getpassword.value)
+
+
+
+  
+
+
+  if(getpassword.value === getcopassword.value){
+
+      if(getpassword.value === '' && getcopassword.value === ''){
+        console.log('hi')
+        getmodalcontainer.style.visibility = "visible";
+
+        
+
+
+      }else{
+      getmodalcontainer.style.visibility = "hidden";
+
+      }
+ 
+      }
+    
+
+
+     e.preventDefault()
+  
+
+
+  })
   
 
 // End Login Form 
