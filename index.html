@@ -476,7 +476,7 @@
 
 
             <!-- Start Modal Login Form  -->
-            <div class="modalcontainer">
+            <div class="modalcontainer" id="modalcontainer">
 
             <div class="loginform model">
 
@@ -496,26 +496,34 @@
 
                 <div class="text-light mb-2">
                     <label for="password">Password</label>
-                    <input type="password" name="password" id="password" class="form-control"  placeholder="Enter Your Password">
+                    <input type="password" name="password" id="password" class="form-control" value="" required placeholder="Enter Your Password">
                     <span class="small" id ="show_password"> <i class="fa-solid fa-lock"></i> show password</span>
                 </div>
 
                 <div class="text-light mb-2">
                     <label for="copassword">Comfirm Password</label>
-                    <input type="password" name="password" id="copassword" class="form-control" placeholder="Comfirm Your Password">
-                    <span class="small" id="show_copassword">  <i class="fa-solid fa-lock"></i> show password</span>
+                    <input type="password" name="password" id="copassword" class="form-control" required placeholder="Comfirm Your Password">
+                    <span class="small" id="show_copassword">  <i class="fa-solid fa-lock"></i> show password </span>
                 </div>
 
 
                 <div class="btncontainer">
-                    <button type="button" class="btn bg-secondary me-1">Cancle</button>
-                    <button type="submit" class="btn bg-primary"> Sign Up</button>
+                    <button type="button" id="cancle" class="btn bg-secondary me-1">Cancle</button>
+                    <button type="submit" id="singup" class="btn bg-primary"> Sign Up</button>
                 </div>
 
                     
                 </form>
+
+
+                
     
             </div> 
+
+            <div class="alertbox">
+                <span id="alert">Password doesn't match!</span>
+            </div>
+            
             </div>
     
     
