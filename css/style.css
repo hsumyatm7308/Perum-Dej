@@ -118,6 +118,9 @@ input[type="search"]{
 
 }
 
+.shopcards:hover{
+  color: rgb(62, 117, 62);
+}
 
 
 
@@ -233,13 +236,13 @@ input[type="search"]{
 
 
 .loginform{
-    width: 40%;
+    width: 45%;
     height: 55%;
     background-color: #5a5e6f;
     border: 2px solid #4c4f5a;
     box-shadow: 5px 5px 5px #4c4f5a;
 
-    transform: translate(15%);
+    /* transform: translate(15%); */
 }
 
 
@@ -285,5 +288,27 @@ input[type="search"]{
     left: 50%;
     top: 50%;
 
+    transition: animation 1.5s;
+    transform: translate(-50%);
+
     z-index: 5;
+
+    opacity: 0;
+
 }
+
+
+.alertboxani{
+    animation: alertboxani 1s linear;
+}
+
+@keyframes alertboxani {
+    from{
+      opacity: 0;
+    }
+    to{
+     opacity: 1;
+     
+    }
+}
+
