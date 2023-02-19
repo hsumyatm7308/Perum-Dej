@@ -90,6 +90,10 @@ for(var i = 0 ; i < getproductitems.length ; i++){
   })
 }
 
+
+
+
+
 // End Products Section 
 
 
@@ -147,16 +151,8 @@ window.onclick = function(e){
        getshowcopassword.innerHTML = `<span id="show_copassword">  <i class="fa-solid fa-lock"></i> show password</span>`
    
      }
-
-
-
   
    })
-
-
-
- 
-   
 
   const getcanclebtn = document.getElementById('cancle')
   getcanclebtn.addEventListener('click',function(){
@@ -174,33 +170,36 @@ window.onclick = function(e){
     localStorage.setItem("password",getpassword.value)
 
 
-
-  
-
-
-  if(getpassword.value === getcopassword.value){
+    if(getpassword.value === getcopassword.value){
 
       if(getpassword.value === '' && getcopassword.value === ''){
-        console.log('hi')
         getmodalcontainer.style.visibility = "visible";
-
-        
-
-
       }else{
-      getmodalcontainer.style.visibility = "hidden";
-
+        getmodalcontainer.style.visibility = "hidden";
       }
  
-      }
+    }else{
+      const getalertbox = document.getElementById('alertbox');
+      getalertbox.classList.add("alertboxani");
+    };
     
-
-
-     e.preventDefault()
+    e.preventDefault()
   
-
 
   })
   
+
+
+
+const getshopcards = document.querySelectorAll(".shopcards");
+const getcounts = document.getElementById('counts');
+
+for(var p = 0; p < getshopcards.length; p++){
+    getshopcards[p].addEventListener("click",function(){
+      // console.log('hi')
+      getmodalcontainer.style.visibility = "visible";
+    })
+}
+
 
 // End Login Form 
