@@ -235,9 +235,9 @@ input[type="search"]{
 
 
 
-.loginform{
-    width: 45%;
-    height: 55%;
+.signupform,.loginform{
+    width: 50%;
+    height: 60%;
     background-color: #5a5e6f;
     border: 2px solid #4c4f5a;
     box-shadow: 5px 5px 5px #4c4f5a;
@@ -247,7 +247,7 @@ input[type="search"]{
 
 
 
-.loginform form input {
+.signupform form input {
     font-size: 12px;
 }
 
@@ -256,23 +256,20 @@ input[type="search"]{
    margin-left: 10%;
 }
 
-.form-control{
+.form-control,.signin{
   
     width: 90%;
 
 }
 
-.loginform .btncontainer{
-    margin-right: 10%;
-    display: flex;
-    justify-content: end;
-}
 
-.btncontainer .btn{
+
+
+.btnsmct .btn{
     padding: 2px 7px;
 } 
 
-.btncontainer .btn:hover{
+.btnsmct .btn:hover{
     opacity: .8;
 }
 
