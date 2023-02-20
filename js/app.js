@@ -109,6 +109,8 @@ const getshowpassword = document.getElementById('show_password');
 const getshowcopassword = document.getElementById('show_copassword');
 
 
+
+
 window.onclick = function(e){
 
   if(e.target === getmodalcontainer){
@@ -154,14 +156,16 @@ window.onclick = function(e){
   
    })
 
-  const getcanclebtn = document.getElementById('cancle')
+  const getcanclebtn = document.getElementById('cancle');
   getcanclebtn.addEventListener('click',function(){
     getmodalcontainer.style.display = "none"
   })
 
 
 
-  const signupbtn = document.getElementById('singup');
+
+
+const signupbtn = document.getElementById('singup');
   
   signupbtn.addEventListener('click',function(e){
     console.log(getpassword.value)
@@ -200,6 +204,28 @@ for(var p = 0; p < getshopcards.length; p++){
       getmodalcontainer.style.visibility = "visible";
     })
 }
+
+
+
+// Start  Sing in 
+
+const getloginpassword = document.getElementById('loginpassword');
+const getshowloginpassword = document.getElementById('show_loginpassword');
+getshowloginpassword.addEventListener('click',function(){
+
+    
+  
+  
+    if(getloginpassword.type === "password"){
+      getloginpassword.setAttribute('type','text');
+      getshowloginpassword.innerHTML = '<span class="" id ="show_password"> <i class="fa-solid fa-lock-open"></i> hide password</span>'
+
+    }else{
+      getloginpassword.setAttribute('type','password')
+      getshowloginpassword.innerHTML = `<span class="" id ="show_password"> <i class="fa-solid fa-lock"></i> show password</span>`
+  
+    }
+  })
 
 
 // End Login Form 
