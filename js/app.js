@@ -98,6 +98,8 @@ for(var i = 0 ; i < getproductitems.length ; i++){
 
 
 
+
+
 // Start Login Form 
 const getmodalcontainer = document.getElementById('modalcontainer')
 const getname = document.getElementById('fname');
@@ -108,18 +110,93 @@ const getcopassword = document.getElementById('copassword')
 const getshowpassword = document.getElementById('show_password');
 const getshowcopassword = document.getElementById('show_copassword');
 
+const canclebtn = document.querySelectorAll('.canclebtn');
+
+const getsignupform = document.getElementById('signupform');
+const getloginform = document.getElementById('loginform');
+const smsingin = document.getElementById('smsingin');
+const smsignup = document.getElementById('smssignup');
+
+const showmodal = document.getElementsByClassName('showmodal')
+
+for(var c = 0; c < canclebtn.length; c++){
+  canclebtn[c].addEventListener("click",function(){
+    getmodalcontainer.classList.toggle('showmodal')
+  })
+}
+
+smsignup.addEventListener("click",function(){
+  getsignupform.style.display = "block";
+  getloginform.style.display = "none";
+})
+
+smsingin.addEventListener("click",function(){
+  getsignupform.style.display = "none";
+  getloginform.style.display = "block";
+})
+
+
+
 
 
 
 window.onclick = function(e){
 
   if(e.target === getmodalcontainer){
-    getmodalcontainer.style.display = "none"
+    getmodalcontainer.classList.toggle("showmodal")
   }
  }
 
 
 
+
+
+ const getshopcards = document.querySelectorAll(".shopcards");
+ const getcounts = document.getElementById('counts');
+ 
+ for(var p = 0; p < getshopcards.length; p++){
+     getshopcards[p].addEventListener("click",function(){
+      //  console.log(localStorage.length)
+       
+       if(localStorage.length === 0){
+        getmodalcontainer.classList.toggle("showmodal")  
+
+       }
+
+     })
+
+
+ }
+
+let count = 1;
+
+
+getshopcards.forEach(function(getshopcard,idx){
+  getshopcard.addEventListener("click",function(){
+  
+
+    getcounts.innerHTML = count++;
+  })
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
 
   getshowpassword.addEventListener('click',function(){
 
@@ -156,11 +233,6 @@ window.onclick = function(e){
   
    })
 
-  const getcanclebtn = document.getElementById('cancle');
-  getcanclebtn.addEventListener('click',function(){
-    getmodalcontainer.style.display = "none"
-  })
-
 
 
 
@@ -168,21 +240,34 @@ window.onclick = function(e){
 const signupbtn = document.getElementById('singup');
   
   signupbtn.addEventListener('click',function(e){
-    console.log(getpassword.value)
+
     localStorage.setItem("name",getname.value)
     localStorage.setItem("email",getemail.value)
     localStorage.setItem("password",getpassword.value)
 
 
+    // console.log(localStorage.getItem("name"))
+
+
+    
+
+
     if(getpassword.value === getcopassword.value){
 
-      if(getpassword.value === '' && getcopassword.value === ''){
+      if( (getname.value === '' && getemail.value === '' ) && getpassword.value === '' && getcopassword.value === ''){
         getmodalcontainer.style.visibility = "visible";
-      }else{
+        // console.log('true')
+        alert("Something went wrong!")
+
+
+      }else if(getname.value && getemail.value && getpassword.value && getcopassword.value){
         getmodalcontainer.style.visibility = "hidden";
+
+     
       }
+
  
-    }else{
+    } else{
       const getalertbox = document.getElementById('alertbox');
       getalertbox.classList.add("alertboxani");
     };
@@ -195,25 +280,24 @@ const signupbtn = document.getElementById('singup');
 
 
 
-const getshopcards = document.querySelectorAll(".shopcards");
-const getcounts = document.getElementById('counts');
 
-for(var p = 0; p < getshopcards.length; p++){
-    getshopcards[p].addEventListener("click",function(){
-      // console.log('hi')
-      getmodalcontainer.style.visibility = "visible";
-    })
-}
+
+  
 
 
 
 // Start  Sing in 
 
+const getlgname = document.getElementById("lgname")
 const getloginpassword = document.getElementById('loginpassword');
 const getshowloginpassword = document.getElementById('show_loginpassword');
+
+const getformcontrol = document.querySelectorAll('.form-control');
+
+const getsinginbtn = document.getElementById("singin");
+
 getshowloginpassword.addEventListener('click',function(){
 
-    
   
   
     if(getloginpassword.type === "password"){
@@ -227,5 +311,35 @@ getshowloginpassword.addEventListener('click',function(){
     }
   })
 
+
+
+
+
+
+
+  getsinginbtn.addEventListener("click",function(e){
+   
+    let localname = localStorage["name"];
+    let localemail = localStorage["email"];
+    let localpassword = localStorage["password"];
+  
+
+    for(var c = 0; c < getformcontrol.length; c++){
+      
+
+      if(getformcontrol[c].value === (localname && localemail && localpassword)){
+            console.log("true")
+          getmodalcontainer.classList.toggle("showmodal")
+
+      }
+    }
+
+
+    
+    e.preventDefault();
+  })
+
+
+ 
 
 // End Login Form 
