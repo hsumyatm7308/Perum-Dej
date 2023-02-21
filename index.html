@@ -486,9 +486,9 @@
 
 
             <!-- Start Modal Login Form  -->
-            <div class="modalcontainer" id="modalcontainer">
+            <div class="modalcontainer showmodal" id="modalcontainer">
 
-                <div class="signupform model d-none">
+                <div id="signupform" class="signupform model ">
 
                     <h4 class="text-center text-light lead mt-1"> Creat Your Account</h4>
     
@@ -496,12 +496,12 @@
     
                     <div class="text-light mb-2">
                         <label for="fname mb-1">Your Name</label>
-                        <input type="text" name="fname" id="fname" class="form-control" placeholder="Enter Your Name">
+                        <input type="text" name="fname" id="fname" class="form-control" required placeholder="Enter Your Name">
                     </div>
     
                     <div class="text-light mb-2">
                         <label for="email">Email</label>
-                        <input type="email" name="email" id="email" class="form-control" placeholder="Enter Your Email">
+                        <input type="email" name="email" id="email" class="form-control" required placeholder="Enter Your Email">
                     </div>
     
                     <div class="text-light mb-2">
@@ -522,13 +522,13 @@
     
                     <div class="btncontainer d-flex justify-content-end mt-2">
                         <div class="btnsmct me-lg-5 me-sm-3">
-                            <button type="button" id="cancle" class="btn bg-secondary me-1">Cancle</button>
+                            <button type="button" id="signupcancle" class="btn bg-secondary me-1 canclebtn">Cancle</button>
                             <button type="submit" id="singup" class="btn bg-primary">Sign Up</button>
                         </div>
                     </div>
     
                     <div class="signin text-center">
-                        <small class="smsingin">If you have one account, please <a href="">Log in</a></small>
+                        <small class="smsingin">If you have one account, please <a href="javascript:void(0);" id="smsingin">Log in</a></small>
                     </div>
                         
                     </form>
@@ -544,15 +544,15 @@
 
                 <!-- End Create  -->
 
-                <div class="loginform model">
+                <div id="loginform" class="loginform model">
 
                     <h4 class="text-center text-light lead mt-1"> Sign In Your Account</h4>
     
                     <form action="" method="" class="form-group">
     
                     <div class="text-light mb-2">
-                        <label for="fname mb-1">Your Name</label>
-                        <input type="text" name="fname" id="fname" class="form-control" placeholder="Enter Your Name">
+                        <label for="fname mb-1">Username</label>
+                        <input type="text" name="fname" id="lgname" class="form-control" placeholder="Enter Your Username">
                     </div>
     
                     <div class="text-light mb-2">
@@ -573,15 +573,15 @@
     
                     <div class="btncontainer d-flex justify-content-end mt-2">
                         <div class="btnsmct me-lg-5 me-sm-3">
-                            <button type="button" id="cancle" class="btn bg-secondary me-1">Cancle</button>
-                            <button type="submit" id="singup" class="btn bg-primary">Sign Up</button>
+                            <button type="button" id="logincancle" class="btn bg-secondary me-1 canclebtn">Cancle</button>
+                            <button type="submit" id="singin" class="btn bg-primary">Sign In</button>
                         </div>
                     </div>
     
                     <div class="signin text-center mt-3">
                         <small>If you don't remember, <a href="">forget password</a></small>
                         <br>
-                        <small class="smsingin mt-1"> <a href="">Create Account</a></small>
+                        <small class="smsingin mt-1"> <a href="javascript:void(0);" id="smssignup">Create Account</a></small>
 
                     </div>
                         
