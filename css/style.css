@@ -227,12 +227,14 @@ input[type="search"]{
     
 }
 
-#modalcontainer{
-    visibility: visible;
+.showmodal{
+    visibility: hidden;
 }
 
 
-
+.signupform{
+    display: none;
+}
 
 
 .signupform,.loginform{
@@ -261,9 +263,6 @@ input[type="search"]{
     width: 90%;
 
 }
-
-
-
 
 .btnsmct .btn{
     padding: 2px 7px;
