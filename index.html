@@ -21,7 +21,7 @@
             </a>
            
                 <button class="navbar-toggler navbuttons " data-bs-toggle="collapse" data-bs-target="#nav"><i class="fa-solid fa-bars"></i></button>
-                <div class="text-uppercase text-success small ms-lg-5  p-3"> <span class="me-1">Shop</span>  <i class="fa-solid fa-cart-shopping text-success"></i><sup id="counts" class="ms-1 fs-6">0</sup></div>
+                <div class="text-uppercase text-success small ms-lg-5  p-3 shopcardbtn"> <span class="me-1">Shop</span>  <i class="fa-solid fa-cart-shopping text-success"></i><sup id="counts" class="ms-1 fs-6">0</sup></div>
 
 
            
@@ -42,7 +42,7 @@
                             <i id="srhbtn" class="fa-solid fa-magnifying-glass fs-6"></i></a>
                         </li>
                         <li class="nav-list-item"><a href="" class="nav-link text-light p-3"><i class="fa-solid fa-user"></i></a></li>
-                        <li class="nav-list-item loginbtn"><a href="" class="nav-link text-light p-3">log in</a></li>
+                        <li class="nav-list-item loginbtn"><a href="javascript:void(0);" class="nav-link text-light p-3">log in</a></li>
         
                     </ul>
     
@@ -485,7 +485,7 @@
 
 
 
-            <!-- Start Modal Login Form  -->
+        <!-- Start Modal Login Form  -->
             <div class="modalcontainer showmodal" id="modalcontainer">
 
                 <div id="signupform" class="signupform model ">
@@ -581,13 +581,13 @@
                     <div class="signin text-center mt-3">
                         <small>If you don't remember, <a href="">forget password</a></small>
                         <br>
-                        <small class="smsingin mt-1"> <a href="javascript:void(0);" id="smssignup">Create Account</a></small>
+                        <small class="smsingin mt-3"> <a href="javascript:void(0);" id="smssignup">Create Account</a></small>
 
                     </div>
                         
                     </form>
     
-    
+                    
                     
         
                 </div>
@@ -597,6 +597,46 @@
     
     
         <!-- End Modal Login Form  -->
+
+
+        <!-- Start Shop Items History -->
+            <div id="itemhistory" class="itemhistory">
+                <div class="container">
+
+                    <div class="row">
+                       <div class=" col-sm-12 text-center historylists">
+
+                        <ul class="list-unstyled d-flex bg-secondary">
+                            <li class="list-inline-item col-sm-2 small itemheaders">No</li>
+                            <li class="list-inline-item col-sm-2 small itemheaders">Items</li>
+                            <li class="list-inline-item col-sm-2 small itemheaders">Count</li>
+                            <li class="list-inline-item col-sm-2 small itemheaders">Value</li>
+                            <li class="list-inline-item col-sm-2 small itemheaders">Total</li>
+                        
+                        </ul>
+
+
+                        <ul class="list-unstyled d-flex">
+                            <li class="list-inline-item col-sm-2">1</li>
+                            <li class="list-inline-item col-sm-2">Tom Ford</li>
+                            <li class="list-inline-item col-sm-2">1</li>
+                            <li class="list-inline-item col-sm-2">$250</li>
+                            <li class="list-inline-item col-sm-2">$250</li>
+                           <li class="list-inline-item col-sm-2"><i class="fa-solid fa-trash text-danger"></i></li>
+                        </ul>
+
+
+                       </div>
+
+
+
+                      
+                    </div>
+
+                </div>
+                
+            </div>
+        <!-- End Shop Items History  -->
        
 
 
