@@ -31,11 +31,7 @@ function pdfilter(idx){
      if(pditemspl.indexOf(idx) === -1){
       removeshowfilter(getpditems[i],'show');
 
-    }   
-
-
-
-    
+    }    
       
   }
 
@@ -111,17 +107,25 @@ const getshowpassword = document.getElementById('show_password');
 const getshowcopassword = document.getElementById('show_copassword');
 
 const canclebtn = document.querySelectorAll('.canclebtn');
+const loginbtn = document.querySelector('.loginbtn')
 
 const getsignupform = document.getElementById('signupform');
 const getloginform = document.getElementById('loginform');
 const smsingin = document.getElementById('smsingin');
 const smsignup = document.getElementById('smssignup');
 
-const showmodal = document.getElementsByClassName('showmodal')
+const showmodal = document.getElementsByClassName('showmodal');
+
+
+loginbtn.addEventListener("click",function(){
+  getmodalcontainer.classList.toggle('showmodal')
+
+})
 
 for(var c = 0; c < canclebtn.length; c++){
   canclebtn[c].addEventListener("click",function(){
     getmodalcontainer.classList.toggle('showmodal')
+
   })
 }
 
@@ -154,49 +158,24 @@ window.onclick = function(e){
  const getshopcards = document.querySelectorAll(".shopcards");
  const getcounts = document.getElementById('counts');
  
- for(var p = 0; p < getshopcards.length; p++){
-     getshopcards[p].addEventListener("click",function(){
-      //  console.log(localStorage.length)
-       
-       if(localStorage.length === 0){
-        getmodalcontainer.classList.toggle("showmodal")  
-
-       }
-
-     })
-
-
- }
 
 let count = 1;
-
 
 getshopcards.forEach(function(getshopcard,idx){
   getshopcard.addEventListener("click",function(){
   
 
+
+    if(localStorage.length === 0){
+      getmodalcontainer.classList.toggle("showmodal")  
+
+     }else{
     getcounts.innerHTML = count++;
+
+     }
   })
 })
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
 
   getshowpassword.addEventListener('click',function(){
 
@@ -243,7 +222,9 @@ const signupbtn = document.getElementById('singup');
 
     localStorage.setItem("name",getname.value)
     localStorage.setItem("email",getemail.value)
-    localStorage.setItem("password",getpassword.value)
+    localStorage.setItem("password",getpassword.value);
+    localStorage.setItem("copassword",getcopassword.value);
+  
 
 
     // console.log(localStorage.getItem("name"))
@@ -280,12 +261,6 @@ const signupbtn = document.getElementById('singup');
 
 
 
-
-
-  
-
-
-
 // Start  Sing in 
 
 const getlgname = document.getElementById("lgname")
@@ -313,18 +288,16 @@ getshowloginpassword.addEventListener('click',function(){
 
 
 
-
-
-
-
   getsinginbtn.addEventListener("click",function(e){
    
     let localname = localStorage["name"];
     let localemail = localStorage["email"];
-    let localpassword = localStorage["password"];
+    let localpassword = localStorage["copassword"];
+  
   
 
     for(var c = 0; c < getformcontrol.length; c++){
+      
       
 
       if(getformcontrol[c].value === (localname && localemail && localpassword)){
