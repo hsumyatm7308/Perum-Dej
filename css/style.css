@@ -275,10 +275,12 @@ input[type="search"]{
 
 .alertbox{
     width: 200px;
+    height: 20px;
     color: #fff;
     background-color: #121314;
 
     text-align: center;
+    line-height: 20px;
     
     position: absolute;
     left: 50%;
@@ -308,3 +310,34 @@ input[type="search"]{
     }
 }
 
+
+
+
+/* Start Item History  */
+.itemhistory{
+    width: 100%;
+    height: 100%;
+    background-color: #f4f4f4;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    z-index: 10;
+}
+
+
+
+.historylists ul{
+    border-bottom: 1px solid #121314;
+}
+
+.itemheaders{
+    /* background-color: #8a98d4; */
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px;
+    
+
+}
+/* End Item History  */
