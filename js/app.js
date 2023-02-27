@@ -170,7 +170,8 @@ getshopcards.forEach(function(getshopcard,idx){
       getmodalcontainer.classList.toggle("showmodal")  
 
      }else{
-    getcounts.innerHTML = count++;
+      getcounts.innerHTML = count++;
+
 
      }
   })
@@ -316,3 +317,70 @@ getshowloginpassword.addEventListener('click',function(){
  
 
 // End Login Form 
+
+
+
+// Start Items History 
+
+const getitemhistoryctn = document.getElementById("itemhistory")
+const shopcardbtn = document.getElementById("shopcardbtn");
+const xmaxbtn = document.querySelector(".fa-circle-xmark");
+
+const historylists = document.querySelector(".goodctn")
+
+shopcardbtn.addEventListener("click",function(){
+    getitemhistoryctn.classList.toggle("itemhistoryshow")
+})
+
+xmaxbtn.addEventListener("click",function(){
+  getitemhistoryctn.classList.toggle("itemhistoryshow")
+})
+
+
+
+
+
+
+getshopcards.forEach(function(getshopcard,idx){
+ getshopcard.addEventListener("click",function(){
+    
+ 
+    
+   goodarrfun(getshopcard,idx);
+
+
+ }) 
+
+})
+
+
+function goodarrfun(good,idx){
+  
+
+
+  const getul = document.createElement("ul")
+getul.className = "list-unstyled d-flex goods"
+
+console.log(getul.innerHTML = `
+<li class="list-inline-item col-sm-2">1</li>
+<li class="list-inline-item col-sm-2">Tom Ford</li>
+<li class="list-inline-item col-sm-2">1</li>
+<li class="list-inline-item col-sm-2">$250</li>
+<li class="list-inline-item col-sm-2">$250</li>
+<li class="list-inline-item col-sm-2"><i class="fa-solid fa-trash"></i></li>
+
+`)
+
+
+historylists.appendChild(getul)
+
+
+
+}
+  
+ 
+
+
+
+
+// End Items History 
