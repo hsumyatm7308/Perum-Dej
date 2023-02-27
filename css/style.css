@@ -338,6 +338,23 @@ input[type="search"]{
     text-transform: uppercase;
     padding: 10px;
     
+}
 
+
+.fa-circle-xmark{
+    color: #979393;
+    font-size: 25px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.fa-circle-xmark:hover{
+    opacity: .7;
+}
+
+
+.itemhistoryshow{
+    display: none;
 }
 /* End Item History  */
