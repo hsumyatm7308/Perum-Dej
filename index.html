@@ -21,7 +21,7 @@
             </a>
            
                 <button class="navbar-toggler navbuttons " data-bs-toggle="collapse" data-bs-target="#nav"><i class="fa-solid fa-bars"></i></button>
-                <div class="text-uppercase text-success small ms-lg-5  p-3 shopcardbtn"> <span class="me-1">Shop</span>  <i class="fa-solid fa-cart-shopping text-success"></i><sup id="counts" class="ms-1 fs-6">0</sup></div>
+                <div id="shopcardbtn" class="text-uppercase text-success small ms-lg-5  p-3 shopcardbtn"> <span class="me-1">Shop</span>  <i class="fa-solid fa-cart-shopping text-success"></i><sup id="counts" class="ms-1 fs-6">0</sup></div>
 
 
            
@@ -600,13 +600,15 @@
 
 
         <!-- Start Shop Items History -->
-            <div id="itemhistory" class="itemhistory">
+            <div id="itemhistory" class="itemhistory itemhistoryshow">
                 <div class="container">
 
                     <div class="row">
                        <div class=" col-sm-12 text-center historylists">
 
-                        <ul class="list-unstyled d-flex bg-secondary">
+                        <i class="fa-solid fa-circle-xmark"></i>
+
+                        <ul class="list-unstyled d-flex bg-secondary goodstitles">
                             <li class="list-inline-item col-sm-2 small itemheaders">No</li>
                             <li class="list-inline-item col-sm-2 small itemheaders">Items</li>
                             <li class="list-inline-item col-sm-2 small itemheaders">Count</li>
@@ -616,20 +618,28 @@
                         </ul>
 
 
-                        <ul class="list-unstyled d-flex">
-                            <li class="list-inline-item col-sm-2">1</li>
-                            <li class="list-inline-item col-sm-2">Tom Ford</li>
-                            <li class="list-inline-item col-sm-2">1</li>
-                            <li class="list-inline-item col-sm-2">$250</li>
-                            <li class="list-inline-item col-sm-2">$250</li>
-                           <li class="list-inline-item col-sm-2"><i class="fa-solid fa-trash text-danger"></i></li>
-                        </ul>
-
+                        <div class="goodctn">
+                            <!-- <ul class="list-unstyled d-flex goods">
+                                <li class="list-inline-item col-sm-2">1</li>
+                                <li class="list-inline-item col-sm-2">Tom Ford</li>
+                                <li class="list-inline-item col-sm-2">1</li>
+                                <li class="list-inline-item col-sm-2">$250</li>
+                                <li class="list-inline-item col-sm-2">$250</li>
+                               <li class="list-inline-item col-sm-2"><i class="fa-solid fa-trash"></i></li>
+                            </ul>
+     -->
+                            <!-- <ul class="list-unstyled d-flex goods">
+                                <li class="list-inline-item col-sm-2">1</li>
+                                <li class="list-inline-item col-sm-2">Tom Ford</li>
+                                <li class="list-inline-item col-sm-2">1</li>
+                                <li class="list-inline-item col-sm-2">$250</li>
+                                <li class="list-inline-item col-sm-2">$250</li>
+                               <li class="list-inline-item col-sm-2"><i class="fa-solid fa-trash"></i></li>
+                            </ul> -->
 
                        </div>
 
-
-
+                       </div>
                       
                     </div>
 
