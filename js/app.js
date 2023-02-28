@@ -155,27 +155,6 @@ window.onclick = function(e){
 
 
 
- const getshopcards = document.querySelectorAll(".shopcards");
- const getcounts = document.getElementById('counts');
- 
-
-let count = 1;
-
-getshopcards.forEach(function(getshopcard,idx){
-  getshopcard.addEventListener("click",function(){
-  
-
-
-    if(localStorage.length === 0){
-      getmodalcontainer.classList.toggle("showmodal")  
-
-     }else{
-      getcounts.innerHTML = count++;
-
-
-     }
-  })
-})
 
 
   getshowpassword.addEventListener('click',function(){
@@ -328,6 +307,13 @@ const xmaxbtn = document.querySelector(".fa-circle-xmark");
 
 const historylists = document.querySelector(".goodctn")
 
+
+
+const getshopcards = document.querySelectorAll(".shopcards");
+const getcounts = document.getElementById('counts');
+
+
+
 shopcardbtn.addEventListener("click",function(){
     getitemhistoryctn.classList.toggle("itemhistoryshow")
 })
@@ -337,42 +323,93 @@ xmaxbtn.addEventListener("click",function(){
 })
 
 
+const pfarrs = ["Tom Ford","Chanel Co Co","Avon","Chanel N 5","Arizona","Eternity(summer)","Eternity(winter)","Elie Saab","Mouzurakahza","Tom Ford2","Arizona2","Avon"];
 
 
+
+
+
+
+
+
+let count = 1;
+let cot = 0;
 
 
 getshopcards.forEach(function(getshopcard,idx){
- getshopcard.addEventListener("click",function(){
-    
+ getshopcards[idx].addEventListener("click",function(){
  
-    
-   goodarrfun(getshopcard,idx);
 
 
- }) 
+   if(localStorage.length === 0){
+     getmodalcontainer.classList.toggle("showmodal")  
+
+    }else{
+     getcounts.innerHTML = count++;
+
+     goodarrfun(cot++)
+
+     goodarrfun(getshopcard,idx);
+
+
+    }
+ })
+
+
 
 })
 
 
+ 
+
+
 function goodarrfun(good,idx){
-  
 
 
+ 
+ 
   const getul = document.createElement("ul")
-getul.className = "list-unstyled d-flex goods"
-
-console.log(getul.innerHTML = `
-<li class="list-inline-item col-sm-2">1</li>
-<li class="list-inline-item col-sm-2">Tom Ford</li>
-<li class="list-inline-item col-sm-2">1</li>
-<li class="list-inline-item col-sm-2">$250</li>
-<li class="list-inline-item col-sm-2">$250</li>
-<li class="list-inline-item col-sm-2"><i class="fa-solid fa-trash"></i></li>
-
-`)
+  getul.className = "list-unstyled d-flex goods"
 
 
-historylists.appendChild(getul)
+  historylists.appendChild(getul)
+
+
+pfarrs.forEach(function(pfarr,pfidx){
+  
+  if(idx === pfidx){
+
+   
+    getul.innerHTML = `
+  
+     <li class="list-inline-item col-sm-2">${cot}</li>
+    <li class="list-inline-item col-sm-2">${pfarr}</li>
+    `
+
+
+  }
+
+
+
+
+ 
+})
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
