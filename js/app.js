@@ -337,7 +337,7 @@ let cot = 1;
 
 
 getshopcards.forEach(function(getshopcard,idx){
- getshopcards[idx].addEventListener("click",function(){
+ getshopcard.addEventListener("click",function(){
  
 
 
@@ -359,6 +359,24 @@ getshopcards.forEach(function(getshopcard,idx){
 
  })
 
+
+ getshopcards[idx].addEventListener("click",function(){
+
+
+//  console.log(idx++)
+
+  
+historylists.appendChild(getul)
+
+
+ if(idx++){
+  console.log('hi')
+  
+ }
+
+
+
+ })
 
 
 })
@@ -389,13 +407,18 @@ pfarrs.forEach(function(pfarr,pfidx){
     `
 
 
+
+
+  
+    
+  
+
   }
 
-  console.log()
 
 
-  historylists.appendChild(getul)
 
+  
 
  
 })
