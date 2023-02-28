@@ -369,7 +369,7 @@ getshopcards.forEach(function(getshopcard,idx){
 historylists.appendChild(getul)
 
 
- if(idx++){
+ if(idx + 1){
   console.log('hi')
   
  }
@@ -404,47 +404,45 @@ pfarrs.forEach(function(pfarr,pfidx){
   
      <li class="list-inline-item col-sm-2">${cot++}</li>
     <li class="list-inline-item col-sm-2">${pfarr}</li>
+    <li class="list-inline-item col-sm-2"></li>
+    <li class="list-inline-item col-sm-2"></li>
+    <li class="list-inline-item col-sm-2"><i class="fa-solid fa-trash" onclick="removeul(${idx})"></i></li> 
     `
 
-
-
-
-  
-    
-  
-
   }
-
-
-
-
-  
 
  
 })
 
 
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
   
+
+
+function removeul(hay){
+  historylists.innerHTML = ''
+}
  
+
+
+// var myarrs=[10,20,30,40,50,60,70,80,90,100];
+
+// // array.reduce(function(total,currentValue,currentIndex,array){},initialValue);
+
+// var result = myarrs.reduce(function(total,curvalue,curidx,arr){
+//   console.log('this is total = ', total); //0 undefined //if we use 1 parameter 10 undefined
+//   console.log('this is curvalue = ', curvalue); //10 to 100 by number //if we use 1 parameter 20 to 100 by number
+//   console.log('this is curidx = ', curidx); //0 to 9 index number //if we use 1 parameter 1 to 9 index number
+//   console.log(arr);
+   
+//   total += curvalue;
+
+//   return total;
+  
+// },0);
+
+// console.log(result);
 
 
 
