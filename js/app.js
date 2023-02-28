@@ -333,7 +333,7 @@ const pfarrs = ["Tom Ford","Chanel Co Co","Avon","Chanel N 5","Arizona","Eternit
 
 
 let count = 1;
-let cot = 0;
+let cot = 1;
 
 
 getshopcards.forEach(function(getshopcard,idx){
@@ -347,13 +347,15 @@ getshopcards.forEach(function(getshopcard,idx){
     }else{
      getcounts.innerHTML = count++;
 
-     goodarrfun(cot++)
 
 
 
     }
 
-    goodarrfun(getshopcard,idx);
+    goodarrfun(getshopcard,idx,cot);
+
+
+
 
  })
 
@@ -375,30 +377,32 @@ function goodarrfun(good,idx){
 
 
 
-
-// pfarrs.forEach(function(pfarr,pfidx){
+pfarrs.forEach(function(pfarr,pfidx){
   
-  // if(idx === pfidx){
+  if(idx === pfidx){
 
    
-    // getul.innerHTML = `
+    getul.innerHTML = `
   
-    //  <li class="list-inline-item col-sm-2">${cot}</li>
-    // <li class="list-inline-item col-sm-2">${pfarr}</li>
-    // `
+     <li class="list-inline-item col-sm-2">${cot++}</li>
+    <li class="list-inline-item col-sm-2">${pfarr}</li>
+    `
 
 
-  // }
+  }
+
+  console.log()
 
 
+  historylists.appendChild(getul)
 
 
  
-// })
+})
+
 
  
 
-historylists.appendChild(getul)
 
 
 
