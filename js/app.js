@@ -349,10 +349,12 @@ getshopcards.forEach(function(getshopcard,idx){
 
      goodarrfun(cot++)
 
-     goodarrfun(getshopcard,idx);
 
 
     }
+
+    goodarrfun(getshopcard,idx);
+
  })
 
 
@@ -368,35 +370,35 @@ function goodarrfun(good,idx){
 
  
  
-  const getul = document.createElement("ul")
+   getul = document.createElement("ul")
   getul.className = "list-unstyled d-flex goods"
 
 
-  historylists.appendChild(getul)
 
 
-pfarrs.forEach(function(pfarr,pfidx){
+// pfarrs.forEach(function(pfarr,pfidx){
   
-  if(idx === pfidx){
+  // if(idx === pfidx){
 
    
-    getul.innerHTML = `
+    // getul.innerHTML = `
   
-     <li class="list-inline-item col-sm-2">${cot}</li>
-    <li class="list-inline-item col-sm-2">${pfarr}</li>
-    `
+    //  <li class="list-inline-item col-sm-2">${cot}</li>
+    // <li class="list-inline-item col-sm-2">${pfarr}</li>
+    // `
 
 
-  }
+  // }
 
 
 
 
  
-})
+// })
 
  
 
+historylists.appendChild(getul)
 
 
 
