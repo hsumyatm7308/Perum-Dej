@@ -354,22 +354,15 @@ getshopcards.forEach(function(getshopcard,idx){
 
     goodarrfun(getshopcard,idx,cot);
 
-
-
   
-//    const newli = getul.children;
 
-//   console.log(newli)
+    
+  
+ const colts = document.querySelector(".cot")
 
-//  for(let l =0;l< newli.length;l++){
-//   console.log(newli[l])
-
+ // console.log(cot++)
  
-//  }
-
-
-
-
+     colts.innerHTML = cot++
   
 
  })
@@ -401,19 +394,22 @@ function goodarrfun(good,idx){
 pfarrs.forEach(function(pfarr,pfidx){
 
 
-
+ 
   
   if(idx === pfidx){
     // getul.nextElementSibling.innerHTML = ''
 
+    historylists.appendChild(getul)
+   
 
-    console.log(cot++)
+    
  
 
     getul.innerHTML = `
   
    <li class="list-inline-item col-sm-2">${pfarr}</li>
    <li class="list-inline-item col-sm-2 cot">${cot}</li>
+
    <li class="list-inline-item col-sm-2"></li>
    <li class="list-inline-item col-sm-2"><i class="fa-solid fa-trash" onclick="removeul(${idx})"></i></li> 
    `
@@ -432,7 +428,10 @@ pfarrs.forEach(function(pfarr,pfidx){
     // console.log( getul.className.includes(`list-unstyled d-flex goods ${pfarr}`))
   
     if( getul.className.includes(`list-unstyled d-flex goods ${pfarr}`)){
+
+   
       getul.remove();
+ 
       
     } 
 
@@ -460,7 +459,6 @@ pfarrs.forEach(function(pfarr,pfidx){
 
 
 
-historylists.appendChild(getul)
 
 
 
