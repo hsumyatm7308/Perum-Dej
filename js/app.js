@@ -374,6 +374,7 @@ function goodarrfun(good,idx){
  
  
   getul = document.createElement("ul")
+  getul.setAttribute(`class`,`list-unstyled d-flex goods`)
   
 
 
@@ -381,32 +382,49 @@ function goodarrfun(good,idx){
 
 pfarrs.forEach(function(pfarr,pfidx){
 
+
+
   
   if(idx === pfidx){
-
-
-    getul.setAttribute(`class`,`list-unstyled d-flex goods ${pfarr}`)
-
-   
-    getul.innerHTML = `
-  
-     <li class="list-inline-item col-sm-2">${cot++}</li>
-    <li class="list-inline-item col-sm-2">${pfarr}</li>
-    <li class="list-inline-item col-sm-2"></li>
-    <li class="list-inline-item col-sm-2"></li>
-    <li class="list-inline-item col-sm-2"><i class="fa-solid fa-trash" onclick="removeul(${idx})"></i></li> 
-    `
-
-
-
-    
-  console.log()
-
-  if(getul.className.includes(`list-unstyled d-flex goods ${pfarr}`)){
     // getul.nextElementSibling.innerHTML = ''
 
-  }
+
+
+
+    getul.innerHTML = `
   
+    <li class="list-inline-item col-sm-2">${cot++}</li>
+   <li class="list-inline-item col-sm-2">${pfarr}</li>
+   <li class="list-inline-item col-sm-2"></li>
+   <li class="list-inline-item col-sm-2"></li>
+   <li class="list-inline-item col-sm-2"><i class="fa-solid fa-trash" onclick="removeul(${idx})"></i></li> 
+   `
+  
+
+
+     
+    good.addEventListener("click",function(){
+      getul.setAttribute(`class`,`list-unstyled d-flex goods ${pfarr}`)
+  
+  
+     
+  
+    console.log( getul.className.includes(`list-unstyled d-flex goods ${pfarr}`))
+  
+    if( getul.className.includes(`list-unstyled d-flex goods ${pfarr}`)){
+      getul.remove();
+
+      console.log(--cot)
+    
+    }
+  
+  
+    })
+  
+  
+
+
+   
  
   }
 
