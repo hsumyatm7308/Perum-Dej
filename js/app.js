@@ -336,39 +336,32 @@ let count = 1;
 let cot = 1;
 
 
+
 getshopcards.forEach(function(getshopcard,idx){
- getshopcard.addEventListener("click",function(){
+ 
+  getshopcard.addEventListener("click",function(){
  
 
 
-   if(localStorage.length === 0){
-     getmodalcontainer.classList.toggle("showmodal")  
-
-    }else{
-     getcounts.innerHTML = count++;
-
-
-
-
-    }
-
-    goodarrfun(getshopcard,idx,cot);
-
-  
-
-    
-  
- const colts = document.querySelector(".cot")
-
- // console.log(cot++)
+    if(localStorage.length === 0){
+      getmodalcontainer.classList.toggle("showmodal")  
  
-     colts.innerHTML = cot++
-  
+     }else{
+      getcounts.innerHTML = count++;
+ 
+ 
+ 
+ 
+     }
+ 
+     goodarrfun(getshopcard,idx,cot);
+ 
+   
+ 
+  })
 
- })
 
-
-
+ 
 
 
 
@@ -389,6 +382,8 @@ function goodarrfun(good,idx){
   
 
 
+  
+
 
 
 pfarrs.forEach(function(pfarr,pfidx){
@@ -399,10 +394,7 @@ pfarrs.forEach(function(pfarr,pfidx){
   if(idx === pfidx){
     // getul.nextElementSibling.innerHTML = ''
 
-    historylists.appendChild(getul)
-   
 
-    
  
 
     getul.innerHTML = `
@@ -439,18 +431,27 @@ pfarrs.forEach(function(pfarr,pfidx){
 
 
 
-   
   
     })
   
-  
-
 
    
+
+
+  historylists.appendChild(getul)
+
+  const colts = document.querySelector(".cot")
+  // colts.innerHTML = 2
+
+  console.log(colts.innerHTML = cot++)
+
+    
  
   }
 
   
+
+ 
 
 
 })
