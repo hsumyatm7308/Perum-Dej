@@ -360,23 +360,6 @@ getshopcards.forEach(function(getshopcard,idx){
  })
 
 
- getshopcards[idx].addEventListener("click",function(){
-
-
-//  console.log(idx++)
-
-  
-historylists.appendChild(getul)
-
-
- if(idx + 1){
-  console.log('hi')
-  
- }
-
-
-
- })
 
 
 })
@@ -390,14 +373,19 @@ function goodarrfun(good,idx){
 
  
  
-   getul = document.createElement("ul")
-  getul.className = "list-unstyled d-flex goods"
+  getul = document.createElement("ul")
+  
+
 
 
 
 pfarrs.forEach(function(pfarr,pfidx){
+
   
   if(idx === pfidx){
+
+
+    getul.setAttribute(`class`,`list-unstyled d-flex goods ${pfarr}`)
 
    
     getul.innerHTML = `
@@ -409,10 +397,23 @@ pfarrs.forEach(function(pfarr,pfidx){
     <li class="list-inline-item col-sm-2"><i class="fa-solid fa-trash" onclick="removeul(${idx})"></i></li> 
     `
 
+
+
+    
+  console.log()
+
+  if(getul.className.includes(`list-unstyled d-flex goods ${pfarr}`)){
+    // getul.nextElementSibling.innerHTML = ''
+
+  }
+  
+ 
   }
 
- 
+
 })
+
+historylists.appendChild(getul)
 
 
 
