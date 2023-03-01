@@ -333,7 +333,7 @@ const pfarrs = ["Tom Ford","Chanel Co Co","Avon","Chanel N 5","Arizona","Eternit
 
 
 let count = 1;
-let cot = 0;
+let cot = 1;
 
 
 getshopcards.forEach(function(getshopcard,idx){
@@ -356,11 +356,26 @@ getshopcards.forEach(function(getshopcard,idx){
 
 
 
-   const colts = document.querySelectorAll(".cot")
+  
+//    const newli = getul.children;
+
+//   console.log(newli)
+
+//  for(let l =0;l< newli.length;l++){
+//   console.log(newli[l])
+
+ 
+//  }
+
+
+
 
   
 
  })
+
+
+
 
 
 
@@ -392,7 +407,8 @@ pfarrs.forEach(function(pfarr,pfidx){
     // getul.nextElementSibling.innerHTML = ''
 
 
-
+    console.log(cot++)
+ 
 
     getul.innerHTML = `
   
@@ -402,7 +418,6 @@ pfarrs.forEach(function(pfarr,pfidx){
    <li class="list-inline-item col-sm-2"><i class="fa-solid fa-trash" onclick="removeul(${idx})"></i></li> 
    `
   
-
 
 
   
@@ -418,11 +433,6 @@ pfarrs.forEach(function(pfarr,pfidx){
   
     if( getul.className.includes(`list-unstyled d-flex goods ${pfarr}`)){
       getul.remove();
-      
-      
-     
-   
-
       
     } 
 
@@ -445,9 +455,6 @@ pfarrs.forEach(function(pfarr,pfidx){
 
 
 })
-
-
-
 
 
 
