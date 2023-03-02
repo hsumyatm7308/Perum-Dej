@@ -324,6 +324,7 @@ xmaxbtn.addEventListener("click",function(){
 
 
 const pfarrs = ["Tom Ford","Chanel Co Co","Avon","Chanel N 5","Arizona","Eternity(summer)","Eternity(winter)","Elie Saab","Mouzurakahza","Tom Ford2","Arizona2","Avon"];
+const pfvalues = [250,350,150,300,200,350,150,150,250,340,290,310]
 
 
 
@@ -339,6 +340,8 @@ let count = 1;
 
 getshopcards.forEach(function(getshopcard,idx){
  
+  let  cot = 1
+
   getshopcard.addEventListener("click",function(){
  
 
@@ -354,20 +357,15 @@ getshopcards.forEach(function(getshopcard,idx){
  
      }
  
-    let  cot = 1
 
-     goodarrfun(getshopcard,idx,cot);
+     goodarrfun(getshopcard,idx,cot,pfvalues);
     //  goodarrfun(getshopcard,idx);
  
    
  
   })
 
-
  
-
-
-
 
 })
 
@@ -386,138 +384,70 @@ function goodarrfun(good,idx){
 
 
   
-
-
-
-pfarrs.forEach(function(pfarr,pfidx){
-
+  pfarrs.forEach(function(pfarr,pfidx){
 
 
 
 
- 
- 
-  
-  if(idx === pfidx){
-    // getul.nextElementSibling.innerHTML = ''
-
-
- 
 
   
-    getul.innerHTML = `
-  
-    <li class="list-inline-item col-sm-2">${pfarr}</li>
-    <li class="list-inline-item col-sm-2 cot">${cot}</li>
- 
-    <li class="list-inline-item col-sm-2"></li>
-    <li class="list-inline-item col-sm-2"><i class="fa-solid fa-trash" onclick="removeul(${idx})"></i></li> 
-    `
-
-  
+    if(idx === pfidx){
+      // getul.nextElementSibling.innerHTML = ''
+      getul.innerHTML = `
+    
+      <li class="list-inline-item col-sm-2">${pfarr}</li>
+      <li class="list-inline-item col-sm-2 cot">${cot}</li>
    
+      <li class="list-inline-item col-sm-2">$${pfvalues[idx]}</li>
+      <li class="list-inline-item col-sm-2"><i class="fa-solid fa-trash" onclick="removeul(${idx})"></i></li> 
+      `
+  
+      
      
-    good.addEventListener("click",function(){
+  
+    
+    
 
-
-      getul.setAttribute(`class`,`list-unstyled d-flex goods ${pfarr}`)
   
   
      
+       
+      good.addEventListener("click",function(){
   
-    console.log( getul.className.includes(`list-unstyled d-flex goods ${pfarr}`))
-   
-    if( getul.className.includes(`list-unstyled d-flex goods ${pfarr}`)){
-
+  
+        getul.setAttribute(`class`,`list-unstyled d-flex goods ${pfarr}`)
     
-      
-      const colts = document.querySelector(".cot")
-      console.log(console.log(colts.innerHTML = cot++))
-   
-      getul.remove();
-
     
-   
+       
+    
+      console.log( getul.className.includes(`list-unstyled d-flex goods ${pfarr}`))
+     
+      if( getul.className.includes(`list-unstyled d-flex goods ${pfarr}`)){
+  
       
+        
+        const colts = document.querySelector(".cot")
+        console.log(console.log(colts.innerHTML = cot++))
+     
+        getul.remove();
+  
+      
+     
+        
+    
+      }
+         
+    
+      })
+    
+      historylists.prepend(getul)
   
     }
-       
   
-    })
+  })
 
 
 
-  
-
-
-
- 
-    // if (getul.className.includes(`list-unstyled d-flex goods ${pfarr}`) === false){
-    //   // console.log("heyyy")
-    
-    // // console.log( cot = 1)
-  
-
-
-
-    // }
-
-    
- 
-    
-      
-   
- 
-
-    historylists.prepend(getul)
-
-   
-
-
-
-
-
-  
-
-   
-
-
-
-//  getul.setAttribute(`class`,`list-unstyled d-flex goods ${pfarr}`)
-    
-    
-//  console.log(    getul.className)
-// console.log(pfarr)
-
-// console.log(colts.innerHTML = cot++)
-
-
-// if(getul.className.includes(`list-unstyled d-flex goods ${pfarr}`) === pfarr){
-
-
-
-// }else{
-//   console.log("hey")
-
-// }
-    
-
-
-
-
-//   const cldcs = getul.children;
-//   console.log(cldcs)
-//  for(var i = 0; i< cldcs.length;i++){
-//   console.log(cldcs[i].className)
-//  }
- 
- 
-  }
-
-
-
-  
-})
 
 }
 
