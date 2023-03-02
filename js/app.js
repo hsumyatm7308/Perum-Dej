@@ -333,7 +333,7 @@ const pfarrs = ["Tom Ford","Chanel Co Co","Avon","Chanel N 5","Arizona","Eternit
 
 
 let count = 1;
-let cot = 1;
+// let cot = 1;
 
 
 
@@ -354,7 +354,10 @@ getshopcards.forEach(function(getshopcard,idx){
  
      }
  
+    let  cot = 1
+
      goodarrfun(getshopcard,idx,cot);
+    //  goodarrfun(getshopcard,idx);
  
    
  
@@ -374,7 +377,7 @@ getshopcards.forEach(function(getshopcard,idx){
 
 function goodarrfun(good,idx){
 
-
+    cot = 1;   //cot ko 1 nae sa chin loh
  
  
   getul = document.createElement("ul")
@@ -415,6 +418,8 @@ pfarrs.forEach(function(pfarr,pfidx){
    
      
     good.addEventListener("click",function(){
+
+
       getul.setAttribute(`class`,`list-unstyled d-flex goods ${pfarr}`)
   
   
@@ -424,7 +429,7 @@ pfarrs.forEach(function(pfarr,pfidx){
    
     if( getul.className.includes(`list-unstyled d-flex goods ${pfarr}`)){
 
-      // console.log(cot++)
+    
       
       const colts = document.querySelector(".cot")
       console.log(console.log(colts.innerHTML = cot++))
@@ -447,14 +452,15 @@ pfarrs.forEach(function(pfarr,pfidx){
 
 
  
-    if (getul.className.includes(`list-unstyled d-flex goods ${pfarr}`) === false){
-      // console.log("heyyy")
-    console.log(cot = 0)
+    // if (getul.className.includes(`list-unstyled d-flex goods ${pfarr}`) === false){
+    //   // console.log("heyyy")
+    
+    // // console.log( cot = 1)
   
 
 
 
-    }
+    // }
 
     
  
