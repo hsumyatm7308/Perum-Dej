@@ -389,6 +389,10 @@ function goodarrfun(good,idx){
 pfarrs.forEach(function(pfarr,pfidx){
 
 
+
+
+
+ 
  
   
   if(idx === pfidx){
@@ -417,7 +421,7 @@ pfarrs.forEach(function(pfarr,pfidx){
   
      
   
-    // console.log( getul.className.includes(`list-unstyled d-flex goods ${pfarr}`))
+    console.log( getul.className.includes(`list-unstyled d-flex goods ${pfarr}`))
   
     if( getul.className.includes(`list-unstyled d-flex goods ${pfarr}`)){
 
@@ -425,43 +429,71 @@ pfarrs.forEach(function(pfarr,pfidx){
       getul.remove();
  
       
+         
+    //  console.log(cot++)
+
     } 
-
-
-
-
-
   
     })
+
+    
+    if (getul.className.includes(`list-unstyled d-flex goods ${pfarr}`) === false){
+      // console.log("heyyy")
+    console.log(cot++)
+
+    }
+
+
+    historylists.appendChild(getul)
+
   
+  const colts = document.querySelector(".cot")
 
    
 
 
-  historylists.appendChild(getul)
 
-  const colts = document.querySelector(".cot")
-  // colts.innerHTML = 2
+//  getul.setAttribute(`class`,`list-unstyled d-flex goods ${pfarr}`)
+    
+    
+//  console.log(    getul.className)
+// console.log(pfarr)
 
-  console.log(colts.innerHTML = cot++)
+// console.log(colts.innerHTML = cot++)
+
+
+// if(getul.className.includes(`list-unstyled d-flex goods ${pfarr}`) === pfarr){
+
+
+
+// }else{
+//   console.log("hey")
+
+// }
+    
+
+
+
+
+
+
+
+
+//   const cldcs = getul.children;
+//   console.log(cldcs)
+//  for(var i = 0; i< cldcs.length;i++){
+//   console.log(cldcs[i].className)
+//  }
+
 
     
  
   }
 
+
+
   
-
- 
-
-
 })
-
-
-
-
-
-
-
 
 }
   
