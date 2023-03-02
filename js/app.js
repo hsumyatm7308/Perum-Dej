@@ -401,17 +401,15 @@ pfarrs.forEach(function(pfarr,pfidx){
 
  
 
+  
     getul.innerHTML = `
   
-   <li class="list-inline-item col-sm-2">${pfarr}</li>
-   <li class="list-inline-item col-sm-2 cot">${cot}</li>
-
-   <li class="list-inline-item col-sm-2"></li>
-   <li class="list-inline-item col-sm-2"><i class="fa-solid fa-trash" onclick="removeul(${idx})"></i></li> 
-   `
-  
-      const colts = document.querySelector(".cot")
-
+    <li class="list-inline-item col-sm-2">${pfarr}</li>
+    <li class="list-inline-item col-sm-2 cot">${cot}</li>
+ 
+    <li class="list-inline-item col-sm-2"></li>
+    <li class="list-inline-item col-sm-2"><i class="fa-solid fa-trash" onclick="removeul(${idx})"></i></li> 
+    `
 
   
    
@@ -423,39 +421,55 @@ pfarrs.forEach(function(pfarr,pfidx){
      
   
     console.log( getul.className.includes(`list-unstyled d-flex goods ${pfarr}`))
-  
+   
     if( getul.className.includes(`list-unstyled d-flex goods ${pfarr}`)){
 
-      console.log(cot++)
+      // console.log(cot++)
+      
+      const colts = document.querySelector(".cot")
+      console.log(console.log(colts.innerHTML = cot++))
+   
+      getul.remove();
+
+    
    
       
-      // getul.remove();
- 
   
-      // console.log(console.log(colts.innerHTML = cot++))
-         
-
-    } 
+    }
+       
   
     })
 
 
 
- 
+  
 
-    
+
+
+ 
     if (getul.className.includes(`list-unstyled d-flex goods ${pfarr}`) === false){
       // console.log("heyyy")
     console.log(cot = 0)
+  
+
+
 
     }
 
+    
+ 
+    
+      
+   
+ 
+
+    historylists.prepend(getul)
+
+   
 
 
 
 
-
-    historylists.appendChild(getul)
 
   
 
@@ -485,18 +499,12 @@ pfarrs.forEach(function(pfarr,pfidx){
 
 
 
-
-
-
-
 //   const cldcs = getul.children;
 //   console.log(cldcs)
 //  for(var i = 0; i< cldcs.length;i++){
 //   console.log(cldcs[i].className)
 //  }
-
-
-    
+ 
  
   }
 
@@ -506,6 +514,33 @@ pfarrs.forEach(function(pfarr,pfidx){
 })
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
 
 
