@@ -410,6 +410,7 @@ pfarrs.forEach(function(pfarr,pfidx){
    <li class="list-inline-item col-sm-2"><i class="fa-solid fa-trash" onclick="removeul(${idx})"></i></li> 
    `
   
+      const colts = document.querySelector(".cot")
 
 
   
@@ -425,29 +426,38 @@ pfarrs.forEach(function(pfarr,pfidx){
   
     if( getul.className.includes(`list-unstyled d-flex goods ${pfarr}`)){
 
+      console.log(cot++)
    
-      getul.remove();
- 
       
+      // getul.remove();
+ 
+  
+      // console.log(console.log(colts.innerHTML = cot++))
          
-    //  console.log(cot++)
 
     } 
   
     })
 
+
+
+ 
+
     
     if (getul.className.includes(`list-unstyled d-flex goods ${pfarr}`) === false){
       // console.log("heyyy")
-    console.log(cot++)
+    console.log(cot = 0)
 
     }
+
+
+
+
 
 
     historylists.appendChild(getul)
 
   
-  const colts = document.querySelector(".cot")
 
    
 
