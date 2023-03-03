@@ -399,12 +399,13 @@ function goodarrfun(good,idx){
       <li class="list-inline-item col-sm-2 cot">${cot}</li>
    
       <li class="list-inline-item col-sm-2">$${pfvalues[idx]}</li>
+      <li class="list-inline-item col-sm-2 value">${pfvalues[idx]*cot}</li>
       <li class="list-inline-item col-sm-2"><i class="fa-solid fa-trash" onclick="removeul(${idx})"></i></li> 
       `
   
       
      
-  
+  // console.log( cot)
     
     
 
@@ -427,10 +428,12 @@ function goodarrfun(good,idx){
       
         
         const colts = document.querySelector(".cot")
-        console.log(console.log(colts.innerHTML = cot++))
+        colts.innerHTML = ++cot
      
         getul.remove();
   
+        const vlaues = document.querySelector(".value")
+        console.log(vlaues.innerHTML =` $${pfvalues[idx]*cot}`)
       
      
         
