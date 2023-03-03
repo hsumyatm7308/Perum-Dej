@@ -227,9 +227,9 @@ input[type="search"]{
     
 }
 
-.showmodal{
-    visibility: hidden;
-}
+/* .showmodal{ */
+    /* visibility: hidden; */
+/* } */
 
 
 .signupform{
@@ -238,19 +238,34 @@ input[type="search"]{
 
 
 .signupform,.loginform{
-    width: 50%;
+    width: 400px;
     height: 60%;
-    background-color: #5a5e6f;
+    background: linear-gradient(400deg,#292929,#557291);
+    backdrop-filter: blur(40px);
     border: 2px solid #4c4f5a;
-    box-shadow: 5px 5px 5px #4c4f5a;
+    /* box-shadow: 5px 5px 5px #4c4f5a; */
 
     /* transform: translate(15%); */
+    position: relative;
+}
+
+.signupform label,.loginform label{
+    width: 50px;
+    padding: 9px 13px;
+    border-radius: 5px 0 0 5px;
+    background: #557291;
+    position: absolute;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
 
 .signupform form input {
-    font-size: 12px;
+    /* font-size: 12px; */
+
 }
 
 
@@ -260,8 +275,32 @@ input[type="search"]{
 
 .form-control,.signin{
   
-    width: 90%;
+    width: 80%;
+    margin-left: 39px;
 
+}
+
+
+.lock1{
+    color: #121314;
+    position: absolute;
+    top: 145px;
+    right: 48px;
+}
+
+.lock2{
+    color: #121314;
+    position: absolute;
+    top: 192px;
+    right: 48px;
+}
+
+.lock3{
+    color: #121314;
+    position: absolute;
+    top:145px;
+    right: 48px;
+    z-index: 10000000;
 }
 
 .btnsmct .btn{
@@ -271,6 +310,7 @@ input[type="search"]{
 .btnsmct .btn:hover{
     opacity: .8;
 }
+
 
 
 .alertbox{
