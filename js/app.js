@@ -86,10 +86,6 @@ for(var i = 0 ; i < getproductitems.length ; i++){
   })
 }
 
-
-
-
-
 // End Products Section 
 
 
@@ -140,22 +136,12 @@ smsingin.addEventListener("click",function(){
 })
 
 
-
-
-
-
 window.onclick = function(e){
 
   if(e.target === getmodalcontainer){
     getmodalcontainer.classList.toggle("showmodal")
   }
  }
-
-
-
-
-
-
 
   getshowpassword.addEventListener('click',function(){
 
@@ -205,13 +191,7 @@ const signupbtn = document.getElementById('singup');
     localStorage.setItem("password",getpassword.value);
     localStorage.setItem("copassword",getcopassword.value);
   
-
-
     // console.log(localStorage.getItem("name"))
-
-
-    
-
 
     if(getpassword.value === getcopassword.value){
 
@@ -220,14 +200,10 @@ const signupbtn = document.getElementById('singup');
         // console.log('true')
         alert("Something went wrong!")
 
-
       }else if(getname.value && getemail.value && getpassword.value && getcopassword.value){
         getmodalcontainer.style.visibility = "hidden";
-
-     
       }
 
- 
     } else{
       const getalertbox = document.getElementById('alertbox');
       getalertbox.classList.add("alertboxani");
@@ -238,8 +214,6 @@ const signupbtn = document.getElementById('singup');
 
   })
   
-
-
 
 // Start  Sing in 
 
@@ -253,19 +227,16 @@ const getsinginbtn = document.getElementById("singin");
 
 getshowloginpassword.addEventListener('click',function(){
 
-  
-  
-    if(getloginpassword.type === "password"){
-      getloginpassword.setAttribute('type','text');
-      getshowloginpassword.innerHTML = '<span class="" id ="show_password"> <i class="fa-solid fa-lock-open"></i> hide password</span>'
+  if(getloginpassword.type === "password"){
+    getloginpassword.setAttribute('type','text');
+    getshowloginpassword.innerHTML = '<span class="" id ="show_password"> <i class="fa-solid fa-lock-open"></i> hide password</span>'
 
-    }else{
-      getloginpassword.setAttribute('type','password')
-      getshowloginpassword.innerHTML = `<span class="" id ="show_password"> <i class="fa-solid fa-lock"></i> show password</span>`
+  }else{
+    getloginpassword.setAttribute('type','password')
+    getshowloginpassword.innerHTML = `<span class="" id ="show_password"> <i class="fa-solid fa-lock"></i> show password</span>`
   
-    }
+   }
   })
-
 
 
   getsinginbtn.addEventListener("click",function(e){
@@ -274,26 +245,15 @@ getshowloginpassword.addEventListener('click',function(){
     let localemail = localStorage["email"];
     let localpassword = localStorage["copassword"];
   
-  
-
     for(var c = 0; c < getformcontrol.length; c++){
       
-      
-
       if(getformcontrol[c].value === (localname && localemail && localpassword)){
-            console.log("true")
+          // console.log("true")
           getmodalcontainer.classList.toggle("showmodal")
-
       }
     }
-
-
-    
     e.preventDefault();
   })
-
-
- 
 
 // End Login Form 
 
@@ -327,12 +287,6 @@ const pfarrs = ["Tom Ford","Chanel Co Co","Avon","Chanel N 5","Arizona","Eternit
 const pfvalues = [250,350,150,300,200,350,150,150,250,340,290,310]
 
 
-
-
-
-
-
-
 let count = 1;
 // let cot = 1;
 
@@ -344,28 +298,16 @@ getshopcards.forEach(function(getshopcard,idx){
 
   getshopcard.addEventListener("click",function(){
  
-
-
     if(localStorage.length === 0){
       getmodalcontainer.classList.toggle("showmodal")  
  
      }else{
       getcounts.innerHTML = count++;
- 
- 
- 
- 
      }
  
-
-     goodarrfun(getshopcard,idx,cot,pfvalues);
-    //  goodarrfun(getshopcard,idx);
- 
-   
- 
+     goodarrfun(getshopcard,idx,cot,pfvalues); 
+  
   })
-
- 
 
 })
 
@@ -375,21 +317,14 @@ getshopcards.forEach(function(getshopcard,idx){
 
 function goodarrfun(good,idx){
 
-    cot = 1;   //cot ko 1 nae sa chin loh
+  cot = 1;   //for start with 1
  
  
   getul = document.createElement("ul")
   getul.setAttribute(`class`,`list-unstyled d-flex goods`)
   
-
-
-  
+ 
   pfarrs.forEach(function(pfarr,pfidx){
-
-
-
-
-
   
     if(idx === pfidx){
       // getul.nextElementSibling.innerHTML = ''
@@ -401,113 +336,36 @@ function goodarrfun(good,idx){
       <li class="list-inline-item col-sm-2">$${pfvalues[idx]}</li>
       <li class="list-inline-item col-sm-2 value">${pfvalues[idx]*cot}</li>
       <li class="list-inline-item col-sm-2"><i class="fa-solid fa-trash" onclick="removeul(${idx})"></i></li> 
-      `
-  
-      
-     
-  // console.log( cot)
-    
-    
-
-  
-  
-     
-       
+      `;
+               
       good.addEventListener("click",function(){
   
   
-        getul.setAttribute(`class`,`list-unstyled d-flex goods ${pfarr}`)
-    
-    
+        getul.setAttribute(`class`,`list-unstyled d-flex goods ${pfarr}`);
+      
+        console.log( getul.className.includes(`list-unstyled d-flex goods ${pfarr}`))
        
-    
-      console.log( getul.className.includes(`list-unstyled d-flex goods ${pfarr}`))
+        if( getul.className.includes(`list-unstyled d-flex goods ${pfarr}`)){
      
-      if( getul.className.includes(`list-unstyled d-flex goods ${pfarr}`)){
-  
-      
-        
-        const colts = document.querySelector(".cot")
-        colts.innerHTML = ++cot
-     
-        getul.remove();
-  
-        const vlaues = document.querySelector(".value")
-        console.log(vlaues.innerHTML =` $${pfvalues[idx]*cot}`)
-      
-     
-        
+          const colts = document.querySelector(".cot")
+          colts.innerHTML = ++cot;
+       
+          getul.remove();
     
-      }
-         
-    
-      })
-    
-      historylists.prepend(getul)
+          const vlaues = document.querySelector(".value")
+          vlaues.innerHTML =` $${pfvalues[idx]*cot}` ;
   
-    }
-  
+        }
+            
+        });
+    
+      historylists.prepend(getul);
+    } 
   })
-
-
-
-
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-function removeul(hay){
+function removeul(){
   historylists.innerHTML = ''
 }
  
-
-
-// var myarrs=[10,20,30,40,50,60,70,80,90,100];
-
-// // array.reduce(function(total,currentValue,currentIndex,array){},initialValue);
-
-// var result = myarrs.reduce(function(total,curvalue,curidx,arr){
-//   console.log('this is total = ', total); //0 undefined //if we use 1 parameter 10 undefined
-//   console.log('this is curvalue = ', curvalue); //10 to 100 by number //if we use 1 parameter 20 to 100 by number
-//   console.log('this is curidx = ', curidx); //0 to 9 index number //if we use 1 parameter 1 to 9 index number
-//   console.log(arr);
-   
-//   total += curvalue;
-
-//   return total;
-  
-// },0);
-
-// console.log(result);
-
-
-
-
 // End Items History 
