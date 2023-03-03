@@ -152,11 +152,11 @@ window.onclick = function(e){
    
      if(getpassword.type === "password"){
        getpassword.setAttribute('type','text');
-       getshowpassword.innerHTML = '<span class="" id ="show_password"> <i class="fa-solid fa-lock-open"></i> hide password</span>'
+       getshowpassword.innerHTML = '<span class="" id ="show_password"> <i class="fa-solid fa-lock-open"></i></span>'
 
      }else{
        getpassword.setAttribute('type','password')
-       getshowpassword.innerHTML = `<span class="" id ="show_password"> <i class="fa-solid fa-lock"></i> show password</span>`
+       getshowpassword.innerHTML = `<span class="" id ="show_password"> <i class="fa-solid fa-lock"></i></span>`
    
      }
    })
@@ -169,10 +169,10 @@ window.onclick = function(e){
    
      if(getcopassword.type === "password"){
        getcopassword.setAttribute('type','text');
-       getshowcopassword.innerHTML = `<span id="show_copassword">  <i class="fa-solid fa-lock-open"></i> hide password</span>`
+       getshowcopassword.innerHTML = `<span id="show_copassword">  <i class="fa-solid fa-lock-open"></i></span>`
      }else{
        getcopassword.setAttribute('type','password')
-       getshowcopassword.innerHTML = `<span id="show_copassword">  <i class="fa-solid fa-lock"></i> show password</span>`
+       getshowcopassword.innerHTML = `<span id="show_copassword">  <i class="fa-solid fa-lock"></i></span>`
    
      }
   
@@ -229,11 +229,11 @@ getshowloginpassword.addEventListener('click',function(){
 
   if(getloginpassword.type === "password"){
     getloginpassword.setAttribute('type','text');
-    getshowloginpassword.innerHTML = '<span class="" id ="show_password"> <i class="fa-solid fa-lock-open"></i> hide password</span>'
+    getshowloginpassword.innerHTML = '<span class="" id ="show_password"> <i class="fa-solid fa-lock-open"></i></span>'
 
   }else{
     getloginpassword.setAttribute('type','password')
-    getshowloginpassword.innerHTML = `<span class="" id ="show_password"> <i class="fa-solid fa-lock"></i> show password</span>`
+    getshowloginpassword.innerHTML = `<span class="" id ="show_password"> <i class="fa-solid fa-lock"></i></span>`
   
    }
   })
