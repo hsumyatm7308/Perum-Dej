@@ -324,6 +324,13 @@ function goodarrfun(good,idx){
   getul = document.createElement("ul")
   getul.setAttribute(`class`,`list-unstyled d-flex goods`)
   
+
+
+
+
+
+
+
  
   pfarrs.forEach(function(pfarr,pfidx){
 
@@ -382,24 +389,22 @@ function goodarrfun(good,idx){
 
       historylists.prepend(getul);
       
-      const removeul = document.querySelector('.removeul')
-    
       
-      removeul.addEventListener("click",function(){
-        getul.remove();
     
 
-      })
 
-
+      console.log(getul.nextElementSibling)
 
       // ----------------------------------------------------------------------------------------------
-
-
-
-
-
-
+    
+    
+      const removeul = document.querySelector('.removeul')
+       
+      removeul.addEventListener("click",function(){
+        
+        
+    
+      })
 
        
     } 
