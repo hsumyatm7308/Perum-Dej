@@ -336,7 +336,8 @@ function goodarrfun(good,idx){
    
       <li class="list-inline-item col-sm-2">$${pfvalues[idx]}</li>
       <li class="list-inline-item col-sm-2 value">$${pfvalues[idx*cot]}</li>
-      <li class="list-inline-item col-sm-2"><i class="fa-solid fa-trash" onclick="removeul()"></i></li> 
+      <li class="list-inline-item col-sm-2 removeul"><i class="fa-solid fa-trash"></i></li> 
+
       `;
 
     
@@ -361,16 +362,40 @@ function goodarrfun(good,idx){
           vlaues.innerHTML =` $${pfvalues[idx]*cot}` ;
   
         }
+
+
+
+
+        
             
         });
     
       historylists.prepend(getul);
+
+
+
+      const removerul = document.querySelector('.removeul')
+        
+removerul.addEventListener("click",function(){
+  cot = 1
+  getul.remove();
+
+  good.addEventListener("click",function(){
+    console.log("hello")
+   historylists.prepend(getul);
+
+
+  })
+
+
+})
+
+       
     } 
   })
 }
 
-function removeul(){
-  getul.remove()
-}
+
+
  
 // End Items History 
