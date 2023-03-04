@@ -228,9 +228,9 @@ input[type="search"]{
     
 }
 
-/* .showmodal{ */
-    /* visibility: hidden; */
-/* } */
+.showmodal{
+    visibility: hidden;
+}
 
 
 .signupform{
@@ -246,9 +246,7 @@ input[type="search"]{
     backdrop-filter: blur(40px);
     border-radius: 5px;
     border: 2px solid #4c4f5a;
-    /* box-shadow: 5px 5px 5px #4c4f5a; */
 
-    /* transform: translate(15%); */
     position: relative;
 }
 
@@ -268,12 +266,30 @@ input[type="search"]{
     margin-bottom: 10px;
 }
 
+.smsingin a{
+    color: #f4f4f4;
+    text-decoration: none;
+}
+
+.smsingin{
+    background:linear-gradient(#344978,rgba(255,255,255,.1));
+    border: 5px solid #344978;
+    border-radius: 10px;
+    padding: 2px 4px;
+}
+
+.smsingin:hover{
+    background:linear-gradient(#344978,rgba(255,255,255,.3));
+
+}
+
+.loginactive{
+    background: linear-gradient(#304ebc,rgba(255,255,255,.1));
+}
+
 
 .signupform form input,.loginform form input{
-    /* background:linear-gradient(#344978,rgba(255,255,255,.4));
-     */
      background: #dddd;
-
 }
 
 .signupform form input:focus ,.loginform form input:focus{
@@ -297,21 +313,21 @@ input[type="search"]{
 .lock1{
     color: #121314;
     position: absolute;
-    top: 145px;
+    top: 203px;
     right: 48px;
 }
 
 .lock2{
     color: #121314;
     position: absolute;
-    top: 192px;
+    top: 250px;
     right: 48px;
 }
 
 .lock3{
     color: #121314;
     position: absolute;
-    top:145px;
+    top:204px;
     right: 48px;
     z-index: 10000000;
 }
@@ -324,7 +340,8 @@ input[type="search"]{
 } 
 
 .btnsmct .btn:hover{
-    opacity: .8;
+    background:linear-gradient(#344978,rgba(255,255,255,.3));
+    
 }
 
 
