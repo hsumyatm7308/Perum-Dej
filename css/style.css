@@ -12,7 +12,7 @@ body{
 
 .navbar{
     /* height: 100px; */
-    background:#8a98d4;
+    background-color: #344978;
     position: absolute;
     z-index: 1;
 }
@@ -63,7 +63,10 @@ input[type="search"]{
 /* Start Products Section  */
 
 #products{
-    background-color: rgb(86, 105, 135);
+    /* background-color: rgb(86, 105, 135); */
+    background:linear-gradient( #45506a,rgba(255,255,255,0));
+
+
 
 }
 
@@ -177,10 +180,14 @@ input[type="search"]{
 
 .cardhover{
     width: 92.3%;
-    background:#f4f4f4;
+    background: #515868;
     transition: all 1s;
     /* transform: translateY(100%); */
     position: absolute;
+}
+
+.cardhover p{
+    color: #f4f4f4;
 }
 
 .salecontainer:hover .cardhover{
@@ -401,8 +408,13 @@ input[type="search"]{
 
 
 
-.historylists ul{
+.historylists .goodstitles li{
     border-bottom: 1px solid #121314;
+}
+
+.goodctn ul{
+    border-bottom: 1px solid #121314;
+
 }
 
 .itemheaders{
@@ -429,5 +441,12 @@ input[type="search"]{
 
 .itemhistoryshow{
     display: none;
+}
+
+.removeul {
+    background:none ;
+   border: none;
+   position: absolute;
+   right: 85px;
 }
 /* End Item History  */
