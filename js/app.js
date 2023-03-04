@@ -325,6 +325,7 @@ function goodarrfun(good,idx){
   
  
   pfarrs.forEach(function(pfarr,pfidx){
+
   
     if(idx === pfidx){
       // getul.nextElementSibling.innerHTML = ''
@@ -334,12 +335,16 @@ function goodarrfun(good,idx){
       <li class="list-inline-item col-sm-2 cot">${cot}</li>
    
       <li class="list-inline-item col-sm-2">$${pfvalues[idx]}</li>
-      <li class="list-inline-item col-sm-2 value">$${pfvalues[idx]*cot}</li>
-      <li class="list-inline-item col-sm-2"><i class="fa-solid fa-trash" onclick="removeul(${idx})"></i></li> 
+      <li class="list-inline-item col-sm-2 value">$${pfvalues[idx*cot]}</li>
+      <li class="list-inline-item col-sm-2"><i class="fa-solid fa-trash" onclick="removeul()"></i></li> 
       `;
+
+    
                
       good.addEventListener("click",function(){
   
+       
+      
   
         getul.setAttribute(`class`,`list-unstyled d-flex goods ${pfarr}`);
       
@@ -348,7 +353,7 @@ function goodarrfun(good,idx){
         if( getul.className.includes(`list-unstyled d-flex goods ${pfarr}`)){
      
           const colts = document.querySelector(".cot")
-          colts.innerHTML = ++cot;
+          console.log(colts.innerHTML = ++cot)
        
           getul.remove();
     
@@ -365,7 +370,7 @@ function goodarrfun(good,idx){
 }
 
 function removeul(){
-  getul.innerHTML = ''
+  getul.remove()
 }
  
 // End Items History 
