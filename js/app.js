@@ -295,6 +295,7 @@ let count = 1;
 getshopcards.forEach(function(getshopcard,idx){
  
   let  cot = 1
+  
 
   getshopcard.addEventListener("click",function(){
  
@@ -318,7 +319,7 @@ getshopcards.forEach(function(getshopcard,idx){
 function goodarrfun(good,idx){
 
   cot = 1;   //for start with 1
- 
+  rmcot = 1
  
   getul = document.createElement("ul")
   getul.setAttribute(`class`,`list-unstyled d-flex goods`)
@@ -336,10 +337,11 @@ function goodarrfun(good,idx){
    
       <li class="list-inline-item col-sm-2">$${pfvalues[idx]}</li>
       <li class="list-inline-item col-sm-2 value">$${pfvalues[idx*cot]}</li>
-      <li class="list-inline-item col-sm-2 removeul"><i class="fa-solid fa-trash"></i></li> 
+      <button class="col-sm-2 removeul"><i class="fa-solid fa-trash"></i></button> 
 
       `;
-
+   
+      
     
                
       good.addEventListener("click",function(){
@@ -361,90 +363,39 @@ function goodarrfun(good,idx){
           const vlaues = document.querySelector(".value")
           vlaues.innerHTML =` $${pfvalues[idx]*cot}` ;
   
+         
+
+          
+
+     
         }
-
-
-
 
         
             
         });
     
+
+
+
+      
+
+
       historylists.prepend(getul);
+      
+      const removeul = document.querySelector('.removeul')
+    
+      
+      removeul.addEventListener("click",function(){
+        getul.remove();
+    
 
-
-
-
-
-
+      })
 
 
 
       // ----------------------------------------------------------------------------------------------
 
 
-
-const removerul = document.querySelector('.removeul')
-        
-removerul.addEventListener("click",function(){
-
-  let rmcot = 1;
-
-  getul.remove();
-
-  good.addEventListener("click",function(){
-    console.log("hello")
-
-    getrmul = document.createElement("ul")
-    getrmul.setAttribute(`class`,`list-unstyled d-flex goods`)
-
-    getrmul.innerHTML = `
-    
-    <li class="list-inline-item col-sm-2">${pfarr}</li>
-    <li class="list-inline-item col-sm-2 cot">${rmcot}</li>
- 
-    <li class="list-inline-item col-sm-2">$${pfvalues[idx]}</li>
-    <li class="list-inline-item col-sm-2 value">$${pfvalues[idx*rmcot]}</li>
-    <li class="list-inline-item col-sm-2 removeul"><i class="fa-solid fa-trash"></i></li> 
-
-    `;
-
-
-    good.addEventListener("click",function(){
-  
-       
-      
-  
-      getrmul.setAttribute(`class`,`list-unstyled d-flex goods ${pfarr}`);
-    
-      console.log( getrmul.className.includes(`list-unstyled d-flex goods ${pfarr}`))
-     
-      if( getrmul.className.includes(`list-unstyled d-flex goods ${pfarr}`)){
-   
-        const colts = document.querySelector(".cot")
-        console.log(colts.innerHTML = rmcot++)
-     
-        getrmul.remove();
-  
-        const vlaues = document.querySelector(".value")
-        vlaues.innerHTML =` $${pfvalues[idx]*rmcot}` ;
-
-      }
-
-
-
-
-      
-          
-      });
-
-   historylists.prepend(getrmul);
-
-
-  })
-
-
-})
 
 
 
@@ -454,7 +405,6 @@ removerul.addEventListener("click",function(){
     } 
   })
 }
-
 
 
  
