@@ -334,7 +334,7 @@ function goodarrfun(good,idx){
       <li class="list-inline-item col-sm-2 cot">${cot}</li>
    
       <li class="list-inline-item col-sm-2">$${pfvalues[idx]}</li>
-      <li class="list-inline-item col-sm-2 value">${pfvalues[idx]*cot}</li>
+      <li class="list-inline-item col-sm-2 value">$${pfvalues[idx]*cot}</li>
       <li class="list-inline-item col-sm-2"><i class="fa-solid fa-trash" onclick="removeul(${idx})"></i></li> 
       `;
                
@@ -365,7 +365,7 @@ function goodarrfun(good,idx){
 }
 
 function removeul(){
-  historylists.innerHTML = ''
+  getul.innerHTML = ''
 }
  
 // End Items History 
