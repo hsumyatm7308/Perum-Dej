@@ -64,7 +64,7 @@ input[type="search"]{
 
 #products{
     /* background-color: rgb(86, 105, 135); */
-    background:linear-gradient( #45506a,rgba(255,255,255,0));
+    background:linear-gradient( #444e64,rgb(65, 73, 100));
 
 
 
@@ -103,12 +103,17 @@ input[type="search"]{
 .productmenus .list-unstyled .productitems{
     border-radius: 30px;
     padding: 5px 15px;
-    transition: background-color .5s;
+    transition: all .5s;
+
     
 }
 
+
+
+
 .productitems:hover{
-    background-color: #8a98d4;
+    background:linear-gradient( #446098,rgb(255,255,255,.3));
+
     opacity: .9;
 }
 
@@ -117,7 +122,8 @@ input[type="search"]{
 }
 
 .activepd{
-    background-color: #8a98d4;
+    background:linear-gradient( #446098,rgb(255,255,255,.1));
+    border: 1px solid #446098;
 
 }
 
@@ -130,6 +136,7 @@ input[type="search"]{
 .salecontainer{
     overflow: hidden;
     transition: all 1s;
+    
 
     position: relative;
 
@@ -140,6 +147,9 @@ input[type="search"]{
 .salecontainer:hover{
     opacity: .8;
     cursor: pointer;
+    transform: scale(1.05);
+   
+
 }
 
 
