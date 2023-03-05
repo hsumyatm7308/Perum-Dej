@@ -94,6 +94,17 @@ input[type="search"] {
 }
 
 
+/* End Nav Bar  */
+
+/* Start About Us Section  */
+.aboutuss{
+    width: 100%;
+    height: 100vh;
+    background: #121314;
+}
+/* End About Us Section  */
+
+
 
 /* Start Products Section  */
 
@@ -280,7 +291,7 @@ input[type="search"] {
     
 }
 
-.showmodal{
+.modalcontainer{
     visibility: hidden;
 }
 
