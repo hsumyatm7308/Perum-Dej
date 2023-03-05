@@ -33,6 +33,18 @@ body{
     margin-left: 50px;
 }
 
+@media only screen and (max-width: 1007px) {
+    .rightside{
+        margin-left:0px;
+    }
+
+    .navbar-nav .nav-list-item:hover a{
+        color: #bbb;
+         border-bottom: none;
+     
+     }
+}
+
 
 
 input[type="search"] {
@@ -62,7 +74,17 @@ input[type="search"] {
   
  
   
+  .navbuttons{
+    border: none;
 
+    position: absolute;
+    right: 93px;
+    top: 33px;
+  }
+
+  .navbuttons:focus{
+    border: none;
+  }
 
 
 
