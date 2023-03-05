@@ -127,15 +127,20 @@ input[type="search"] {
 
 .productmenus{
     position: absolute;
-    top: -10px;
+    top: 30px;
     
 }
 
 .productlines{
     width: 70px;
     height: 4px;
+
     background-color: #8a98d4;
     border-radius: 30px;
+
+    position: absolute;
+    top: 10px;
+
 
 }
 
@@ -221,6 +226,10 @@ input[type="search"] {
     height: 200px;
 }
 
+
+
+
+
 .saleproducts .card-body{
     width: 100%;
     background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.9));
@@ -250,6 +259,8 @@ input[type="search"] {
     transform: translateY(-100%);
     
 }
+
+
 
 .pditems{
     display: none;
