@@ -17,46 +17,78 @@ body{
     z-index: 1;
 }
 
-.navbar-nav .nav-list-item:hover a{
-    opacity: .8;
-    border-bottom: 2px solid #121314;
+.navmenus a{
+    color: #fff;
+    transition: all .3s;
+} 
 
-    transition: all .5s;
+.navbar-nav .nav-list-item:hover a{
+   color: #bbb;
+   border-bottom: 2px solid rgb(45, 138, 146);
+
+}
+
+
+.rightside{
+    margin-left: 50px;
 }
 
 
 
-input[type="search"]{
-    color: #776464;
+input[type="search"] {
+    width: 0;
+    color: #fff;
     background: none;
     outline: none;
     border: none;
     border-bottom: 2px solid #d6d2d2;
+    visibility: hidden;
 
-}
+    transition: all 1s;
 
-
-
-.nav-item a i{
+  }
+  
+  .nav-item a i {
     color: #ffff;
-}
+  }
+  
+  .nav-item a:hover input {
+    color: #dc0e0e;
+    border-bottom: 2px solid #a04a4a;
+    width: 200px;
+    visibility: visible;
+    
+  }
+  
+ 
+  
 
-.nav-item a i:hover{
-    color: #776464;
-}
 
 
-.navbuttons{
+input[type="search"] {
+    color: #fff;
     background: none;
+    outline: none;
     border: none;
-    position: absolute;
-    top: 33px;
-    right: 15%;
+    border-bottom: 2px solid #d6d2d2;
+  }
+  
+  .nav-item a i {
+    color: #ffff;
+  }
+  
+  .nav-item a:hover i {
+    color: #dc0e0e;
+  }
+  
+  .nav-item a:hover ~ input[type="search"] {
+    color: #dc0e0e;
+  }
 
 
+.countdot{
+   font-size: 7px;
 }
-
-
 
 
 
