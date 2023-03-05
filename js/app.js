@@ -3,6 +3,195 @@
 
 // End Navbar 
 
+// Start Login Form 
+const getmodalcontainer = document.getElementById('modalcontainer')
+const getname = document.getElementById('fname');
+const getemail = document.getElementById('email')
+
+const getpassword = document.getElementById('password');
+const getcopassword = document.getElementById('copassword')
+const getshowpassword = document.getElementById('show_password');
+const getshowcopassword = document.getElementById('show_copassword');
+
+const canclebtn = document.querySelectorAll('.canclebtn');
+const loginbtn = document.querySelector('.loginbtn')
+
+const getsignupform = document.getElementById('signupform');
+const getloginform = document.getElementById('loginform');
+const smsingin = document.getElementById('smsingin');
+const smsignup = document.getElementById('smssignup');
+
+const showmodal = document.getElementsByClassName('showmodal');
+
+
+loginbtn.addEventListener("click",function(){
+  getmodalcontainer.style.visibility = "visible"
+
+})
+
+
+
+smsignup.addEventListener("click",function(){
+  getsignupform.style.display = "block";
+  getloginform.style.display = "none";
+})
+
+smsingin.addEventListener("click",function(){
+  getsignupform.style.display = "none";
+  getloginform.style.display = "block";
+})
+
+
+window.onclick = function(e){
+
+  if(e.target === getmodalcontainer){
+    getmodalcontainer.style.visibility = "hidden";
+  }
+ }
+
+  getshowpassword.addEventListener('click',function(){
+
+    
+   console.log(getname.value)
+    
+     console.log(getpassword.type)
+   
+     if(getpassword.type === "password"){
+       getpassword.setAttribute('type','text');
+       getshowpassword.innerHTML = '<span class="" id ="show_password"> <i class="fa-solid fa-lock-open"></i></span>'
+
+     }else{
+       getpassword.setAttribute('type','password')
+       getshowpassword.innerHTML = `<span class="" id ="show_password"> <i class="fa-solid fa-lock"></i></span>`
+   
+     }
+   })
+
+
+   
+
+  getshowcopassword.addEventListener('click',function(){
+    
+   
+     if(getcopassword.type === "password"){
+       getcopassword.setAttribute('type','text');
+       getshowcopassword.innerHTML = `<span id="show_copassword">  <i class="fa-solid fa-lock-open"></i></span>`
+     }else{
+       getcopassword.setAttribute('type','password')
+       getshowcopassword.innerHTML = `<span id="show_copassword">  <i class="fa-solid fa-lock"></i></span>`
+   
+     }
+  
+   })
+
+
+
+
+const signupbtn = document.getElementById('singup');
+  
+  signupbtn.addEventListener('click',function(e){
+
+    sessionStorage.setItem("name",getname.value)
+    sessionStorage.setItem("email",getemail.value)
+    sessionStorage.setItem("password",getpassword.value);
+    sessionStorage.setItem("copassword",getcopassword.value);
+
+
+   
+
+  
+    // console.log(localStorage.getItem("name"))
+
+    if(getpassword.value === getcopassword.value){
+
+      if( (getname.value === '' && getemail.value === '' ) && getpassword.value === '' && getcopassword.value === ''){
+        getmodalcontainer.style.visibility = "visible";
+        // console.log('true')
+        alert("Something went wrong!")
+
+      }else if(getname.value && getemail.value && getpassword.value && getcopassword.value){
+        getmodalcontainer.style.visibility = "hidden";
+      }
+
+    } else{
+      const getalertbox = document.getElementById('alertbox');
+      getalertbox.classList.add("alertboxani");
+    };
+    
+    e.preventDefault()
+  
+   
+  })
+  
+
+
+
+// Start  Sing in 
+
+const getlgname = document.getElementById("lgname")
+const getloginpassword = document.getElementById('loginpassword');
+const getshowloginpassword = document.getElementById('show_loginpassword');
+
+const getformcontrol = document.querySelector('.form-control');
+
+const getsinginbtn = document.getElementById("singin");
+
+getshowloginpassword.addEventListener('click',function(){
+
+  if(getloginpassword.type === "password"){
+    getloginpassword.setAttribute('type','text');
+    getshowloginpassword.innerHTML = '<span class="" id ="show_password"> <i class="fa-solid fa-lock-open"></i></span>'
+
+  }else{
+    getloginpassword.setAttribute('type','password')
+    getshowloginpassword.innerHTML = `<span class="" id ="show_password"> <i class="fa-solid fa-lock"></i></span>`
+  
+   }
+  })
+
+  const sessionstoragearr = [
+
+    sessionStorage["name"],
+    sessionStorage["email"],
+     sessionStorage["copassword"]
+ ]
+
+
+ sessionstoragearr.forEach(function(sessiontorage,sesidx){
+
+
+  for(var c = 0; c < getformcontrol.length; c++){
+
+  getsinginbtn.addEventListener("click",function(e){
+   
+    console.log(sessionStorage["name"])
+    
+  
+
+
+  
+      
+      // console.log(getformcontrol[c].value )
+      // console.log(getformcontrol[c].value === sessiontorage)
+      // if(getformcontrol[c].value === sessiontorage){
+      //     getmodalcontainer.style.visibility = "hidden"
+      // }else{
+      //   getmodalcontainer.style.visibility = "visible"
+
+      // }
+    e.preventDefault();
+  
+
+
+  })
+}
+
+
+  })
+
+// End Login Form 
+
+
 
 
 
@@ -92,170 +281,6 @@ for(var i = 0 ; i < getproductitems.length ; i++){
 
 
 
-// Start Login Form 
-const getmodalcontainer = document.getElementById('modalcontainer')
-const getname = document.getElementById('fname');
-const getemail = document.getElementById('email')
-
-const getpassword = document.getElementById('password');
-const getcopassword = document.getElementById('copassword')
-const getshowpassword = document.getElementById('show_password');
-const getshowcopassword = document.getElementById('show_copassword');
-
-const canclebtn = document.querySelectorAll('.canclebtn');
-const loginbtn = document.querySelector('.loginbtn')
-
-const getsignupform = document.getElementById('signupform');
-const getloginform = document.getElementById('loginform');
-const smsingin = document.getElementById('smsingin');
-const smsignup = document.getElementById('smssignup');
-
-const showmodal = document.getElementsByClassName('showmodal');
-
-
-loginbtn.addEventListener("click",function(){
-  getmodalcontainer.classList.toggle('showmodal')
-
-})
-
-for(var c = 0; c < canclebtn.length; c++){
-  canclebtn[c].addEventListener("click",function(){
-    getmodalcontainer.classList.toggle('showmodal')
-
-  })
-}
-
-smsignup.addEventListener("click",function(){
-  getsignupform.style.display = "block";
-  getloginform.style.display = "none";
-})
-
-smsingin.addEventListener("click",function(){
-  getsignupform.style.display = "none";
-  getloginform.style.display = "block";
-})
-
-
-window.onclick = function(e){
-
-  if(e.target === getmodalcontainer){
-    getmodalcontainer.classList.toggle("showmodal")
-  }
- }
-
-  getshowpassword.addEventListener('click',function(){
-
-    
-   console.log(getname.value)
-    
-     console.log(getpassword.type)
-   
-     if(getpassword.type === "password"){
-       getpassword.setAttribute('type','text');
-       getshowpassword.innerHTML = '<span class="" id ="show_password"> <i class="fa-solid fa-lock-open"></i></span>'
-
-     }else{
-       getpassword.setAttribute('type','password')
-       getshowpassword.innerHTML = `<span class="" id ="show_password"> <i class="fa-solid fa-lock"></i></span>`
-   
-     }
-   })
-
-
-   
-
-  getshowcopassword.addEventListener('click',function(){
-    
-   
-     if(getcopassword.type === "password"){
-       getcopassword.setAttribute('type','text');
-       getshowcopassword.innerHTML = `<span id="show_copassword">  <i class="fa-solid fa-lock-open"></i></span>`
-     }else{
-       getcopassword.setAttribute('type','password')
-       getshowcopassword.innerHTML = `<span id="show_copassword">  <i class="fa-solid fa-lock"></i></span>`
-   
-     }
-  
-   })
-
-
-
-
-
-const signupbtn = document.getElementById('singup');
-  
-  signupbtn.addEventListener('click',function(e){
-
-    localStorage.setItem("name",getname.value)
-    localStorage.setItem("email",getemail.value)
-    localStorage.setItem("password",getpassword.value);
-    localStorage.setItem("copassword",getcopassword.value);
-  
-    // console.log(localStorage.getItem("name"))
-
-    if(getpassword.value === getcopassword.value){
-
-      if( (getname.value === '' && getemail.value === '' ) && getpassword.value === '' && getcopassword.value === ''){
-        getmodalcontainer.style.visibility = "visible";
-        // console.log('true')
-        alert("Something went wrong!")
-
-      }else if(getname.value && getemail.value && getpassword.value && getcopassword.value){
-        getmodalcontainer.style.visibility = "hidden";
-      }
-
-    } else{
-      const getalertbox = document.getElementById('alertbox');
-      getalertbox.classList.add("alertboxani");
-    };
-    
-    e.preventDefault()
-  
-
-  })
-  
-
-// Start  Sing in 
-
-const getlgname = document.getElementById("lgname")
-const getloginpassword = document.getElementById('loginpassword');
-const getshowloginpassword = document.getElementById('show_loginpassword');
-
-const getformcontrol = document.querySelectorAll('.form-control');
-
-const getsinginbtn = document.getElementById("singin");
-
-getshowloginpassword.addEventListener('click',function(){
-
-  if(getloginpassword.type === "password"){
-    getloginpassword.setAttribute('type','text');
-    getshowloginpassword.innerHTML = '<span class="" id ="show_password"> <i class="fa-solid fa-lock-open"></i></span>'
-
-  }else{
-    getloginpassword.setAttribute('type','password')
-    getshowloginpassword.innerHTML = `<span class="" id ="show_password"> <i class="fa-solid fa-lock"></i></span>`
-  
-   }
-  })
-
-
-  getsinginbtn.addEventListener("click",function(e){
-   
-    let localname = localStorage["name"];
-    let localemail = localStorage["email"];
-    let localpassword = localStorage["copassword"];
-  
-    for(var c = 0; c < getformcontrol.length; c++){
-      
-      if(getformcontrol[c].value === (localname && localemail && localpassword)){
-          // console.log("true")
-          getmodalcontainer.classList.toggle("showmodal")
-      }
-    }
-    e.preventDefault();
-  })
-
-// End Login Form 
 
 
 
@@ -298,13 +323,21 @@ getshopcards.forEach(function(getshopcard,idx){
   
 
   getshopcard.addEventListener("click",function(){
+
+    // console.log(!sessionStorage.getItem("email") === false)
  
-    if(localStorage.length === 0){
-      getmodalcontainer.classList.toggle("showmodal")  
- 
-     }else{
+    if (!sessionStorage.getItem("copassword") ) {
+      // email key is not set in sessionStorage
+      getmodalcontainer.style.visibility = "visible"
+    } else {
+      // email key is set in sessionStorage
       getcounts.innerHTML = `<i class="fa-solid fa-circle countdot"></i>`;
-     }
+
+      // getmodalcontainer.style.visibility = "hidden" 
+      
+  
+      
+    }
  
      goodarrfun(getshopcard,idx,cot,pfvalues); 
   
@@ -393,7 +426,7 @@ function goodarrfun(good,idx){
     
 
 
-      console.log(getul.nextElementSibling)
+      // console.log(getul.nextElementSibling)
 
       // ----------------------------------------------------------------------------------------------
     
@@ -414,3 +447,21 @@ function goodarrfun(good,idx){
 
  
 // End Items History 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // sessionStorage.setItem("email","zaw zaw")
