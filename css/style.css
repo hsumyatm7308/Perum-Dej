@@ -96,13 +96,23 @@ input[type="search"] {
 
 /* End Nav Bar  */
 
-/* Start About Us Section  */
-.aboutuss{
+/* Start Banner Section  */
+.banner{
     width: 100%;
     height: 100vh;
-    background: #121314;
+    background: linear-gradient(10deg,#586d9a,#5c7b9d);
+    margin: 0;
+    overflow: hidden;
+    position: relative;
 }
-/* End About Us Section  */
+
+.imgcontainer{
+   
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+/* End Banner Section  */
 
 
 
