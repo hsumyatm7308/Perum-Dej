@@ -303,7 +303,7 @@ getshopcards.forEach(function(getshopcard,idx){
       getmodalcontainer.classList.toggle("showmodal")  
  
      }else{
-      getcounts.innerHTML = count++;
+      getcounts.innerHTML = `<i class="fa-solid fa-circle countdot"></i>`;
      }
  
      goodarrfun(getshopcard,idx,cot,pfvalues); 
@@ -402,7 +402,7 @@ function goodarrfun(good,idx){
        
       removeul.addEventListener("click",function(){
         
-        
+        getul.remove()
     
       })
 
