@@ -7,10 +7,24 @@ const leftarrw     = document.getElementById('leftarr');
 const rightarrw = document.getElementById('rightarr');
 
 let curimg = 0;
+let curtitl = 0;
+
+
 
 rightarrw.addEventListener("click",function(){
-  curimg++
-  bannerfun()
+  curimg++;
+  curtitl++;
+
+  if(curimg > getbannerimgs.length-1){
+     curimg =0;
+  }
+
+  if(curtitl > getimgtitles.length-1){
+    curtitl =0;
+  }
+
+  bannerfun();
+  bannertitlefun();
 })
 
 function bannerfun(){
@@ -18,12 +32,25 @@ function bannerfun(){
     console.log(getbannerimgs[curimg])
     if(curimg === idx){
       getbannerimg.classList.add('bannerimgshow')
-      getbannerimg.style.animation = "bannershowani .5s linear"
+      
+    }else{
+      getbannerimg.classList.remove('bannerimgshow')
+
     }
    })
 
 }
 
+
+function bannertitlefun(){
+  getimgtitles.forEach(function(getimgtitle,idx){
+       if(curtitl === idx){
+        getimgtitle.classList.add('imgtitleani')
+       }else{
+        getimgtitle.classList.remove('imgtitleani')
+       }
+  })
+}
 
 
   
