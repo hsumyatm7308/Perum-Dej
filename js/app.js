@@ -1,65 +1,35 @@
 
 // Start Banner 
-const getbannerimg = document.getElementById('bannerimg');
+const getbannerimgs = document.querySelectorAll('.banner-img');
+const getimgtitles = document.querySelectorAll('.imgtits')
+
 const leftarrw     = document.getElementById('leftarr');
 const rightarrw = document.getElementById('rightarr');
 
-const getimgtitle = document.getElementById('imgtitle')
+let curimg = 0;
 
+rightarrw.addEventListener("click",function(){
+  curimg++
+  bannerfun()
+})
 
-const getimgarrs = ["pf3","pf4","pf5","pf6","pf10","pf11","pf1","pf2"];
-const getimgtitlearrs = ["NARS","BVLGARI","AMINO","HERBIVOR","BAKUCHIOL","CHJOE","BVLGARI","FULL FILL"]
+function bannerfun(){
+  getbannerimgs.forEach(function(getbannerimg,idx){
+    console.log(getbannerimgs[curimg])
+    if(curimg === idx){
+      getbannerimg.classList.add('bannerimgshow')
+      getbannerimg.style.animation = "bannershowani .5s linear"
+    }
+   })
 
-function bannerimg() {
-  // getbannerimg.src = `asses/img/pp/${getimgarrs[curbannerimg]}.png`
-  getbannerimg.src = `asses/img/pp/${getimgarrs[curbannerimg]}.png`
 }
 
 
-let curbannerimg = 0;
-let curimgtitle = 0;
-
-
-leftarrw.addEventListener("click",function(){
-
- 
-  
-
-  curbannerimg--;
-  curimgtitle--;
-  
-  if(curbannerimg < 0){
-    curbannerimg = getimgarrs.length-1;
-    curimgtitle = getimgtitlearrs.length-1;
-
-  } 
-
-  bannerimg()
-  getimgtitle.innerHTML = getimgtitlearrs[curimgtitle]
 
   
-  console.log(getbannerimg.src)
-
-})
 
 
-rightarrw.addEventListener("click",function(){
 
-  curbannerimg++;
-  curimgtitle++;
-  
-  if(curbannerimg > getimgarrs.length-1){
-    curbannerimg = 0;
-    curimgtitle = 0;
-  } 
-
-  bannerimg()
-  getimgtitle.innerHTML = getimgtitlearrs[curimgtitle]
-
-});
-
-
-  
 
 
 
