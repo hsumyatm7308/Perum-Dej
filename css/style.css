@@ -108,7 +108,19 @@ input[type="search"] {
 
 
 
+.imgside{
+    height: 100vh;
+    background: linear-gradient( rgb(86, 105, 150) 60%,#425888 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.imgcontainer{
+    width: 450px;
+    height: 450px;
+    background: linear-gradient(10deg,#586d9a,#5c7b9d,rgba(255,255,255,.1));
+}
 /* End Banner Section  */
 
 
