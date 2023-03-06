@@ -17,10 +17,17 @@ body{
     z-index: 1;
 }
 
+.navbar a h4{
+    font-family: 'Caveat', cursive;
+    
+}
+
 .navmenus a{
     color: #fff;
     transition: all .3s;
 } 
+
+
 
 .navbar-nav .nav-list-item:hover a{
    color: #bbb;
@@ -149,6 +156,22 @@ input[type="search"] {
     width: 300px;
     margin-left: -15%;
     margin-top: 10%;
+
+    transition: all 2s;
+
+    animation:textsidebanner-p 2s ;
+}
+
+@keyframes textsidebanner-p{
+    from{
+       transform: translate(-10%);
+       opacity: .5; 
+    }
+
+    to{
+        transform: translate(0);
+        opacity: 1;
+    }
 }
 
 .textsidebanner .dtl{
@@ -167,6 +190,9 @@ input[type="search"] {
     border: none;
     background: none;
     margin-top: 15px;
+
+    animation:textsidebanner-p 1s ;
+
   }
   
   .cta span {
@@ -275,7 +301,7 @@ input[type="search"] {
     transition: transform 2s;
 
     position: relative;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 
@@ -287,13 +313,15 @@ input[type="search"] {
 
     display: none;
 
+    transition: all 1.5s;
+
     /* visibility: hidden; */
 }
 
 .bannerimgshow{
 
     display: block;
-    animation : bannershowani .3s linear;
+    animation : bannershowani .4s linear;
     
 }
 
@@ -313,8 +341,9 @@ input[type="search"] {
 }
 
 .imgtitleani{
+
     display: block;
-    animation : bannershowani .3s linear;
+    animation : bannershowani .4s linear;
 
 }
 
@@ -393,10 +422,51 @@ input[type="search"] {
 /* End Banner Section  */
 
 
+/* Start About Us Section  */
+.aboutuss{
+    width: 100%;
+    height: 620px;
+    background: linear-gradient(rgb(86, 105, 150),rgb(86, 105, 140));
+
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+    
+}
+
+.aboutustext{
+    font-size: 250px;
+    color: transparent;
+    -webkit-text-stroke: 3px #576ec1;
+    margin-top: -20px;
+}
+
+.left-aboutusbox{
+    width: 400px;
+    height: 550px;
+    /* background: linear-gradient(10deg,#6580ba,#5c7b9d); */
+    background: #425888;
+    position: absolute;
+    left: 20%;
+    bottom: 0;
+}
+
+.right-aboutusbox{
+    width: 400px;
+    height: 400px;
+    background: #1d3568;
+    position: absolute;
+    right: 20%;
+    bottom: 0;
+}
+/* End About Us Section  */
+
+
 
 /* Start Products Section  */
 
-#products{
+.products{
     /* background-color: rgb(86, 105, 135); */
     background:linear-gradient( #444e64,rgb(65, 73, 100));
 
@@ -468,8 +538,12 @@ input[type="search"] {
 
 .shopcards:hover{
   color: rgb(62, 117, 62);
+  cursor: pointer;
 }
 
+.shopcardbtn:hover{
+    cursor: pointer;
+}
 
 
 .salecontainer{
