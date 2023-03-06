@@ -7,11 +7,12 @@ const rightarrw = document.getElementById('rightarr');
 const getimgtitle = document.getElementById('imgtitle')
 
 
-const getimgarrs = ["pf8","pf9","pf1","pf2","pf3","pf4","pf6","pf7"];
-const getimgtitlearrs = ["ELIE SAAB","DANNAY","TOM FORD","CHANEL COCO","AVON","CHANEL N*5","ETERNITY","ETERNITY"]
+const getimgarrs = ["pf3","pf4","pf5","pf6","pf10","pf11","pf1","pf2"];
+const getimgtitlearrs = ["NARS","BVLGARI","AMINO","HERBIVOR","BAKUCHIOL","CHJOE","BVLGARI","FULL FILL"]
 
 function bannerimg() {
-  getbannerimg.src = `asses/img/pf/${getimgarrs[curbannerimg]}.png`
+  // getbannerimg.src = `asses/img/pp/${getimgarrs[curbannerimg]}.png`
+  getbannerimg.src = `asses/img/pp/${getimgarrs[curbannerimg]}.png`
 }
 
 
@@ -20,16 +21,25 @@ let curimgtitle = 0;
 
 
 leftarrw.addEventListener("click",function(){
+
+ 
+  
+
   curbannerimg--;
   curimgtitle--;
   
   if(curbannerimg < 0){
     curbannerimg = getimgarrs.length-1;
     curimgtitle = getimgtitlearrs.length-1;
+
   } 
 
   bannerimg()
   getimgtitle.innerHTML = getimgtitlearrs[curimgtitle]
+
+  
+  console.log(getbannerimg.src)
+
 })
 
 
