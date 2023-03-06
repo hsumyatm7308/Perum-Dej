@@ -25,6 +25,23 @@ rightarrw.addEventListener("click",function(){
 
   bannerfun();
   bannertitlefun();
+});
+
+leftarrw.addEventListener("click",function(){
+  curimg--;
+  curtitl--;
+
+  if(curimg < 0){
+    curimg = getbannerimgs.length-1;
+  }
+
+  if(curtitl < 0 ){
+    curtitl = getimgtitles.length-1;
+  }
+
+  
+  bannerfun();
+  bannertitlefun();
 })
 
 function bannerfun(){
