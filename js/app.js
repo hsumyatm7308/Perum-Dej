@@ -1,7 +1,63 @@
-// Start Navbar 
+
+// Start Banner 
+const getbannerimg = document.getElementById('bannerimg');
+const leftarrw     = document.getElementById('leftarr');
+const rightarrw = document.getElementById('rightarr');
+
+const getimgtitle = document.getElementById('imgtitle')
 
 
-// End Navbar 
+const getimgarrs = ["pf8","pf9","pf1","pf2","pf3","pf4","pf6","pf7"];
+const getimgtitlearrs = ["ELIE SAAB","DANNAY","TOM FORD","CHANEL COCO","AVON","CHANEL N*5","ETERNITY","ETERNITY"]
+
+function bannerimg() {
+  getbannerimg.src = `asses/img/pf/${getimgarrs[curbannerimg]}.png`
+}
+
+
+let curbannerimg = 0;
+let curimgtitle = 0;
+
+
+leftarrw.addEventListener("click",function(){
+  curbannerimg--;
+  curimgtitle--;
+  
+  if(curbannerimg < 0){
+    curbannerimg = getimgarrs.length-1;
+    curimgtitle = getimgtitlearrs.length-1;
+  } 
+
+  bannerimg()
+  getimgtitle.innerHTML = getimgtitlearrs[curimgtitle]
+})
+
+
+rightarrw.addEventListener("click",function(){
+
+  curbannerimg++;
+  curimgtitle++;
+  
+  if(curbannerimg > getimgarrs.length-1){
+    curbannerimg = 0;
+    curimgtitle = 0;
+  } 
+
+  bannerimg()
+  getimgtitle.innerHTML = getimgtitlearrs[curimgtitle]
+
+});
+
+
+  
+
+
+
+
+
+
+
+// End Banner 
 
 // Start Login Form 
 const getmodalcontainer = document.getElementById('modalcontainer')
