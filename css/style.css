@@ -43,6 +43,8 @@ body{
          border-bottom: none;
      
      }
+
+
 }
 
 
@@ -106,11 +108,103 @@ input[type="search"] {
     position: relative;
 }
 
+.textsidebanner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+}
+
+.textsidebanner small{
+    margin-left: -65%;
+    margin-top: 10%;
+}
+
+.textsidebanner h1{
+    margin-left: -30%;
+    font-size: 65px;
+}
+
+.textsidebanner p{
+    width: 300px;
+    margin-left: -15%;
+}
+
+.textsidebanner .dtl{
+    background-color: #344978;
+    border: none;
+    padding: 5px 20px;
+    margin-left: -43%;
+}
+
+.dtl a{
+    text-decoration: none;
+}
+
+
+.cta {
+    border: none;
+    background: none;
+    margin-top: 15px;
+  }
+  
+  .cta span {
+    padding-bottom: 7px;
+    letter-spacing: 4px;
+    font-size: 14px;
+    padding-right: 15px;
+    text-transform: uppercase;
+  }
+  
+  .cta svg {
+    transform: translateX(-8px);
+    transition: all 0.3s ease;
+  }
+  
+  .cta:hover svg {
+    transform: translateX(0);
+  }
+  
+  .cta:active svg {
+    transform: scale(0.9);
+  }
+  
+  .hover-underline-animation {
+    position: relative;
+    color: black;
+    padding-bottom: 20px;
+  }
+  
+  .hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .cta:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+
+
+
+
+
+
 
 
 .imgside{
     height: 100vh;
-    background: linear-gradient( rgb(86, 105, 150) 60%,#425888 50%);
+    background: linear-gradient( rgb(86, 105, 150) 55%,#425888 50%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -125,6 +219,10 @@ input[type="search"] {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.banner-img{
+    filter: drop-shadow(10px,10px,10px,red);
 }
 /* End Banner Section  */
 
@@ -297,6 +395,8 @@ input[type="search"] {
 .show{
     display: block;
 }
+
+
 
 
 
