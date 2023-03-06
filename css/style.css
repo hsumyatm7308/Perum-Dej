@@ -122,11 +122,14 @@ input[type="search"] {
 }
 
 .textsidebanner h1{
-    margin-left: -15%;
+    
     font-size: 65px;
     color: #000;
  
     -webkit-text-stroke: 2px #4488b2;
+    position: absolute;
+    left:10% ;
+    top: 42%;
 }
 
 
@@ -145,6 +148,7 @@ input[type="search"] {
 .textsidebanner p{
     width: 300px;
     margin-left: -15%;
+    margin-top: 10%;
 }
 
 .textsidebanner .dtl{
@@ -289,6 +293,7 @@ input[type="search"] {
 .bannerimgshow{
 
     display: block;
+    animation : bannershowani .5s linear;
     
 }
 
@@ -303,8 +308,14 @@ input[type="search"] {
     }
 }
 
-.imgtitleani{
+.imgtits{
     display: none;
+}
+
+.imgtitleani{
+    display: block;
+    animation : bannershowani .5s linear;
+
 }
 
 
@@ -315,13 +326,17 @@ input[type="search"] {
     }
     
     .textsidebanner h1{
-        margin-left: -10%;
-       
+        position: absolute;
+        left: 5%;
+        top: 34%; 
+        z-index: 1;
+
     }
     
     .textsidebanner p{
     
-        margin-left: -0%;
+        margin-left: 10%;
+        margin-top: 15%;
     }
     
     .textsidebanner .dtl{
@@ -344,13 +359,16 @@ input[type="search"] {
     }
     
     .textsidebanner h1{
-        margin-left: 0%;
-       
+        position: absolute;
+        left: 10px; 
+        top: 5%;   
+        z-index: 1;   
     }
     
     .textsidebanner p{
     
         margin-left: -40%;
+        margin-top: 10%;
     }
     
     .textsidebanner .dtl{
