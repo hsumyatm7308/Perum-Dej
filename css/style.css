@@ -580,12 +580,12 @@ input[type="search"] {
 
     .left-aboutusbox{
         width: 300px;
-        left: 5%;
+        left: 4%;
     }
 
     .right-aboutusbox{
         width: 300px;
-        right: 5%;
+        right: 4%;
     }
 
     .right-aboutusboxtext{
@@ -948,13 +948,21 @@ input[type="search"] {
 
 }
 
-.propertyimg img{
+
+
+.propertyimg .propertyimgarr{
     width: 600px;
     filter: brightness(2000px);
 
     position: absolute;
     top: -30px;
     right: 0;
+
+    display: none;
+}
+
+.propertyimgarr.pparrshow{
+    display: block;
 }
 /* End Property Section  */
 
