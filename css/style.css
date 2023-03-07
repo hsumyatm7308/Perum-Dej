@@ -603,12 +603,8 @@ input[type="search"] {
 /* Start Products Section  */
 
 .products{
-    /* background-color: rgb(86, 105, 135); */
-    /* background:linear-gradient( #444e64,rgb(65, 73, 100)); */
-    /* background:linear-gradient( #566f88,rgb(85, 109, 136)); */
-    background: linear-gradient(rgb(86, 105, 135),rgb(86, 105, 140));
-
-
+   
+    background: linear-gradient(10deg,#586d9a,#5c7b9d);
 }
 
 .productscontainer{
@@ -723,7 +719,10 @@ input[type="search"] {
 
 .saleproducts{
     /* background-color: rgb(86, 105, 150); */
-    background:rgb(106, 135, 164) ;
+    /* background:rgb(106, 135, 164) ; */
+    background: linear-gradient( rgb(86, 105, 150) 74%,#425888 20%);
+    
+    border: none;
 
     overflow-y: hidden;
 
@@ -867,6 +866,7 @@ input[type="search"] {
 .testparagraph{
     width: 400px;
     text-align: justify;
+    letter-spacing: 1px;
     margin-left: 27%;
     margin-top: 5%;
 }
@@ -874,15 +874,27 @@ input[type="search"] {
 
 @media only screen and (max-width:1007px){
     .squaretest{
-      left: 14.5%;
+        left: 14.5%;
+
+    }
+
+    .upline{
+      display: none;
+    }
+
+    .testparagraph{
+        width: 280px;
+        margin-left: 20%;
+        letter-spacing: 1px;
     }
 }
 
 
-@media only screen and (max-width:1007px){
+@media only screen and (max-width:768px){
     .squaretest{
         width: 150px;
         height: 230px;
+
     }
 
     .testiimg{
@@ -893,16 +905,57 @@ input[type="search"] {
     .testiimg2{
         width: 160px;
     }
+
+    .upline{
+        display: none;
+      }
+  
+    .testparagraph{
+        width: 230px;
+        margin-left: 20%;
+        text-align: start;
+    }
+
+
+
+
+
 }
 
 
 
 /* Start Property Section  */
-/* .property-container{
+.property-container{
     width: 100%;
-    height: 100vh;
-    background-color: #000;
-} */
+    height: 90vh;
+    background: linear-gradient(10deg,#586d9a,#5c7b9d);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+.items-container{
+    width: 90%;
+    height: 75vh;
+    background: linear-gradient( rgb(86, 105, 150) ,#425888 );
+    margin-top: 7%;
+
+    position: relative;
+    overflow: hidden;
+
+}
+
+.propertyimg img{
+    width: 600px;
+    filter: brightness(2000px);
+
+    position: absolute;
+    top: -30px;
+    right: 0;
+}
 /* End Property Section  */
 
 
