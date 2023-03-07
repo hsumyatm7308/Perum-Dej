@@ -487,7 +487,7 @@ input[type="search"] {
 }
 
 .left-aboutusboxani{
-    animation: left-aboutusboxani 3s linear;
+    animation: left-aboutusboxani 2s linear;
 
 }
 
@@ -525,7 +525,7 @@ input[type="search"] {
 }
 
 .right-aboutusboxani{
-    animation: right-aboutusboxani 3s linear;
+    animation: right-aboutusboxani 2s linear;
 }
 
 @keyframes right-aboutusboxani{
@@ -539,7 +539,7 @@ input[type="search"] {
 }
 
 .right-aboutusboxtextani{
-    animation:  right-aboutusboxtextani 3s linear;
+    animation:  right-aboutusboxtextani 2s linear;
     
 }
 
@@ -553,6 +553,49 @@ input[type="search"] {
 }
 
 
+
+
+@media only screen and (max-width: 1007px) {
+    .aboutustext{
+        font-size: 150px;
+        margin-top: 10px;
+    }
+
+    .left-aboutusbox{
+        left: 5%;
+    }
+
+    .right-aboutusbox{
+        right: 5%;
+    }
+
+
+}
+
+@media only screen and (max-width: 768px) {
+    .aboutustext{
+        font-size: 100px;
+        margin-top: 10px;
+    }
+
+    .left-aboutusbox{
+        width: 300px;
+        left: 5%;
+    }
+
+    .right-aboutusbox{
+        width: 300px;
+        right: 5%;
+    }
+
+    .right-aboutusboxtext{
+        width: 200px;
+    }
+
+
+}
+
+
 /* End About Us Section  */
 
 
@@ -562,6 +605,7 @@ input[type="search"] {
 .products{
     /* background-color: rgb(86, 105, 135); */
     background:linear-gradient( #444e64,rgb(65, 73, 100));
+
 
 }
 
@@ -656,6 +700,20 @@ input[type="search"] {
 
 }
 
+.salecontainerani{
+    animation: salecontainerani 1.5s;
+}
+
+@keyframes salecontainerani{
+    from{
+        transform:  translate(-100%);
+    }
+
+    to{
+        transform: translate(0);
+    }
+}
+
 
 .saleproducts{
     background-color: rgb(86, 105, 150);
@@ -727,6 +785,16 @@ input[type="search"] {
     display: block;
 }
 
+
+
+
+/* Start Property Section  */
+.property-container{
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+}
+/* End Property Section  */
 
 
 
