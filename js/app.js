@@ -138,18 +138,32 @@ $(document).ready(function(){
     
         $('.salecontainer').css('transform','translate(0%)')
       }
+
+
+      
+
+     
+
     
   
       // start Testimonial 
 
     
   
-    
-
-
-
 
   })
+
+
+   // Start Product 
+
+
+   $('.salecontainer').tilt({
+    glare: true,
+    maxGlare: .1
+  })
+
+
+
  })
 
 // End About Us 
