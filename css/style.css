@@ -606,7 +606,6 @@ input[type="search"] {
     /* background-color: rgb(86, 105, 135); */
     background:linear-gradient( #444e64,rgb(65, 73, 100));
 
-
 }
 
 .productscontainer{
@@ -671,6 +670,7 @@ input[type="search"] {
 
 }
 
+
 .shopcards:hover{
   color: rgb(62, 117, 62);
   cursor: pointer;
@@ -681,7 +681,10 @@ input[type="search"] {
 }
 
 
+
+
 .salecontainer{
+    width: 300px;
     overflow: hidden;
     transition: all 1s;
     
@@ -783,18 +786,38 @@ input[type="search"] {
 
 .show{
     display: block;
+    animation : bannershowani .4s linear;
+
 }
 
 
+
+/* Start Testimonial  */
+.testimonial{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(58, 67, 87);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-testimonial{
+   height: 500px;
+    background:  rgb(71, 85, 105);
+}
 
 
 /* Start Property Section  */
-.property-container{
+/* .property-container{
     width: 100%;
     height: 100vh;
     background-color: #000;
-}
+} */
 /* End Property Section  */
+
+
+
 
 
 
