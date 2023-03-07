@@ -438,8 +438,11 @@ input[type="search"] {
 .aboutustext{
     font-size: 250px;
     color: transparent;
-    -webkit-text-stroke: 3px #576ec1;
+    /* -webkit-text-stroke: 3px #576ec1; */
+    -webkit-text-stroke: 3px  #444e64;
     margin-top: -20px;
+
+    /* z-index: 1; */
 }
 
 .left-aboutusbox{
@@ -452,6 +455,18 @@ input[type="search"] {
     bottom: 0;
 }
 
+.left-aboutusbox h3{
+
+    color: #0c1832;
+}
+
+.left-aboutusbox p{
+    font-size: 18px;
+    color: #152445;
+    margin-left: -15%;
+    margin-top: 10px;
+}
+
 .right-aboutusbox{
     width: 400px;
     height: 400px;
@@ -459,6 +474,15 @@ input[type="search"] {
     position: absolute;
     right: 20%;
     bottom: 0;
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-aboutusboxtext{
+    width: 300px;
+    height: 350px;
 }
 /* End About Us Section  */
 
