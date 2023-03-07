@@ -795,15 +795,49 @@ input[type="search"] {
 /* Start Testimonial  */
 .testimonial{
     width: 100%;
-    height: 500px;
+    height: 650px;
     background-color: rgb(58, 67, 87);
     display: flex;
     justify-content: center;
     align-items: center;
+
+    position: relative;
+}
+
+
+.squaretest{
+    width: 250px;
+    height: 330px;
+
+    border: 3px solid #30497e;
+    box-shadow: 1px 1px 10px 5px  #30497e;
+    position: relative;
+
+    position: absolute;
+    top: 25%;
+    left: 10%;
+}
+
+.testiimg{
+    width: 250px;
+    border: 2px solid #606f7d;
+    background:rgb(84, 97, 125) ;
+    position: absolute;
+    left: -50%;
+    top: -30%;
+}
+
+.testiimg2{
+    width: 250px;
+    border: 2px solid #606f7d;
+
+    position: absolute;
+    right: -30%;
+    bottom: -30%;
 }
 
 .right-testimonial{
-   height: 500px;
+   height: 650px;
     background:  rgb(71, 85, 105);
 }
 
