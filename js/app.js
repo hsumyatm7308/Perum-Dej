@@ -350,7 +350,7 @@ function pdfilter(idx){
       console.log( getpditems[i].classList.add('all'))
      }
 
-     showfilter(getpditems[i],'show')
+     showfilter(getpditems[i],'show');
 
      if(pditemspl.indexOf(idx) === -1){
       removeshowfilter(getpditems[i],'show');
@@ -376,6 +376,9 @@ function showfilter(getpditem,show){
       getpditem.classList.add('show')
       // pditemspl.splice(pditemspl.indexOf(getshow[s]),1);
     }
+
+
+
   }
 
 }
@@ -402,13 +405,17 @@ function removeshowfilter(getpditem,show){
 
 var getproductitems = document.getElementsByClassName('productitems');
 
-for(var i = 0 ; i < getproductitems.length ; i++){
-  getproductitems[i].addEventListener('click',function(){
-     var curractives = document.querySelector('.activepd');
-     curractives.className = curractives.className.replace(' activepd','');
-     this.className += " activepd";
-  })
-}
+
+  for(var i = 0 ; i < getproductitems.length ; i++){
+    getproductitems[i].addEventListener('click',function(){
+       var curractives = document.querySelector('.activepd');
+       curractives.className = curractives.className.replace(' activepd','');
+       this.className += " activepd";
+    })
+  }
+
+
+
 
 // End Products Section 
 
