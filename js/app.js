@@ -95,7 +95,7 @@ $(document).ready(function(){
 
   $(window).scroll(function(){
     const windowscrolltop = $(this).scrollTop();
-    console.log(windowscrolltop)
+    // console.log(windowscrolltop)
 
   //  Start About Us 
     
@@ -139,29 +139,58 @@ $(document).ready(function(){
         $('.salecontainer').css('transform','translate(0%)')
       }
 
-
-      
-
-     
-
-    
-  
       // start Testimonial 
 
-    
-  
 
   })
 
 
-   // Start Product 
-
-
+   // Start Product Secction
    $('.salecontainer').tilt({
     glare: true,
     maxGlare: .1
   })
 
+
+  //  Start Property Section 
+
+  const getpropertyimg = document.querySelectorAll('.propertyimgarr');
+
+  let curppimg = 0;
+
+   $('#leftpropertyarr').click(function(){
+    // console.log('hi')
+    curppimg--;
+     
+    if(curppimg < 0){
+      curppimg = getpropertyimg.length-1;
+    }
+
+    curppimgfun();
+
+
+   })
+
+   $('#rightpropertyarr').click(function(){
+    curppimg++;
+    if(curppimg > getpropertyimg.length-1){
+      curppimg = 0;
+    }
+
+    curppimgfun();
+   })
+
+   function curppimgfun(){
+     for(var x =0; x < getpropertyimg.length;x++){
+       if(curppimg === x){
+        getpropertyimg[x].classList.add('pparrshow')
+
+       }else{
+        getpropertyimg[x].classList.remove('pparrshow')
+
+       }
+     }
+   }
 
 
  })
