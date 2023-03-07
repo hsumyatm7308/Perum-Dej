@@ -445,15 +445,34 @@ input[type="search"] {
     /* z-index: 1; */
 }
 
+.aboutustextani{
+    animation: aboutustextani 1.5s;
+}
+
+@keyframes aboutustextani {
+    from{
+        transform: translateY(100%);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
 .left-aboutusbox{
     width: 400px;
     height: 550px;
     /* background: linear-gradient(10deg,#6580ba,#5c7b9d); */
     background: #425888;
+    position: relative;
     position: absolute;
     left: 20%;
     bottom: 0;
+
+    overflow: hidden;
+
 }
+
+
 
 .left-aboutusbox h3{
 
@@ -467,6 +486,24 @@ input[type="search"] {
     margin-top: 10px;
 }
 
+.left-aboutusboxani{
+    animation: left-aboutusboxani 3s linear;
+
+}
+
+@keyframes left-aboutusboxani{
+    from{
+      height: 0;
+    }
+
+    to{
+        height:550px;
+    }
+}
+
+
+
+
 .right-aboutusbox{
     width: 400px;
     height: 400px;
@@ -478,12 +515,44 @@ input[type="search"] {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    overflow: hidden;
 }
 
 .right-aboutusboxtext{
     width: 300px;
     height: 350px;
 }
+
+.right-aboutusboxani{
+    animation: right-aboutusboxani 3s linear;
+}
+
+@keyframes right-aboutusboxani{
+    from{
+        height: 0;
+    }
+
+    to{
+        height: 400px;
+    }
+}
+
+.right-aboutusboxtextani{
+    animation:  right-aboutusboxtextani 3s linear;
+    
+}
+
+@keyframes right-aboutusboxtextani{
+    from{
+        height: 0;
+    }
+    to{
+        height: 350px;
+    }
+}
+
+
 /* End About Us Section  */
 
 
@@ -493,8 +562,6 @@ input[type="search"] {
 .products{
     /* background-color: rgb(86, 105, 135); */
     background:linear-gradient( #444e64,rgb(65, 73, 100));
-
-
 
 }
 
