@@ -84,6 +84,10 @@ const rightaboutusboxani = document.getElementById('rightaboutusbox')
 
 $(document).ready(function(){
 
+
+
+
+
   $('.aboutustext').hide()
   $('.left-aboutusbox').hide();
   $('.right-aboutusbox').hide();
@@ -91,7 +95,9 @@ $(document).ready(function(){
 
   $(window).scroll(function(){
     const windowscrolltop = $(this).scrollTop();
-    // console.log(windowscrolltop)
+    console.log(windowscrolltop)
+
+
     
     if(windowscrolltop >= 226){
        aboutustext.classList.add('aboutustextani');
@@ -108,9 +114,37 @@ $(document).ready(function(){
       $('.left-aboutusbox').fadeOut(1000);
       $('.right-aboutusbox').fadeOut(1000);
     }
-  
-   })
 
+    
+
+    if(windowscrolltop <= 465){
+      $('.imgcontainer').fadeIn(1000);
+      $('.textsidebanner').fadeIn(1000);
+     }else{
+      $('.imgcontainer').fadeOut(1000)
+      $('.textsidebanner').fadeOut(1000);
+  
+     }
+
+
+
+
+
+     $('.salecontainer').css('transform','translate(-500%)')
+
+      if(windowscrolltop >= 936){
+    
+        $('.salecontainer').css('transform','translate(0%)')
+      }
+    
+  
+  
+    
+
+
+
+
+  })
  })
 
 // End About Us 
