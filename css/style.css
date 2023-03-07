@@ -795,7 +795,7 @@ input[type="search"] {
 /* Start Testimonial  */
 .testimonial{
     width: 100%;
-    height: 650px;
+    height: 600px;
     background-color: rgb(58, 67, 87);
     display: flex;
     justify-content: center;
@@ -837,9 +837,60 @@ input[type="search"] {
 }
 
 .right-testimonial{
-   height: 650px;
+    height: 600px;
     background:  rgb(71, 85, 105);
+    position: relative;
 }
+
+.right-testimonial .upline{
+    width: 70px;
+    height: 4px;
+    background: linear-gradient(10deg,#586d9a,#5c7b9d);
+    border-radius: 10px;
+
+    position: absolute;
+    top: 100px;
+    left: 27%;
+}
+
+.testimotext{
+    font-family: 'Caveat', cursive;
+    color: #021d3f;
+    font-size: 50px;
+    margin-top: 13%;
+}
+
+.testparagraph{
+    width: 400px;
+    text-align: justify;
+    margin-left: 27%;
+    margin-top: 5%;
+}
+
+
+@media only screen and (max-width:1007px){
+    .squaretest{
+      left: 14.5%;
+    }
+}
+
+
+@media only screen and (max-width:1007px){
+    .squaretest{
+        width: 150px;
+        height: 230px;
+    }
+
+    .testiimg{
+        width: 160px;
+        
+    }
+
+    .testiimg2{
+        width: 160px;
+    }
+}
+
 
 
 /* Start Property Section  */
