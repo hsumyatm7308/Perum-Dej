@@ -69,19 +69,53 @@ function bannertitlefun(){
   })
 }
 
-
-  
-
-
-
-
-
-
-
-
-
-
 // End Banner 
+
+
+
+
+// Jquery Area 
+
+// Start About Us 
+const getaboutusctn = document.getElementById('aboutus');
+const aboutustext   = document.getElementById('aboutustext');
+const leftaboutusboxani = document.getElementById('leftaboutusbox')
+const rightaboutusboxani = document.getElementById('rightaboutusbox')
+
+$(document).ready(function(){
+
+  $('.aboutustext').hide()
+  $('.left-aboutusbox').hide();
+  $('.right-aboutusbox').hide();
+
+
+  $(window).scroll(function(){
+    const windowscrolltop = $(this).scrollTop();
+    // console.log(windowscrolltop)
+    
+    if(windowscrolltop >= 226){
+       aboutustext.classList.add('aboutustextani');
+       leftaboutusboxani.classList.add('left-aboutusboxani');
+       rightaboutusboxani.classList.add('right-aboutusboxani');
+      $('.aboutustext').fadeIn(1000)
+      $('.left-aboutusbox').fadeIn(1000);
+      $('.right-aboutusbox').fadeIn(100);
+
+      
+    }
+    else{
+      $('.aboutustext').fadeOut(1000);
+      $('.left-aboutusbox').fadeOut(1000);
+      $('.right-aboutusbox').fadeOut(1000);
+    }
+  
+   })
+
+ })
+
+// End About Us 
+
+
 
 // Start Login Form 
 const getmodalcontainer = document.getElementById('modalcontainer')
@@ -132,8 +166,7 @@ window.onclick = function(e){
   getshowpassword.addEventListener('click',function(){
 
     
-   console.log(getname.value)
-    
+     console.log(getname.value) 
      console.log(getpassword.type)
    
      if(getpassword.type === "password"){
@@ -237,37 +270,25 @@ getshowloginpassword.addEventListener('click',function(){
  ]
 
 
- sessionstoragearr.forEach(function(sessiontorage,sesidx){
 
 
-  for(var c = 0; c < getformcontrol.length; c++){
 
   getsinginbtn.addEventListener("click",function(e){
-   
-    console.log(sessionStorage["name"])
-    
-  
-
-
-  
       
-      // console.log(getformcontrol[c].value )
-      // console.log(getformcontrol[c].value === sessiontorage)
-      // if(getformcontrol[c].value === sessiontorage){
-      //     getmodalcontainer.style.visibility = "hidden"
-      // }else{
-      //   getmodalcontainer.style.visibility = "visible"
+        getmodalcontainer.style.visibility = "visible"
+        alert("Something went wrong")
 
-      // }
+      
     e.preventDefault();
   
 
-
-  })
-}
+   })
 
 
-  })
+
+
+
+
 
 // End Login Form 
 
