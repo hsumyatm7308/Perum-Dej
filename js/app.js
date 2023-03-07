@@ -86,7 +86,7 @@ $(document).ready(function(){
 
 
 
-
+  
 
   $('.aboutustext').hide()
   $('.left-aboutusbox').hide();
@@ -97,7 +97,7 @@ $(document).ready(function(){
     const windowscrolltop = $(this).scrollTop();
     console.log(windowscrolltop)
 
-
+  //  Start About Us 
     
     if(windowscrolltop >= 226){
        aboutustext.classList.add('aboutustextani');
@@ -116,6 +116,7 @@ $(document).ready(function(){
     }
 
     
+    // start Banner 
 
     if(windowscrolltop <= 465){
       $('.imgcontainer').fadeIn(1000);
@@ -128,6 +129,7 @@ $(document).ready(function(){
 
 
 
+    //  Start Banner 
 
 
      $('.salecontainer').css('transform','translate(-500%)')
@@ -138,6 +140,9 @@ $(document).ready(function(){
       }
     
   
+      // start Testimonial 
+
+    
   
     
 
