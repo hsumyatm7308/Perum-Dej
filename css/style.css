@@ -604,7 +604,10 @@ input[type="search"] {
 
 .products{
     /* background-color: rgb(86, 105, 135); */
-    background:linear-gradient( #444e64,rgb(65, 73, 100));
+    /* background:linear-gradient( #444e64,rgb(65, 73, 100)); */
+    /* background:linear-gradient( #566f88,rgb(85, 109, 136)); */
+    background: linear-gradient(rgb(86, 105, 135),rgb(86, 105, 140));
+
 
 }
 
@@ -719,7 +722,9 @@ input[type="search"] {
 
 
 .saleproducts{
-    background-color: rgb(86, 105, 150);
+    /* background-color: rgb(86, 105, 150); */
+    background:rgb(106, 135, 164) ;
+
     overflow-y: hidden;
 
     display: flex;
@@ -746,7 +751,6 @@ input[type="search"] {
 
 .saleproducts .card-body{
     width: 100%;
-    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.9));
     position: absolute;
     bottom: 0;
 
