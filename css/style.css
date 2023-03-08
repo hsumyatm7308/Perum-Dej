@@ -947,6 +947,17 @@ input[type="search"] {
     position: relative;
 }
 
+.display1{
+    display: flex;
+}
+.display2{
+    display: flex;
+}
+
+.none{
+    display: none;
+
+}
 
 
 
@@ -956,18 +967,8 @@ input[type="search"] {
 
 }
 
-.itemsdispalycard::before{
-    content: " ";
-    width: 100%;
-    height: 100%;
-    background:linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.2));
-
-    
-    position: absolute;
-    left: 0px;
-    top: 0px;
-  
-
+.itemsdispalycard:hover{
+    box-shadow: 4px 4px 4px 4px #021d3f;
 }
 
 
@@ -1035,6 +1036,9 @@ input[type="search"] {
 .propertyimgarr.pparrshow{
     display: block;
 }
+
+
+
 /* End Property Section  */
 
 
