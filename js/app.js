@@ -201,6 +201,24 @@ $(document).ready(function(){
      $('.items-container').css('display','block')
    })
 
+   $('.dot1').click(function(){
+     $('.display1').css('display','block');
+     $('.display2').css('opacity','0')
+   })
+
+   $('.dot2').click(function(){
+    $('.display1').css('display','none');
+    $('.display2').css({
+      'opacity':'1',
+     
+    })
+   })
+
+
+
+   
+  
+  
  })
 
 // End About Us 
