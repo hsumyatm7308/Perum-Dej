@@ -473,6 +473,10 @@ input[type="search"] {
 }
 
 
+.left-aboutusbox:hover{
+    transform: translateY(-5px);
+}
+
 
 .left-aboutusbox h3{
 
@@ -517,6 +521,10 @@ input[type="search"] {
     align-items: center;
 
     overflow: hidden;
+}
+
+.right-aboutusbox:hover{
+    transform: translateY(-5px);
 }
 
 .right-aboutusboxtext{
@@ -946,6 +954,20 @@ input[type="search"] {
     position: relative;
     overflow: hidden;
 
+}
+
+.propertytext{
+    width: 500px;
+
+    margin-left: 15%;
+    margin-top: 13%;
+}
+
+.propertytext h4{
+    font-size: 100px;
+    color: transparent;
+
+    -webkit-text-stroke: 3px #021d3f;
 }
 
 
