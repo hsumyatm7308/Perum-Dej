@@ -193,6 +193,14 @@ $(document).ready(function(){
    }
 
 
+
+
+
+   $('.items-display').click(function(){
+     $('.property-container').css('height','90vh')
+     $('.items-container').css('display','block')
+   })
+
  })
 
 // End About Us 
