@@ -197,7 +197,7 @@ $(document).ready(function(){
 
 
    $('.items-display').click(function(){
-     $('.property-container').css('height','90vh')
+     $('.property-container').css('height','80vh')
      $('.items-container').css('display','block')
    })
 
