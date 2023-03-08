@@ -1028,13 +1028,11 @@ input[type="search"] {
 
 
 .display2{
-    display: flex;
+    opacity: 0;
 }
 
-.none{
-    display: none;
 
-}
+
 
 
 .dot-container{
