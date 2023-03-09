@@ -1063,6 +1063,10 @@ input[type="search"] {
 }
 
 
+.dot1{
+    background: #021d3f;
+}
+
 
 
 
@@ -1132,8 +1136,18 @@ input[type="search"] {
     display: block;
 }
 
+.pptxt{
+    position: absolute;
+    top: 70px;
+    left: 15%;
+    display: none;
+}
 
 
+
+.pptxtshow{
+    display: block;
+}
 
 
 
