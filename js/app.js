@@ -155,30 +155,46 @@ $(document).ready(function(){
   //  Start Property Section 
 
   const getpropertyimg = document.querySelectorAll('.propertyimgarr');
+  const getpptxt      = document.querySelectorAll('.pptxt');
 
   let curppimg = 0;
+  let curpptxt = 0;
 
    $('#leftpropertyarr').click(function(){
     // console.log('hi')
     curppimg--;
-     
+    curpptxt--;
     if(curppimg < 0){
       curppimg = getpropertyimg.length-1;
     }
 
-    curppimgfun();
+    if(curpptxt < 0){
+      curpptxt = getpptxt.length-1;
 
+    }
+
+    curppimgfun();
+    curpptxtfun();
 
    })
 
+
+
    $('#rightpropertyarr').click(function(){
     curppimg++;
+    curpptxt++;
     if(curppimg > getpropertyimg.length-1){
       curppimg = 0;
     }
 
+    if(curpptxt > getpptxt.length-1){
+      curpptxt = 0;
+    }
+
+    
     curppimgfun();
-   })
+    curpptxtfun();
+  })
 
    function curppimgfun(){
      for(var x =0; x < getpropertyimg.length;x++){
@@ -193,13 +209,35 @@ $(document).ready(function(){
    }
 
 
+   function curpptxtfun(){
+     for(var l =0;l < getpptxt.length;l++){
+          if(l === curpptxt){
+             getpptxt[l].classList.add('pptxtshow');
 
+          }else{
+            getpptxt[l].classList.remove('pptxtshow');
+              
+          }
+
+     }
+
+     }
+   
+
+
+    
 
 
    $('.cardfooter').click(function(){
      $('.property-container').css('height','80vh')
      $('.items-container').css('display','block')
    })
+
+   $('.items-container').click(function(){
+    $('.items-container').css('display','none','transition','all 1.5s linear')
+    $('.property-container').css('height','75vh')
+    })
+
  
   $('.dot1').click(function(){
     $('.displaycard').css({
@@ -207,6 +245,9 @@ $(document).ready(function(){
       'animation':'displayani1 2s'
     });
     $('.displaycard2').css( 'display','none');
+    $(this).css("background","#021d3f")
+    $('.dot2').css("background","#fbfbfb")
+  
   })
 
 
@@ -216,12 +257,16 @@ $(document).ready(function(){
       'display':'block',
       'animation':'displayani 2s'
     } );
+
+    $(this).css("background","#021d3f")
+    $('.dot1').css("background","#fbfbfb")
+
    })
   
   
  })
 
-// End About Us 
+// Jquery
 
 
 
