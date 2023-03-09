@@ -950,6 +950,7 @@ input[type="search"] {
 }
 
 
+
 .cardbody img {
     width: 250px;
     height: 300px;
@@ -958,7 +959,7 @@ input[type="search"] {
     transition: all 2.5s;
 }
 
-.displaycard .cards{
+.displaycard .cards,.displaycard2 .cards{
  
     background: #30497e;
     margin: 15px;
@@ -967,7 +968,7 @@ input[type="search"] {
 
 }
 
-.displaycard .cardfooter{
+.displaycard .cardfooter,.displaycard2 .cardfooter{
     width: 250px;
     height: 50px;
     background: #30496e;
@@ -978,7 +979,7 @@ input[type="search"] {
 
 }
 
-.displaycard .cards:hover .cardbody > .cardfooter{
+.displaycard .cards:hover .cardbody > .cardfooter,.displaycard2 .cards:hover .cardbody > .cardfooter{
     transform: rotateX(0deg);
     position: absolute
   
@@ -989,12 +990,11 @@ input[type="search"] {
 
 
 
-.displaycard .cards:hover .cardbody > img{
+.displaycard .cards:hover .cardbody > img,.displaycard2 .cards:hover .cardbody > img{
     /* transform: rotateX(-90deg); */
     animation: cardani 2s ;
     animation-fill-mode: forwards;
 }
-
 
 
 
@@ -1012,7 +1012,35 @@ input[type="search"] {
 }
 
 
+.displaycard{
+    display: block;
+}
 
+.displaycard2{
+    display: none;
+
+}
+
+
+@keyframes displayani1{
+    from{
+        transform: translateX(-200%);
+    }
+
+    to{
+        transform: translateX(0);
+    }
+}
+
+@keyframes displayani{
+    from{
+        transform: translateX(200%);
+    }
+
+    to{
+        transform: translateX(0);
+    }
+}
 
 .dot-container{
     width: 500px;
