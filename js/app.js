@@ -722,19 +722,8 @@ function goodarrfun(good,idx){
 // End Items History 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  // sessionStorage.setItem("email","zaw zaw")
+// Start footer 
+const autoyear = document.getElementById("autoyear")
+const getyear = new Date().getUTCFullYear()
+autoyear.textContent = getyear;
+// End footer 
