@@ -95,7 +95,7 @@ $(document).ready(function(){
 
   $(window).scroll(function(){
     const windowscrolltop = $(this).scrollTop();
-    // console.log(windowscrolltop)
+    console.log(windowscrolltop)
 
   //  Start About Us 
     
@@ -132,17 +132,29 @@ $(document).ready(function(){
     //  Start Banner 
 
 
-     $('.salecontainer').css('transform','translate(-500%)')
+    //  $('.salecontainer').css('transform','translate(-500%)')
 
       if(windowscrolltop >= 936){
     
-        $('.salecontainer').css('transform','translate(0%)')
+        // $('.salecontainer').css('transform','translate(0%)')
+        AOS.init();
+
       }
 
       // start Testimonial 
+      if(windowscrolltop >= 2480){
+        AOS.init();
+      }
 
 
+
+      if(windowscrolltop >= 3790){
+        AOS.init();
+        
+      }
   })
+
+  // End Scroll 
 
 
    // Start Product Secction
@@ -233,11 +245,11 @@ $(document).ready(function(){
      $('.items-container').css('display','block')
    })
 
-   $('.items-container').click(function(){
-    $('.items-container').css('display','none','transition','all 1.5s linear')
-    $('.property-container').css('height','75vh')
-    })
+    $('.backarrow').click(function(){
+      $('.items-container').css('display','none')
+     $('.property-container').css('height','75vh')
 
+    })
  
   $('.dot1').click(function(){
     $('.displaycard').css({
