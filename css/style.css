@@ -1363,13 +1363,23 @@ input[type="search"] {
     color: #021d3f;
     font-weight: 700;
     position: absolute;
-    right: 8%;
+    right: -5%;
     top: 11%;
+
 }
+
+.addresstxt i{
+    font-size: 40px;
+    position: absolute;
+    left: -70px;
+}
+
 .addresstxt h4{
     text-transform: uppercase;
 }
 /* End Conatact Section  */
+
+/* Start Footer  */
 
 footer{
     width: 100%;
@@ -1377,6 +1387,23 @@ footer{
     background: linear-gradient(rgb(70, 87, 127),rgb(83, 98, 124));
 }
 
+.socialaccs{
+    margin-top: 35px;
+    margin-left: 20px;
+}
+
+.socialaccs a{
+    color: #021d3f;
+    font-size: 18px;
+    margin: 5px;
+}
+
+.footerp{
+    color: #021d3f;
+    margin-top: 35px;
+    margin-left: 400px;
+}
+/* End Footer  */
 
 
 /* Start Login Form  */
