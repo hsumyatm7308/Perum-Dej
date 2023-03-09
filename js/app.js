@@ -148,7 +148,7 @@ $(document).ready(function(){
    // Start Product Secction
    $('.salecontainer').tilt({
     glare: true,
-    maxGlare: .1
+    maxGlare: .2
   })
 
 
@@ -200,23 +200,23 @@ $(document).ready(function(){
      $('.property-container').css('height','80vh')
      $('.items-container').css('display','block')
    })
+ 
+  $('.dot1').click(function(){
+    $('.displaycard').css({
+      'display':'block',
+      'animation':'displayani1 2s'
+    });
+    $('.displaycard2').css( 'display','none');
+  })
 
-   $('.dot1').click(function(){
-     $('.display1').css('display','block');
-     $('.display2').css('opacity','0')
-   })
 
    $('.dot2').click(function(){
-    $('.display1').css('display','none');
-    $('.display2').css({
-      'opacity':'1',
-     
-    })
+    $('.displaycard').css('display','none');
+    $('.displaycard2').css({
+      'display':'block',
+      'animation':'displayani 2s'
+    } );
    })
-
-
-
-   
   
   
  })
