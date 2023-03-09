@@ -241,7 +241,7 @@ $(document).ready(function(){
 
 
    $('.cardfooter').click(function(){
-     $('.property-container').css('height','80vh')
+     $('.property-container').css('height','100vh')
      $('.items-container').css('display','block')
    })
 
