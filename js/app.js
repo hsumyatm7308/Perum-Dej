@@ -196,7 +196,7 @@ $(document).ready(function(){
 
 
 
-   $('.items-display').click(function(){
+   $('.cardfooter').click(function(){
      $('.property-container').css('height','80vh')
      $('.items-container').css('display','block')
    })
