@@ -1110,6 +1110,7 @@ input[type="search"] {
 
     margin-left: 15%;
     margin-top: 13%;
+
 }
 
 .propertytext h4{
@@ -1118,6 +1119,7 @@ input[type="search"] {
 
     -webkit-text-stroke: 3px #021d3f;
 }
+
 
 
 
@@ -1150,6 +1152,40 @@ input[type="search"] {
 }
 
 
+
+@media only screen and (max-width:1007px){
+    .cardbody img {
+        width: 150px;
+        height: 180px;
+       
+    }
+    
+    
+    
+    .displaycard .cardfooter,.displaycard2 .cardfooter{
+        width: 150px;
+        height: 50px;
+    
+    }
+
+    .propertytext{
+        position: absolute;
+        z-index: 2;
+    }
+
+    .pptxt{
+        left: 5%;
+        top: 10%;
+    }
+
+    .txttil{
+        margin-top: 30%;
+    }
+
+    .propertyimgarr{
+        width: 400px;
+    }
+}
 
 /* End Property Section  */
 
