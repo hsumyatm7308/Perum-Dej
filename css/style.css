@@ -313,7 +313,7 @@ input[type="search"] {
 
     display: none;
 
-    transition: all 1.5s;
+    transition: all 2s;
 
     /* visibility: hidden; */
 }
@@ -321,7 +321,7 @@ input[type="search"] {
 .bannerimgshow{
 
     display: block;
-    animation : bannershowani .4s linear;
+    animation : bannershowani .8s ease-in-out;
     
 }
 
@@ -329,7 +329,7 @@ input[type="search"] {
 
 @keyframes bannershowani{
     from{
-        transform: translate(30%);
+        transform: translate(100%);
     }
     to{
         transform: translate(0);
@@ -945,15 +945,25 @@ input[type="search"] {
     overflow: hidden;
 
     position: relative;
+
+    transition: all 2.5s;
 }
 
 
-.displaycard .cards{
+.cardbody img {
     width: 250px;
     height: 300px;
     text-align: center;
+
+    transition: all 2.5s;
+}
+
+.displaycard .cards{
+ 
     background: #30497e;
     margin: 15px;
+
+    transition: all 2.5s;
 
 }
 
@@ -962,16 +972,45 @@ input[type="search"] {
     height: 50px;
     background: #30496e;
     line-height: 50px;
+    transition: all 2.5s;
+
     transform: rotateX(90deg);
+
 }
 
-.displaycard .cards:hover ~ .cardfooter{
-    transform: rotateX(0deg) translate3d(0em,0em,2em);
+.displaycard .cards:hover .cardbody > .cardfooter{
+    transform: rotateX(0deg);
+    position: absolute
+  
 }
 
-.displaycard .cards:hover{
-    transform: rotateX(-90deg);
+
+
+
+
+
+.displaycard .cards:hover .cardbody > img{
+    /* transform: rotateX(-90deg); */
+    animation: cardani 2s ;
+    animation-fill-mode: forwards;
 }
+
+
+
+
+
+@keyframes cardani{
+    from{
+        transform: rotate(0);
+        height: 300px;
+    }
+
+    to{
+        transform: rotateX(-90deg);
+        height: 10px;
+    }
+}
+
 
 
 
