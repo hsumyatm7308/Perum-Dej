@@ -164,9 +164,9 @@ input[type="search"] {
     margin-left: -15%;
     margin-top: 10%;
 
-    transition: all 2s;
+    transition: all 3s;
 
-    animation:textsidebanner-p 2s ;
+    animation:textsidebanner-p 3s ;
 }
 
 @keyframes textsidebanner-p{
@@ -198,7 +198,7 @@ input[type="search"] {
     background: none;
     margin-top: 15px;
 
-    animation:textsidebanner-p 1s ;
+    animation:textsidebanner-p 3s ;
 
   }
   
@@ -305,7 +305,7 @@ input[type="search"] {
     justify-content: center;
     align-items: center;
 
-    transition: transform 2s;
+    transition: transform 4s;
 
     position: relative;
     overflow: hidden;
@@ -320,7 +320,7 @@ input[type="search"] {
 
     display: none;
 
-    transition: all 2s;
+    transition: all 4s;
 
     /* visibility: hidden; */
 }
@@ -328,7 +328,7 @@ input[type="search"] {
 .bannerimgshow{
 
     display: block;
-    animation : bannershowani .8s ease-in-out;
+    animation : bannershowani 2s ease-in-out;
     
 }
 
@@ -337,9 +337,11 @@ input[type="search"] {
 @keyframes bannershowani{
     from{
         transform: translate(100%);
+        opacity: 0;
     }
     to{
         transform: translate(0);
+        opacity: 1;
     }
 }
 
@@ -350,7 +352,7 @@ input[type="search"] {
 .imgtitleani{
 
     display: block;
-    animation : bannershowani .4s linear;
+    animation : bannershowani 2s linear;
 
 }
 
