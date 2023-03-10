@@ -142,16 +142,22 @@ $(document).ready(function(){
       }
 
       // start Testimonial 
-      if(windowscrolltop >= 2480){
+      if(windowscrolltop >= 2576){
         AOS.init();
       }
 
 
 
-      if(windowscrolltop >= 3790){
+      if(windowscrolltop >= 3258){
         AOS.init();
         
       }
+
+      if(windowscrolltop >= 3867){
+        AOS.init();
+        
+      }
+
   })
 
   // End Scroll 
