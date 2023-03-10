@@ -7,9 +7,7 @@ const aboutustext   = document.getElementById('aboutustext');
 const leftaboutusboxani = document.getElementById('leftaboutusbox')
 const rightaboutusboxani = document.getElementById('rightaboutusbox')
 
-$(document).ready(function(){
-
-
+$(document).ready(function() {
   $('.aboutustext').hide()
   $('.left-aboutusbox').hide();
   $('.right-aboutusbox').hide();
@@ -48,11 +46,6 @@ $(document).ready(function(){
       $('.textsidebanner').fadeOut(1000);
   
      }
-
-     
-
-
-
     //  Start Banner 
 
 
@@ -209,6 +202,9 @@ $(document).ready(function(){
  })
 
 // Jquery
+
+
+
 
 // Start Banner 
 const getbannerimgs = document.querySelectorAll('.banner-img');
