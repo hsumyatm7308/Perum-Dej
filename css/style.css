@@ -10,6 +10,13 @@ body{
 
 }
 
+
+
+
+
+
+
+
 .navbar{
     /* height: 100px; */
     background-color: #344978;
@@ -1302,11 +1309,11 @@ input[type="search"] {
     z-index: 3;
 }
 
-.form-group{
+.addressbox .form-group{
     margin-top: 25%;
 }
 
-.form-control{
+ .addressbox .form-group .form-control{
     background: none;
     border: none;
     border-bottom: 2px solid #021d3f;
@@ -1316,7 +1323,7 @@ input[type="search"] {
    
 }
 
-.form-control:focus{
+.addressbox .form-group .form-control:focus{
     outline: none;
     box-shadow: none;
     background: none;
@@ -1351,6 +1358,8 @@ input[type="search"] {
     position: absolute;
     right: 10%;
     top: 11%;
+
+    transition: all 3s;
 
 }
 
@@ -1389,7 +1398,7 @@ input[type="search"] {
         top: 0%;
     }
 
-    .form-group{
+    .addressbox .form-group{
         margin-right: 35px;
     }
     
@@ -1429,7 +1438,7 @@ input[type="search"] {
         top: 0%;
     }
 
-    .form-group{
+    .addressbox .form-group{
         margin-right: 35px;
     }
     
@@ -1502,7 +1511,7 @@ footer{
     left: 0;
     top: 0;
 
-    z-index: 2;
+    z-index: 200;
 
     overflow: hidden;
 
