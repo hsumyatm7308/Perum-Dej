@@ -87,77 +87,7 @@ $(document).ready(function() {
   })
 
 
-  //  Start Property Section 
 
-  const getpropertyimg = document.querySelectorAll('.propertyimgarr');
-  const getpptxt      = document.querySelectorAll('.pptxt');
-
-  let curppimg = 0;
-  let curpptxt = 0;
-
-   $('#leftpropertyarr').click(function(){
-    // console.log('hi')
-    curppimg--;
-    curpptxt--;
-    if(curppimg < 0){
-      curppimg = getpropertyimg.length-1;
-    }
-
-    if(curpptxt < 0){
-      curpptxt = getpptxt.length-1;
-
-    }
-
-    curppimgfun();
-    curpptxtfun();
-
-   })
-
-
-
-   $('#rightpropertyarr').click(function(){
-    curppimg++;
-    curpptxt++;
-    if(curppimg > getpropertyimg.length-1){
-      curppimg = 0;
-    }
-
-    if(curpptxt > getpptxt.length-1){
-      curpptxt = 0;
-    }
-
-    
-    curppimgfun();
-    curpptxtfun();
-  })
-
-   function curppimgfun(){
-     for(var x =0; x < getpropertyimg.length;x++){
-       if(curppimg === x){
-        getpropertyimg[x].classList.add('pparrshow')
-
-       }else{
-        getpropertyimg[x].classList.remove('pparrshow')
-
-       }
-     }
-   }
-
-
-   function curpptxtfun(){
-     for(var l =0;l < getpptxt.length;l++){
-          if(l === curpptxt){
-             getpptxt[l].classList.add('pptxtshow');
-
-          }else{
-            getpptxt[l].classList.remove('pptxtshow');
-              
-          }
-
-     }
-
-     }
-   
 
 
     
@@ -430,13 +360,6 @@ getshowloginpassword.addEventListener('click',function(){
    }
   })
 
-  const sessionstoragearr = [
-
-    sessionStorage["name"],
-    sessionStorage["email"],
-     sessionStorage["copassword"]
- ]
-
 
 
 
@@ -560,78 +483,78 @@ var getproductitems = document.getElementsByClassName('productitems');
 
 
 
-// Start Items History 
+// // Start Items History 
 
-const getitemhistoryctn = document.getElementById("itemhistory")
-const shopcardbtn = document.getElementById("shopcardbtn");
-const xmaxbtn = document.querySelector(".fa-circle-xmark");
+// const getitemhistoryctn = document.getElementById("itemhistory")
+// const shopcardbtn = document.getElementById("shopcardbtn");
+// const xmaxbtn = document.querySelector(".fa-circle-xmark");
 
-const historylists = document.querySelector(".goodctn")
-
-
-
-const getshopcards = document.querySelectorAll(".shopcards");
-const getcounts = document.getElementById('counts');
+// const historylists = document.querySelector(".goodctn")
 
 
 
-shopcardbtn.addEventListener("click",function(){
-    getitemhistoryctn.classList.toggle("itemhistoryshow")
-})
-
-xmaxbtn.addEventListener("click",function(){
-  getitemhistoryctn.classList.toggle("itemhistoryshow")
-})
-
-
-const pfarrs = ["Tom Ford","Chanel Co Co","Avon","Chanel N 5","Arizona","Eternity(summer)","Eternity(winter)","Elie Saab","Mouzurakahza","Tom Ford2","Arizona2","Avon"];
-const pfvalues = [250,350,150,300,200,350,150,150,250,340,290,310]
-
-
-let count = 1;
-// let cot = 1;
+// const getshopcards = document.querySelectorAll(".shopcards");
+// const getcounts = document.getElementById('counts');
 
 
 
-getshopcards.forEach(function(getshopcard,idx){
+// shopcardbtn.addEventListener("click",function(){
+//     getitemhistoryctn.classList.toggle("itemhistoryshow")
+// })
+
+// xmaxbtn.addEventListener("click",function(){
+//   getitemhistoryctn.classList.toggle("itemhistoryshow")
+// })
+
+
+// const pfarrs = ["Tom Ford","Chanel Co Co","Avon","Chanel N 5","Arizona","Eternity(summer)","Eternity(winter)","Elie Saab","Mouzurakahza","Tom Ford2","Arizona2","Avon"];
+// const pfvalues = [250,350,150,300,200,350,150,150,250,340,290,310]
+
+
+// let count = 1;
+// // let cot = 1;
+
+
+
+// getshopcards.forEach(function(getshopcard,idx){
  
-  let  cot = 1
+//   let  cot = 1
   
 
-  getshopcard.addEventListener("click",function(){
+//   getshopcard.addEventListener("click",function(){
 
-    // console.log(!sessionStorage.getItem("email") === false)
+//     // console.log(!sessionStorage.getItem("email") === false)
  
-    if (!sessionStorage.getItem("copassword") ) {
-      // email key is not set in sessionStorage
-      getmodalcontainer.style.visibility = "visible"
-    } else {
-      // email key is set in sessionStorage
-      getcounts.innerHTML = `<i class="fa-solid fa-circle countdot"></i>`;
+//     if (!sessionStorage.getItem("copassword") ) {
+//       // email key is not set in sessionStorage
+//       getmodalcontainer.style.visibility = "visible"
+//     } else {
+//       // email key is set in sessionStorage
+//       getcounts.innerHTML = `<i class="fa-solid fa-circle countdot"></i>`;
 
-      // getmodalcontainer.style.visibility = "hidden" 
+//       // getmodalcontainer.style.visibility = "hidden" 
       
   
       
-    }
+//     }
  
-     goodarrfun(getshopcard,idx,cot,pfvalues); 
+//      goodarrfun(getshopcard,idx,cot,pfvalues); 
   
-  })
+//   })
 
-})
+// })
 
 
  
 
 
-function goodarrfun(good,idx){
+// function goodarrfun(good,idx){
 
-  cot = 1;   //for start with 1
-  rmcot = 1
+//   cot = 1;   //for start with 1
+//   rmcot = 1
  
-  getul = document.createElement("ul")
-  getul.setAttribute(`class`,`list-unstyled d-flex goods`)
+//   getul = document.createElement("ul")
+//   getul.setAttribute(`class`,`list-unstyled d-flex goods`)
   
 
 
@@ -641,54 +564,54 @@ function goodarrfun(good,idx){
 
 
  
-  pfarrs.forEach(function(pfarr,pfidx){
+//   pfarrs.forEach(function(pfarr,pfidx){
 
   
-    if(idx === pfidx){
-      // getul.nextElementSibling.innerHTML = ''
-      getul.innerHTML = `
+//     if(idx === pfidx){
+//       // getul.nextElementSibling.innerHTML = ''
+//       getul.innerHTML = `
     
-      <li class="list-inline-item col-sm-2">${pfarr}</li>
-      <li class="list-inline-item col-sm-2 cot">${cot}</li>
+//       <li class="list-inline-item col-sm-2">${pfarr}</li>
+//       <li class="list-inline-item col-sm-2 cot">${cot}</li>
    
-      <li class="list-inline-item col-sm-2">$${pfvalues[idx]}</li>
-      <li class="list-inline-item col-sm-2 value">$${pfvalues[idx*cot]}</li>
-      <button class="col-sm-2 removeul"><i class="fa-solid fa-trash"></i></button> 
+//       <li class="list-inline-item col-sm-2">$${pfvalues[idx]}</li>
+//       <li class="list-inline-item col-sm-2 value">$${pfvalues[idx*cot]}</li>
+//       <button class="col-sm-2 removeul"><i class="fa-solid fa-trash"></i></button> 
 
-      `;
+//       `;
    
       
     
                
-      good.addEventListener("click",function(){
+//       good.addEventListener("click",function(){
   
        
       
   
-        getul.setAttribute(`class`,`list-unstyled d-flex goods ${pfarr}`);
+//         getul.setAttribute(`class`,`list-unstyled d-flex goods ${pfarr}`);
       
-        console.log( getul.className.includes(`list-unstyled d-flex goods ${pfarr}`))
+//         console.log( getul.className.includes(`list-unstyled d-flex goods ${pfarr}`))
        
-        if( getul.className.includes(`list-unstyled d-flex goods ${pfarr}`)){
+//         if( getul.className.includes(`list-unstyled d-flex goods ${pfarr}`)){
      
-          const colts = document.querySelector(".cot")
-          console.log(colts.innerHTML = ++cot)
+//           const colts = document.querySelector(".cot")
+//           console.log(colts.innerHTML = ++cot)
        
-          getul.remove();
+//           getul.remove();
     
-          const vlaues = document.querySelector(".value")
-          vlaues.innerHTML =` $${pfvalues[idx]*cot}` ;
+//           const vlaues = document.querySelector(".value")
+//           vlaues.innerHTML =` $${pfvalues[idx]*cot}` ;
   
          
 
           
 
      
-        }
+//         }
 
         
             
-        });
+//         });
     
 
 
@@ -696,33 +619,33 @@ function goodarrfun(good,idx){
       
 
 
-      historylists.prepend(getul);
+//       historylists.prepend(getul);
       
       
     
 
 
-      // console.log(getul.nextElementSibling)
+//       // console.log(getul.nextElementSibling)
 
-      // ----------------------------------------------------------------------------------------------
+//       // ----------------------------------------------------------------------------------------------
     
     
-      const removeul = document.querySelector('.removeul')
+//       const removeul = document.querySelector('.removeul')
        
-      removeul.addEventListener("click",function(){
+//       removeul.addEventListener("click",function(){
         
-        getul.remove()
+//         getul.remove()
     
-      })
+//       })
 
        
-    } 
-  })
-}
+//     } 
+//   })
+// }
 
 
  
-// End Items History 
+// // End Items History 
 
 
 // Start footer 
