@@ -9,6 +9,7 @@ body {
     font-family: capitolina, serif;
     font-style: normal;
     font-weight: 300;
+    color: #000
 }
 
 
@@ -1260,6 +1261,11 @@ input[type="search"] {
     border-radius: 1px;
 }
 
+.form-control:focus{
+    background: rgb(86, 105, 160) ;
+    outline: none;
+}
+
 .addname {
     /* height: 100px; */
     width: 100%;
@@ -1276,7 +1282,7 @@ input[type="search"] {
 }
 
 .sendbtn {
-    background-color: #0c1832;
+    background-color: #394f7d;
 }
 
 /* End Conatact Section  */
@@ -1293,7 +1299,9 @@ footer {
     height: 200px;
     padding: 10px;
     /* background: linear-gradient(rgb(70, 87, 127), rgb(83, 98, 124)); */
-    background-color: #3f485c;
+    /* background-color: #3f485c; */
+    background: linear-gradient(10deg, #586d9a, #5c7b9d);
+
 
 }
 
@@ -1302,19 +1310,17 @@ footer {
     margin-top: 50px;
 }
 
-.socialaccs {
-    margin-top: 35px;
-    margin-left: 20px;
-}
 
-.socialaccs a {
-    color: #021d3f;
+
+.socialaccs ul a i{
+    /* color: #021d3f; */
+    color: #000;
     font-size: 18px;
     margin: 5px;
 }
 
 .footerp {
-    color: #021d3f;
+    /* color: #021d3f; */
     margin-left: 13px;
 
     transform: translateY(-50%);
