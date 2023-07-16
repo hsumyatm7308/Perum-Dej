@@ -21,6 +21,9 @@
         background: linear-gradient(10deg, #586d9a, #5c7b9d);
         color: #000;
 
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+
+
     }
 
     .banner-container {
@@ -155,22 +158,49 @@
 
 
     /* FAQ  */
-  
+
     .contact-faq {
         width: 100vw;
-        height: 130vh;
+        height: 140vh;
         /* background: #5c7b9d; */
         background: linear-gradient(15deg #586d9a, #5c7b9d);
     }
 
     .faq-container {
         width: inherit;
-        height: 90vh;
+        height: 110vh;
         background: rgb(86, 105, 150);
 
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    
+
+
+    }
+
+    .faq-title{
+        padding: 40px;
+    }
+
+    .faqtxt{
+        width: 600px;
+        text-align: center;
+    }
+    .accordion {
+        color: #000;
+        margin-top: 40px;
+    }
+
+    .accordion-item {
+        background: #586d9a;
+        border: none;
+        border-radius: none;
+        margin-top: 30px;
+        color: #000;
+
+    }
+
+    .accordion-header,
+    .accordion-button {
+        background: rgb(86, 105, 150);
     }
 </style>
 
@@ -182,7 +212,7 @@
         <div class="banner-container">
 
 
-            <div class="container contact-banner">
+            <div class="container contact-banner ">
 
 
                 <div class="contact-banner-title me-5">
@@ -369,7 +399,182 @@
     <section>
         <div class="contact-faq">
             <div class="container faq-container">
-                <h1>F.A.Q</h1>
+                <div class="d-flex  align-items-center text-center flex-column  faq-title">
+                    <h1>F.A.Q</h1>
+                    <div class="faqtxt">
+                        <span class="lead">
+                            Common questions about the company and all the answers you need to get started discovering
+                            new
+                            fragrances.
+                        </span>
+                    </div>
+                </div>
+
+                <div>
+
+
+                    <div class="accordion" id="accordion">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            <h5 class="">Are these real brand fragrances?</h5>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show"
+                                        data-bs-parent="#accordion">
+                                        <div class="accordion-body">
+                                            <strong>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                                Consequatur, magnam placeat. Quae repudiandae delectus accusantium
+                                                ipsum, maxime facere, odio explicabo laudantium cumque illum distinctio
+                                                labore et dolorum tenetur, totam a? </strong>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header ">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            <h5> Are these fragrances long lasting?</h5>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse "
+                                        data-bs-parent="#accordion">
+                                        <div class="accordion-body">
+                                            <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+                                                quod nobis sunt rem cupiditate assumenda quia animi eos voluptatem
+                                                fugiat similique vel tempore suscipit eveniet quos laudantium vitae,
+                                                corporis id. </strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header ">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                            aria-expanded="false" aria-controls="collapseFour">
+                                            <h5> How long will the fragrance bottle last?</h5>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFour" class="accordion-collapse collapse "
+                                        data-bs-parent="#accordion">
+                                        <div class="accordion-body">
+                                            <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+                                                quod nobis sunt rem cupiditate assumenda quia animi eos voluptatem
+                                                fugiat similique vel tempore suscipit eveniet quos laudantium vitae,
+                                                corporis id. </strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header ">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                                            aria-expanded="false" aria-controls="collapseFive">
+                                            <h5> Are the fragrances tested on animals?</h5>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFive" class="accordion-collapse collapse "
+                                        data-bs-parent="#accordion">
+                                        <div class="accordion-body">
+                                            <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+                                                quod nobis sunt rem cupiditate assumenda quia animi eos voluptatem
+                                                fugiat similique vel tempore suscipit eveniet quos laudantium vitae,
+                                                corporis id. </strong>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header ">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseSix"
+                                            aria-expanded="false" aria-controls="collapseSix">
+                                            <h5> Are these fragrances long lasting?</h5>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseSix" class="accordion-collapse collapse "
+                                        data-bs-parent="#accordion">
+                                        <div class="accordion-body">
+                                            <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+                                                quod nobis sunt rem cupiditate assumenda quia animi eos voluptatem
+                                                fugiat similique vel tempore suscipit eveniet quos laudantium vitae,
+                                                corporis id. </strong>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header ">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseSeven"
+                                            aria-expanded="false" aria-controls="collapseSeven">
+                                            <h5> Are these fragrances long lasting?</h5>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseSeven" class="accordion-collapse collapse "
+                                        data-bs-parent="#accordion">
+                                        <div class="accordion-body">
+                                            <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+                                                quod nobis sunt rem cupiditate assumenda quia animi eos voluptatem
+                                                fugiat similique vel tempore suscipit eveniet quos laudantium vitae,
+                                                corporis id. </strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header ">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseEight"
+                                            aria-expanded="false" aria-controls="collapseEight">
+                                            <h5> How long will the fragrance bottle last?</h5>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseEight" class="accordion-collapse collapse "
+                                        data-bs-parent="#accordion">
+                                        <div class="accordion-body">
+                                            <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+                                                quod nobis sunt rem cupiditate assumenda quia animi eos voluptatem
+                                                fugiat similique vel tempore suscipit eveniet quos laudantium vitae,
+                                                corporis id. </strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header ">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseNine"
+                                            aria-expanded="false" aria-controls="collapseNine">
+                                            <h5> Are the fragrances tested on animals?</h5>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseNine" class="accordion-collapse collapse "
+                                        data-bs-parent="#accordion">
+                                        <div class="accordion-body">
+                                            <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+                                                quod nobis sunt rem cupiditate assumenda quia animi eos voluptatem
+                                                fugiat similique vel tempore suscipit eveniet quos laudantium vitae,
+                                                corporis id. </strong>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
 
             </div>
         </div>
