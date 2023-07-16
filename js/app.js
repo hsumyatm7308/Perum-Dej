@@ -3,85 +3,85 @@
 
 // Start About Us 
 const getaboutusctn = document.getElementById('aboutus');
-const aboutustext   = document.getElementById('aboutustext');
+const aboutustext = document.getElementById('aboutustext');
 const leftaboutusboxani = document.getElementById('leftaboutusbox')
 const rightaboutusboxani = document.getElementById('rightaboutusbox')
 
-$(document).ready(function() {
+$(document).ready(function () {
   $('.aboutustext').hide()
   $('.left-aboutusbox').hide();
   $('.right-aboutusbox').hide();
 
 
-  $(window).scroll(function(){
+  $(window).scroll(function () {
     const windowscrolltop = $(this).scrollTop();
     console.log(windowscrolltop)
 
-  //  Start About Us 
-    
-    if(windowscrolltop >= 226){
-       aboutustext.classList.add('aboutustextani');
-       leftaboutusboxani.classList.add('left-aboutusboxani');
-       rightaboutusboxani.classList.add('right-aboutusboxani');
+    //  Start About Us 
+
+    if (windowscrolltop >= 226) {
+      aboutustext.classList.add('aboutustextani');
+      leftaboutusboxani.classList.add('left-aboutusboxani');
+      rightaboutusboxani.classList.add('right-aboutusboxani');
       $('.aboutustext').fadeIn(1000)
       $('.left-aboutusbox').fadeIn(1000);
       $('.right-aboutusbox').fadeIn(100);
 
-      
+
     }
-    else{
+    else {
       $('.aboutustext').fadeOut(1000);
       $('.left-aboutusbox').fadeOut(1000);
       $('.right-aboutusbox').fadeOut(1000);
     }
 
-    
+
     // start Banner 
 
-    if(windowscrolltop <= 465){
+    if (windowscrolltop <= 465) {
       $('.imgcontainer').fadeIn(1000);
       $('.textsidebanner').fadeIn(1000);
-     }else{
+    } else {
       $('.imgcontainer').fadeOut(1000)
       $('.textsidebanner').fadeOut(1000);
-  
-     }
+
+    }
     //  Start Banner 
 
 
     //  $('.salecontainer').css('transform','translate(-500%)')
 
-      if(windowscrolltop >= 936){
-    
-        // $('.salecontainer').css('transform','translate(0%)')
-        AOS.init();
+    if (windowscrolltop >= 936) {
 
-      }
+      // $('.salecontainer').css('transform','translate(0%)')
+      AOS.init();
 
-      // start Testimonial 
-      if(windowscrolltop >= 2576){
-        AOS.init();
-      }
+    }
+
+    // start story 
+    if (windowscrolltop >= 2576) {
+      AOS.init();
+    }
 
 
 
-      if(windowscrolltop >= 3258){
-        AOS.init();
-        
-      }
+    if (windowscrolltop >= 3258) {
+      AOS.init();
 
-      if(windowscrolltop >= 3867){
-        AOS.init();
-        
-      }
+    }
+
+    if (windowscrolltop >= 3867) {
+      AOS.init();
+
+    }
 
   })
 
   // End Scroll 
 
 
-   // Start Product Secction
-   $('.salecontainer').tilt({
+  // Start Product Secction
+  $('.salecontainer').tilt({
     glare: true,
     maxGlare: .2
   })
@@ -90,46 +90,46 @@ $(document).ready(function() {
 
 
 
-    
 
 
-   $('.cardfooter').click(function(){
-     $('.property-container').css('height','100vh')
-     $('.items-container').css('display','block')
-   })
 
-    $('.backarrow').click(function(){
-      $('.items-container').css('display','none')
-     $('.property-container').css('height','75vh')
+  $('.cardfooter').click(function () {
+    $('.property-container').css('height', '100vh')
+    $('.items-container').css('display', 'block')
+  })
 
-    })
- 
-  $('.dot1').click(function(){
+  $('.backarrow').click(function () {
+    $('.items-container').css('display', 'none')
+    $('.property-container').css('height', '75vh')
+
+  })
+
+  $('.dot1').click(function () {
     $('.displaycard').css({
-      'display':'block',
-      'animation':'displayani1 2s'
+      'display': 'block',
+      'animation': 'displayani1 2s'
     });
-    $('.displaycard2').css( 'display','none');
-    $(this).css("background","#021d3f")
-    $('.dot2').css("background","#fbfbfb")
-  
+    $('.displaycard2').css('display', 'none');
+    $(this).css("background", "#021d3f")
+    $('.dot2').css("background", "#fbfbfb")
+
   })
 
 
-   $('.dot2').click(function(){
-    $('.displaycard').css('display','none');
+  $('.dot2').click(function () {
+    $('.displaycard').css('display', 'none');
     $('.displaycard2').css({
-      'display':'block',
-      'animation':'displayani 2s'
-    } );
+      'display': 'block',
+      'animation': 'displayani 2s'
+    });
 
-    $(this).css("background","#021d3f")
-    $('.dot1').css("background","#fbfbfb")
+    $(this).css("background", "#021d3f")
+    $('.dot1').css("background", "#fbfbfb")
 
-   })
-  
-  
- })
+  })
+
+
+})
 
 // Jquery
 
@@ -140,7 +140,7 @@ $(document).ready(function() {
 const getbannerimgs = document.querySelectorAll('.banner-img');
 const getimgtitles = document.querySelectorAll('.imgtits')
 
-const leftarrw     = document.getElementById('leftarr');
+const leftarrw = document.getElementById('leftarr');
 const rightarrw = document.getElementById('rightarr');
 
 let curimg = 0;
@@ -148,61 +148,61 @@ let curtitl = 0;
 
 
 
-rightarrw.addEventListener("click",function(){
+rightarrw.addEventListener("click", function () {
   curimg++;
   curtitl++;
 
-  if(curimg > getbannerimgs.length-1){
-     curimg =0;
+  if (curimg > getbannerimgs.length - 1) {
+    curimg = 0;
   }
 
-  if(curtitl > getimgtitles.length-1){
-    curtitl =0;
+  if (curtitl > getimgtitles.length - 1) {
+    curtitl = 0;
   }
 
   bannerfun();
   bannertitlefun();
 });
 
-leftarrw.addEventListener("click",function(){
+leftarrw.addEventListener("click", function () {
   curimg--;
   curtitl--;
 
-  if(curimg < 0){
-    curimg = getbannerimgs.length-1;
+  if (curimg < 0) {
+    curimg = getbannerimgs.length - 1;
   }
 
-  if(curtitl < 0 ){
-    curtitl = getimgtitles.length-1;
+  if (curtitl < 0) {
+    curtitl = getimgtitles.length - 1;
   }
 
-  
+
   bannerfun();
   bannertitlefun();
 })
 
-function bannerfun(){
-  getbannerimgs.forEach(function(getbannerimg,idx){
+function bannerfun() {
+  getbannerimgs.forEach(function (getbannerimg, idx) {
     console.log(getbannerimgs[curimg])
-    if(curimg === idx){
+    if (curimg === idx) {
       getbannerimg.classList.add('bannerimgshow')
-      
-    }else{
+
+    } else {
       getbannerimg.classList.remove('bannerimgshow')
 
     }
-   })
+  })
 
 }
 
 
-function bannertitlefun(){
-  getimgtitles.forEach(function(getimgtitle,idx){
-       if(curtitl === idx){
-        getimgtitle.classList.add('imgtitleani')
-       }else{
-        getimgtitle.classList.remove('imgtitleani')
-       }
+function bannertitlefun() {
+  getimgtitles.forEach(function (getimgtitle, idx) {
+    if (curtitl === idx) {
+      getimgtitle.classList.add('imgtitleani')
+    } else {
+      getimgtitle.classList.remove('imgtitleani')
+    }
   })
 }
 
@@ -216,164 +216,65 @@ function bannertitlefun(){
 
 
 // Start Login Form 
-const getmodalcontainer = document.getElementById('modalcontainer')
-const getname = document.getElementById('fname');
-const getemail = document.getElementById('email')
 
-const getpassword = document.getElementById('password');
-const getcopassword = document.getElementById('copassword')
-const getshowpassword = document.getElementById('show_password');
-const getshowcopassword = document.getElementById('show_copassword');
-
-const canclebtn = document.querySelectorAll('.canclebtn');
-const loginbtn = document.querySelector('.loginbtn')
-
-const getsignupform = document.getElementById('signupform');
-const getloginform = document.getElementById('loginform');
-const smsingin = document.getElementById('smsingin');
-const smsignup = document.getElementById('smssignup');
-
-const showmodal = document.getElementsByClassName('showmodal');
-
-
-loginbtn.addEventListener("click",function(){
-  getmodalcontainer.style.visibility = "visible"
-
-})
-
-
-
-smsignup.addEventListener("click",function(){
-  getsignupform.style.display = "block";
-  getloginform.style.display = "none";
-})
-
-smsingin.addEventListener("click",function(){
-  getsignupform.style.display = "none";
-  getloginform.style.display = "block";
-})
-
-
-window.onclick = function(e){
-
-  if(e.target === getmodalcontainer){
-    getmodalcontainer.style.visibility = "hidden";
-  }
- }
-
-  getshowpassword.addEventListener('click',function(){
-
-    
-     console.log(getname.value) 
-     console.log(getpassword.type)
-   
-     if(getpassword.type === "password"){
-       getpassword.setAttribute('type','text');
-       getshowpassword.innerHTML = '<span class="" id ="show_password"> <i class="fa-solid fa-lock-open"></i></span>'
-
-     }else{
-       getpassword.setAttribute('type','password')
-       getshowpassword.innerHTML = `<span class="" id ="show_password"> <i class="fa-solid fa-lock"></i></span>`
-   
-     }
-   })
-
-
-   
-
-  getshowcopassword.addEventListener('click',function(){
-    
-   
-     if(getcopassword.type === "password"){
-       getcopassword.setAttribute('type','text');
-       getshowcopassword.innerHTML = `<span id="show_copassword">  <i class="fa-solid fa-lock-open"></i></span>`
-     }else{
-       getcopassword.setAttribute('type','password')
-       getshowcopassword.innerHTML = `<span id="show_copassword">  <i class="fa-solid fa-lock"></i></span>`
-   
-     }
-  
-   })
 
 
 
 
 const signupbtn = document.getElementById('singup');
-  
-  signupbtn.addEventListener('click',function(e){
 
-    sessionStorage.setItem("name",getname.value)
-    sessionStorage.setItem("email",getemail.value)
-    sessionStorage.setItem("password",getpassword.value);
-    sessionStorage.setItem("copassword",getcopassword.value);
+// signupbtn.addEventListener('click',function(e){
+
+// sessionStorage.setItem("name",getname.value)
+// sessionStorage.setItem("email",getemail.value)
+// sessionStorage.setItem("password",getpassword.value);
+// sessionStorage.setItem("copassword",getcopassword.value);
 
 
-   
 
-  
-    // console.log(localStorage.getItem("name"))
 
-    if(getpassword.value === getcopassword.value){
 
-      if( (getname.value === '' && getemail.value === '' ) && getpassword.value === '' && getcopassword.value === ''){
-        getmodalcontainer.style.visibility = "visible";
-        // console.log('true')
-        alert("Something went wrong!")
+// // console.log(localStorage.getItem("name"))
 
-      }else if(getname.value && getemail.value && getpassword.value && getcopassword.value){
-        getmodalcontainer.style.visibility = "hidden";
-      }
+// if(getpassword.value === getcopassword.value){
 
-    } else{
-      const getalertbox = document.getElementById('alertbox');
-      getalertbox.classList.add("alertboxani");
-    };
-    
-    e.preventDefault()
-  
-   
-  })
-  
+//   if( (getname.value === '' && getemail.value === '' ) && getpassword.value === '' && getcopassword.value === ''){
+//     getmodalcontainer.style.visibility = "visible";
+//     // console.log('true')
+//     alert("Something went wrong!")
+
+//   }else if(getname.value && getemail.value && getpassword.value && getcopassword.value){
+//     getmodalcontainer.style.visibility = "hidden";
+//   }
+
+// } else{
+//   const getalertbox = document.getElementById('alertbox');
+//   getalertbox.classList.add("alertboxani");
+// };
+
+// e.preventDefault()
+
+
+// })
+
 
 
 
 // Start  Sing in 
 
-const getlgname = document.getElementById("lgname")
-const getloginpassword = document.getElementById('loginpassword');
-const getshowloginpassword = document.getElementById('show_loginpassword');
-
-const getformcontrol = document.querySelector('.form-control');
-
-const getsinginbtn = document.getElementById("singin");
-
-getshowloginpassword.addEventListener('click',function(){
-
-  if(getloginpassword.type === "password"){
-    getloginpassword.setAttribute('type','text');
-    getshowloginpassword.innerHTML = '<span class="" id ="show_password"> <i class="fa-solid fa-lock-open"></i></span>'
-
-  }else{
-    getloginpassword.setAttribute('type','password')
-    getshowloginpassword.innerHTML = `<span class="" id ="show_password"> <i class="fa-solid fa-lock"></i></span>`
-  
-   }
-  })
 
 
 
+// getsinginbtn.addEventListener("click",function(e){
+
+//       getmodalcontainer.style.visibility = "visible"
+//       alert("Something went wrong")
 
 
-  getsinginbtn.addEventListener("click",function(e){
-      
-        getmodalcontainer.style.visibility = "visible"
-        alert("Something went wrong")
+//   e.preventDefault();
 
-      
-    e.preventDefault();
-  
 
-   })
+//  })
 
 
 
@@ -392,44 +293,44 @@ getshowloginpassword.addEventListener('click',function(){
 const getpditems = document.querySelectorAll('.pditems');
 
 pdfilter('all');
-function pdfilter(idx){
+function pdfilter(idx) {
 
-  
-  for(var i = 0; i < getpditems.length; i++){
-        
+
+  for (var i = 0; i < getpditems.length; i++) {
+
     console.log(getpditems[i].className.split(' ').indexOf(idx) === -1)
-    
+
     let pditemspl = getpditems[i].className.split(' ');
-      
 
-     console.log(pditemspl[6] === idx)
-     if(pditemspl[6] === idx){
-      console.log( getpditems[i].classList.add('all'))
-     }
 
-     showfilter(getpditems[i],'show');
+    console.log(pditemspl[6] === idx)
+    if (pditemspl[6] === idx) {
+      console.log(getpditems[i].classList.add('all'))
+    }
 
-     if(pditemspl.indexOf(idx) === -1){
-      removeshowfilter(getpditems[i],'show');
+    showfilter(getpditems[i], 'show');
 
-    }    
-      
+    if (pditemspl.indexOf(idx) === -1) {
+      removeshowfilter(getpditems[i], 'show');
+
+    }
+
   }
 
 }
 
 
-function showfilter(getpditem,show){
+function showfilter(getpditem, show) {
   const pditemspl = getpditem.className.split(' ');
 
   const getshow = show.split(' ');
 
-  for(var s =0; s < getshow.length;s++){
-    
+  for (var s = 0; s < getshow.length; s++) {
 
-   console.log(pditemspl.indexOf(getshow[s]) === -1)
 
-    if(pditemspl.indexOf(getshow[s]) === -1){
+    console.log(pditemspl.indexOf(getshow[s]) === -1)
+
+    if (pditemspl.indexOf(getshow[s]) === -1) {
       getpditem.classList.add('show')
       // pditemspl.splice(pditemspl.indexOf(getshow[s]),1);
     }
@@ -441,35 +342,35 @@ function showfilter(getpditem,show){
 }
 
 
-function removeshowfilter(getpditem,show){
+function removeshowfilter(getpditem, show) {
   const pditemspl = getpditem.className.split(' ');
 
   const getshow = show.split(' ');
 
-   for(var s =0; s < getshow.length;s++){
-  
+  for (var s = 0; s < getshow.length; s++) {
+
 
     console.log(pditemspl.indexOf(getshow[s]) < -1)
 
-     if(pditemspl.indexOf(getshow[s]) > -1 ){
+    if (pditemspl.indexOf(getshow[s]) > -1) {
       getpditem.classList.remove('show')
 
       //  getpditem.className += " "+getshow[s]
-     }
-   }
+    }
+  }
 }
 
 
 var getproductitems = document.getElementsByClassName('productitems');
 
 
-  for(var i = 0 ; i < getproductitems.length ; i++){
-    getproductitems[i].addEventListener('click',function(){
-       var curractives = document.querySelector('.activepd');
-       curractives.className = curractives.className.replace(' activepd','');
-       this.className += " activepd";
-    })
-  }
+for (var i = 0; i < getproductitems.length; i++) {
+  getproductitems[i].addEventListener('click', function () {
+    var curractives = document.querySelector('.activepd');
+    curractives.className = curractives.className.replace(' activepd', '');
+    this.className += " activepd";
+  })
+}
 
 
 
@@ -517,14 +418,14 @@ var getproductitems = document.getElementsByClassName('productitems');
 
 
 // getshopcards.forEach(function(getshopcard,idx){
- 
+
 //   let  cot = 1
-  
+
 
 //   getshopcard.addEventListener("click",function(){
 
 //     // console.log(!sessionStorage.getItem("email") === false)
- 
+
 //     if (!sessionStorage.getItem("copassword") ) {
 //       // email key is not set in sessionStorage
 //       getmodalcontainer.style.visibility = "visible"
@@ -533,29 +434,28 @@ var getproductitems = document.getElementsByClassName('productitems');
 //       getcounts.innerHTML = `<i class="fa-solid fa-circle countdot"></i>`;
 
 //       // getmodalcontainer.style.visibility = "hidden" 
-      
-  
-      
+
+
+
 //     }
- 
+
 //      goodarrfun(getshopcard,idx,cot,pfvalues); 
-  
+
 //   })
 
 // })
 
 
- 
+
 
 
 // function goodarrfun(good,idx){
 
 //   cot = 1;   //for start with 1
 //   rmcot = 1
- 
+
 //   getul = document.createElement("ul")
 //   getul.setAttribute(`class`,`list-unstyled d-flex goods`)
-  
 
 
 
@@ -563,88 +463,89 @@ var getproductitems = document.getElementsByClassName('productitems');
 
 
 
- 
+
+
 //   pfarrs.forEach(function(pfarr,pfidx){
 
-  
+
 //     if(idx === pfidx){
 //       // getul.nextElementSibling.innerHTML = ''
 //       getul.innerHTML = `
-    
+
 //       <li class="list-inline-item col-sm-2">${pfarr}</li>
 //       <li class="list-inline-item col-sm-2 cot">${cot}</li>
-   
+
 //       <li class="list-inline-item col-sm-2">$${pfvalues[idx]}</li>
 //       <li class="list-inline-item col-sm-2 value">$${pfvalues[idx*cot]}</li>
 //       <button class="col-sm-2 removeul"><i class="fa-solid fa-trash"></i></button> 
 
 //       `;
-   
-      
-    
-               
+
+
+
+
 //       good.addEventListener("click",function(){
-  
-       
-      
-  
+
+
+
+
 //         getul.setAttribute(`class`,`list-unstyled d-flex goods ${pfarr}`);
-      
+
 //         console.log( getul.className.includes(`list-unstyled d-flex goods ${pfarr}`))
-       
+
 //         if( getul.className.includes(`list-unstyled d-flex goods ${pfarr}`)){
-     
+
 //           const colts = document.querySelector(".cot")
 //           console.log(colts.innerHTML = ++cot)
-       
+
 //           getul.remove();
-    
+
 //           const vlaues = document.querySelector(".value")
 //           vlaues.innerHTML =` $${pfvalues[idx]*cot}` ;
-  
-         
 
-          
 
-     
+
+
+
+
 //         }
 
-        
-            
+
+
 //         });
-    
 
 
 
-      
+
+
 
 
 //       historylists.prepend(getul);
-      
-      
-    
+
+
+
 
 
 //       // console.log(getul.nextElementSibling)
 
 //       // ----------------------------------------------------------------------------------------------
-    
-    
+
+
 //       const removeul = document.querySelector('.removeul')
-       
+
 //       removeul.addEventListener("click",function(){
-        
+
 //         getul.remove()
-    
+
 //       })
 
-       
+
 //     } 
 //   })
 // }
 
 
- 
+
 // // End Items History 
 
 

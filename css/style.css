@@ -955,7 +955,7 @@ input[type="search"] {
 
 
 
-/* Start Testimonial  */
+/* Start Stroy Section  */
 .testimonial {
     width: 100%;
     height: 600px;
@@ -1082,6 +1082,7 @@ input[type="search"] {
 
 }
 
+/* End Stroy Section  */
 
 
 
@@ -1237,7 +1238,7 @@ input[type="search"] {
 
 .contactcontainer {
 
-    width: 1000px;
+    width: 800px;
     height: 550px;
 }
 
@@ -1261,13 +1262,16 @@ input[type="search"] {
 
 .addname {
     /* height: 100px; */
-    transform: translate(-10.5%);
+    width: 100%;
+    transform: translate(-10px);
     padding: 10px;
 }
 
 .addemail {
-    transform: translate(-17.5%);
+    /* transform: translate(-17.5%); */
     padding: 10px;
+    transform: translate(10px);
+
 
 }
 
@@ -1364,27 +1368,46 @@ footer {
 }
 
 .modalcontainer {
-    visibility: hidden;
+    visibility: visible;
 }
 
 
-.signupform {
-    display: none;
-}
+
 
 
 .signupform,
 .loginform {
     width: 400px;
-    height: 60%;
+    height: 70%;
     background: linear-gradient(to top left, #364d7b 50%, #344978 50%);
 
     backdrop-filter: blur(40px);
     border-radius: 5px;
     border: 2px solid #4c4f5a;
 
+
+    
+
     position: relative;
 }
+
+
+.form-group{
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+}
+
+.candl{
+    width: 200px;
+
+}
+
+
 
 .signupform label,
 .loginform label {
@@ -1392,12 +1415,31 @@ footer {
     padding: 9px 13px;
     border-radius: 5px 0 0 5px;
     background: #557291;
-    position: absolute;
+    /* position: absolute; */
 
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
+
+.signupform label i,
+.loginform label i{
+    padding: 10px;
+
+}
+
+
+
+
+.formgroupitems{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    position: relative;
+}
+
 
 .signupform h4,
 .loginform h4 {
@@ -1438,39 +1480,23 @@ footer {
 
 }
 
-.form-group {
-    margin-left: 10%;
-}
-
-.form-control,
-.signin {
-
-    width: 80%;
-    margin-left: 39px;
-
-}
 
 
-.lock1 {
+
+
+
+
+.lock1,.lock2,.lock3 {
     color: #121314;
     position: absolute;
-    top: 203px;
-    right: 48px;
+    top: 20px;
+    right: 20px;
 }
 
-.lock2 {
-    color: #121314;
-    position: absolute;
-    top: 250px;
-    right: 48px;
-}
 
-.lock3 {
-    color: #121314;
-    position: absolute;
-    top: 204px;
-    right: 48px;
-    z-index: 10000000;
+
+.regbtncontainer{
+    margin-top: -10px;
 }
 
 .btnsmct .btn {
@@ -1478,6 +1504,7 @@ footer {
     color: #fff;
     background: linear-gradient(#344978, rgba(255, 255, 255, .1));
     border: 1px solid #f4f4f4;
+
 }
 
 .btnsmct .btn:hover {
