@@ -32,10 +32,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    position: relative;
 }
 
 .navbar a img {
-   
+
     border-radius: 50%;
 }
 
@@ -43,7 +45,7 @@ body {
 .navmenus a {
     color: #fff;
     transition: all .3s;
-    
+
 }
 
 
@@ -59,19 +61,7 @@ body {
     margin-left: 50px;
 }
 
-@media only screen and (max-width: 1007px) {
-    .rightside {
-        margin-left: 0px;
-    }
 
-    .navbar-nav .nav-list-item:hover a {
-        color: #bbb;
-        border-bottom: none;
-
-    }
-
-
-}
 
 
 
@@ -122,6 +112,517 @@ input[type="search"] {
 }
 
 
+
+
+/* Styles for iPhone SE screen size (320px width) */
+@media (max-width: 200px) {
+
+  
+     .navbar-brand{
+        transform: translate(-50%);
+    }
+
+    .shopcardbtn{
+        transform: translate(150%);
+    }
+
+    .lglogin{
+        transform: translate(120%);
+    }
+    
+
+    .menubar {
+        display: block;
+        font-size: 20px;
+        color: #030534;
+
+
+        transform: translate(500%);
+
+    }
+
+
+
+    .navbackarr{
+       margin: 50px;
+     
+    }
+
+    .navbackarr .fa-arrow-left-long{
+        margin-right: 10px;
+    }
+    .navbarmenu {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        /* left: -50px; */
+        right: 0;
+        top: 0px;
+        background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5));
+
+        display: flex;
+        justify-content: end;
+
+
+    }
+
+    .navbarmenutoggle{
+        display: none;
+    }
+
+    .navbarcontainer {
+        width: 400px;
+        height: 100vh;
+        background-color: #021d3f;
+
+        transform: translateX(11%);
+
+
+    }
+
+    .navbar-nav {
+        display: grid;
+    }
+
+    .searchbox {
+        margin-left: -50px;
+    }
+
+
+    .navbar-nav .nav-list-item:hover a {
+        color: #bbb;
+        border-bottom: none;
+
+    }
+
+    .usericon{
+        display: none;
+    }
+
+    .loginbtn{
+        display: none;
+    }
+
+    .setting{
+        display: block;
+        background-color: #021d3f;
+        color: #ffffff;
+    }
+    .settxt{
+        margin-right: 30px;
+    }
+
+   
+
+    .dropdown-menu {
+        background-color: #021d3f;
+        border: none;
+        color: #ffffff;
+    }
+    
+    .dropdown-item{
+        background-color: #021d3f;
+        color: white;
+        font-size: 13px;
+    }
+
+    .dropdown-menu .dropdown-item:hover{
+        background-color: #082950;
+        color: black;
+        font-size: 13px;
+    }
+  
+
+}
+
+
+
+/* Styles for screen widths between 321px and 768px */
+@media (min-width: 201px) and (max-width: 768px) {
+    
+    .navbar-brand{
+        transform: translate(-50%);
+    }
+
+    .shopcardbtn{
+        transform: translate(150%);
+    }
+
+    .lglogin{
+        transform: translate(120%);
+    }
+    
+
+    .menubar {
+        display: block;
+        font-size: 20px;
+        color: #030534;
+
+
+        transform: translate(500%);
+
+    }
+
+
+    .navbackarr {
+        margin: 50px;
+
+    }
+
+    .navbackarr .fa-arrow-left-long {
+        margin-right: 10px;
+    }
+
+    .navbarmenu {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        /* left: -50px; */
+        right: 0;
+        top: 0px;
+        background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5));
+
+        display: flex;
+        justify-content: end;
+
+
+    }
+
+    .navbarmenutoggle {
+        display: none;
+    }
+
+    .navbarcontainer {
+        width: 400px;
+        height: 100vh;
+        background-color: #021d3f;
+
+        transform: translateX(11%);
+
+
+    }
+
+    .navbar-nav {
+        display: grid;
+    }
+
+    .searchbox {
+        margin-left: -50px;
+    }
+
+
+    .navbar-nav .nav-list-item:hover a {
+        color: #bbb;
+        border-bottom: none;
+
+    }
+
+    .usericon {
+        display: none;
+    }
+
+    .loginbtn {
+        display: none;
+    }
+
+    .setting {
+        display: block;
+        background-color: #021d3f;
+        color: #ffffff;
+    }
+
+    .settxt {
+        margin-right: 30px;
+    }
+
+
+
+    .dropdown-menu {
+        background-color: #021d3f;
+        border: none;
+        color: #ffffff;
+    }
+
+    .dropdown-item {
+        background-color: #021d3f;
+        color: white;
+        font-size: 13px;
+    }
+
+    .dropdown-menu .dropdown-item:hover {
+        background-color: #082950;
+        color: black;
+        font-size: 13px;
+    }
+
+}
+
+/* Styles for screen widths between 769px and 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+   
+    .navbar-brand{
+        transform: translate(-150%);
+    }
+
+    .shopcardbtn{
+        transform: translate(340%);
+    }
+
+    .lglogin{
+        transform: translate(300%);
+    }
+    
+
+    .menubar {
+        display: block;
+        font-size: 20px;
+        color: #030534;
+
+
+        transform: translate(1400%);
+
+    }
+
+
+    .navbackarr {
+        margin: 50px;
+
+    }
+
+    .navbackarr .fa-arrow-left-long {
+        margin-right: 10px;
+    }
+
+    .navbarmenu {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        /* left: -50px; */
+        right: 0;
+        top: 0px;
+        background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5));
+
+        display: flex;
+        justify-content: end;
+
+
+    }
+
+    .navbarmenutoggle {
+        display: none;
+    }
+
+    .navbarcontainer {
+        width: 400px;
+        height: 100vh;
+        background-color: #021d3f;
+
+        transform: translateX(11%);
+
+
+    }
+
+    .navbar-nav {
+        display: grid;
+    }
+
+    .searchbox {
+        margin-left: -50px;
+    }
+
+
+    .navbar-nav .nav-list-item:hover a {
+        color: #bbb;
+        border-bottom: none;
+
+    }
+
+    .usericon {
+        display: none;
+    }
+
+    .loginbtn {
+        display: none;
+    }
+
+    .setting {
+        display: block;
+        background-color: #021d3f;
+        color: #ffffff;
+    }
+
+    .settxt {
+        margin-right: 30px;
+    }
+
+
+
+    .dropdown-menu {
+        background-color: #021d3f;
+        border: none;
+        color: #ffffff;
+    }
+
+    .dropdown-item {
+        background-color: #021d3f;
+        color: white;
+        font-size: 13px;
+    }
+
+    .dropdown-menu .dropdown-item:hover {
+        background-color: #082950;
+        color: black;
+        font-size: 13px;
+    }
+
+}
+
+
+/* Styles for screen widths greater than 1024px */
+@media (min-width: 1025px) and (max-width:1380px) {
+
+    .navbar-brand{
+        transform: translate(-170%);
+    }
+
+    .shopcardbtn{
+        transform: translate(390%);
+    }
+
+    .lglogin{
+        transform: translate(350%);
+    }
+    
+
+    .menubar {
+        display: block;
+        font-size: 20px;
+        color: #030534;
+
+
+        transform: translate(1700%);
+
+    }
+
+
+
+    .navbackarr {
+        margin: 50px;
+
+    }
+
+    .navbackarr .fa-arrow-left-long {
+        margin-right: 10px;
+    }
+
+    .navbarmenu {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        /* left: -50px; */
+        right: 0;
+        top: 0px;
+        background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5));
+
+        display: flex;
+        justify-content: end;
+
+
+    }
+
+    .navbarmenutoggle {
+        display: none;
+    }
+
+    .navbarcontainer {
+        width: 400px;
+        height: 100vh;
+        background-color: #021d3f;
+
+        transform: translateX(11%);
+
+
+    }
+
+    .navbar-nav {
+        display: grid;
+    }
+
+    .searchbox {
+        margin-left: -50px;
+    }
+
+
+    .navbar-nav .nav-list-item:hover a {
+        color: #bbb;
+        border-bottom: none;
+
+    }
+
+    .usericon {
+        display: none;
+    }
+
+    .loginbtn {
+        display: none;
+    }
+
+    .setting {
+        display: block;
+        background-color: #021d3f;
+        color: #ffffff;
+    }
+
+    .settxt {
+        margin-right: 30px;
+    }
+
+
+
+    .dropdown-menu {
+        background-color: #021d3f;
+        border: none;
+        color: #ffffff;
+    }
+
+    .dropdown-item {
+        background-color: #021d3f;
+        color: white;
+        font-size: 13px;
+    }
+
+    .dropdown-menu .dropdown-item:hover {
+        background-color: #082950;
+        color: black;
+        font-size: 13px;
+    }
+
+
+}
+
+
+
+@media (min-width: 1381px) {
+    .menubar {
+        display: none;
+    }
+
+    .navbackarr {
+        display: none;
+    }
+
+    .setting {
+        display: none;
+    }
+
+    .lglogin {
+        display: none;
+    }
+
+
+}
+
+
 /* End Nav Bar  */
 
 /* Start Banner Section  */
@@ -161,9 +662,9 @@ input[type="search"] {
     /* -webkit-text-stroke: 2px #4488b2; */
     position: absolute;
     left: 23%;
-    top: 42%; 
+    top: 42%;
 
- 
+
 
     margin-bottom: 0px;
 
@@ -176,19 +677,19 @@ input[type="search"] {
 
 
 
-.bannertxt{
+.bannertxt {
 
-    
+
     font-family: 'Crimson Text', serif;
     font-family: 'Oswald', sans-serif;
 
 }
 
-.abus{
+.abus {
 
     font-size: 14px;
     position: absolute;
-  
+
     /* left: 0;
     top: 50%; */
 
@@ -204,13 +705,15 @@ input[type="search"] {
 }
 
 
-.line1,.line2{
+.line1,
+.line2 {
     width: 50px;
     height: 2px;
     /* background: #000; */
     margin: 10px;
     background: #1d3568;
 }
+
 @keyframes imgtitleani {
 
     to {
@@ -421,7 +924,10 @@ input[type="search"] {
 }
 
 
-@media only screen and (max-width: 1007px) {
+@media (min-width: 201px) and (max-width: 768px) {
+
+
+/* @media only screen and (max-width: 1007px) { */
     .textsidebanner small {
         margin-left: -65%;
         margin-top: 10%;
@@ -448,6 +954,8 @@ input[type="search"] {
 
 
 }
+
+/* @media (min-width: 201px) and (max-width: 768px) { */
 
 @media only screen and (max-width: 768px) {
     .textsidebanner {
@@ -520,7 +1028,7 @@ input[type="search"] {
     /* -webkit-text-stroke: 3px linear-gradient(rgb(86, 105, 150), rgb(85, 116, 173)); */
 
 
- transform: translateY(20%),rotate(180deg);
+    transform: translateY(20%), rotate(180deg);
 
     font-family: 'Oswald', sans-serif;
     font-family: 'Playfair Display', serif;
@@ -741,13 +1249,13 @@ input[type="search"] {
 
 
 /* Start Products Section  */
-#products{
-    
+#products {
+
     width: 100%;
     height: 280vh;
     background: linear-gradient(10deg, #586d9a, #5c7b9d);
 
-    
+
 }
 
 
@@ -791,7 +1299,7 @@ input[type="search"] {
 }
 
 
-.pditemcontainer{
+.pditemcontainer {
     transform: translateY(25%);
 }
 
@@ -800,7 +1308,7 @@ input[type="search"] {
     padding: 5px 15px;
     transition: all .5s;
 
-    
+
     font-family: 'Crimson Text', serif;
     font-family: 'Oswald', sans-serif;
 
@@ -1261,8 +1769,8 @@ input[type="search"] {
     border-radius: 1px;
 }
 
-.form-control:focus{
-    background: rgb(86, 105, 160) ;
+.form-control:focus {
+    background: rgb(86, 105, 160);
     outline: none;
 }
 
@@ -1312,7 +1820,7 @@ footer {
 
 
 
-.socialaccs ul a i{
+.socialaccs ul a i {
     /* color: #021d3f; */
     color: #000;
     font-size: 18px;
@@ -1392,15 +1900,15 @@ footer {
     border: 2px solid #4c4f5a;
 
 
-    
+
 
     position: relative;
 }
 
 
-.form-group{
+.form-group {
     width: 100%;
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1408,7 +1916,7 @@ footer {
     flex-direction: column;
 }
 
-.candl{
+.candl {
     width: 200px;
 
 }
@@ -1430,7 +1938,7 @@ footer {
 }
 
 .signupform label i,
-.loginform label i{
+.loginform label i {
     padding: 10px;
 
 }
@@ -1438,7 +1946,7 @@ footer {
 
 
 
-.formgroupitems{
+.formgroupitems {
     display: flex;
     justify-content: center;
     align-content: center;
@@ -1492,7 +2000,9 @@ footer {
 
 
 
-.lock1,.lock2,.lock3 {
+.lock1,
+.lock2,
+.lock3 {
     color: #121314;
     position: absolute;
     top: 20px;
@@ -1501,7 +2011,7 @@ footer {
 
 
 
-.regbtncontainer{
+.regbtncontainer {
     margin-top: -10px;
 }
 

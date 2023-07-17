@@ -4,10 +4,25 @@
 // Start About Us 
 const getaboutusctn = document.getElementById('aboutus');
 const aboutustext = document.getElementById('aboutustext');
-const leftaboutusboxani = document.getElementById('leftaboutusbox')
-const rightaboutusboxani = document.getElementById('rightaboutusbox')
+const leftaboutusboxani = document.getElementById('leftaboutusbox');
+const rightaboutusboxani = document.getElementById('rightaboutusbox');
 
 $(document).ready(function () {
+
+
+  // start Nav 
+  const menubar = document.querySelector('.menubar');
+  const navbackarr = document.querySelector('.navbackarr');
+  const navbarmenu = document.querySelector('.navbarmenu');
+  $(menubar).click(function () {
+    navbarmenu.classList.toggle('navbarmenutoggle')
+  })
+  $(navbackarr).click(function () {
+    navbarmenu.classList.toggle('navbarmenutoggle');
+  })
+ 
+
+
   $('.aboutustext').hide()
   $('.left-aboutusbox').hide();
   $('.right-aboutusbox').hide();
@@ -129,6 +144,10 @@ $(document).ready(function () {
   })
 
 
+
+
+
+
 })
 
 // Jquery
@@ -216,70 +235,6 @@ function bannertitlefun() {
 
 
 // Start Login Form 
-
-
-
-
-
-const signupbtn = document.getElementById('singup');
-
-// signupbtn.addEventListener('click',function(e){
-
-// sessionStorage.setItem("name",getname.value)
-// sessionStorage.setItem("email",getemail.value)
-// sessionStorage.setItem("password",getpassword.value);
-// sessionStorage.setItem("copassword",getcopassword.value);
-
-
-
-
-
-// // console.log(localStorage.getItem("name"))
-
-// if(getpassword.value === getcopassword.value){
-
-//   if( (getname.value === '' && getemail.value === '' ) && getpassword.value === '' && getcopassword.value === ''){
-//     getmodalcontainer.style.visibility = "visible";
-//     // console.log('true')
-//     alert("Something went wrong!")
-
-//   }else if(getname.value && getemail.value && getpassword.value && getcopassword.value){
-//     getmodalcontainer.style.visibility = "hidden";
-//   }
-
-// } else{
-//   const getalertbox = document.getElementById('alertbox');
-//   getalertbox.classList.add("alertboxani");
-// };
-
-// e.preventDefault()
-
-
-// })
-
-
-
-
-// Start  Sing in 
-
-
-
-
-// getsinginbtn.addEventListener("click",function(e){
-
-//       getmodalcontainer.style.visibility = "visible"
-//       alert("Something went wrong")
-
-
-//   e.preventDefault();
-
-
-//  })
-
-
-
-
-
 
 
 // End Login Form 
