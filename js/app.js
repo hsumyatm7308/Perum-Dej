@@ -66,6 +66,8 @@ $(document).ready(function () {
 
     //  $('.salecontainer').css('transform','translate(-500%)')
 
+    console.log(windowscrolltop);
+
     if (windowscrolltop >= 936) {
 
       // $('.salecontainer').css('transform','translate(0%)')

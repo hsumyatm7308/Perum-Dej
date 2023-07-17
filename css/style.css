@@ -9,7 +9,9 @@ body {
     font-family: capitolina, serif;
     font-style: normal;
     font-weight: 300;
-    color: #000
+    color: #000;
+
+    overflow-x: hidden
 }
 
 
@@ -114,514 +116,6 @@ input[type="search"] {
 
 
 
-/* Styles for iPhone SE screen size (320px width) */
-@media (max-width: 200px) {
-
-  
-     .navbar-brand{
-        transform: translate(-50%);
-    }
-
-    .shopcardbtn{
-        transform: translate(150%);
-    }
-
-    .lglogin{
-        transform: translate(120%);
-    }
-    
-
-    .menubar {
-        display: block;
-        font-size: 20px;
-        color: #030534;
-
-
-        transform: translate(500%);
-
-    }
-
-
-
-    .navbackarr{
-       margin: 50px;
-     
-    }
-
-    .navbackarr .fa-arrow-left-long{
-        margin-right: 10px;
-    }
-    .navbarmenu {
-        width: 100vw;
-        height: 100vh;
-        position: absolute;
-        /* left: -50px; */
-        right: 0;
-        top: 0px;
-        background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5));
-
-        display: flex;
-        justify-content: end;
-
-
-    }
-
-    .navbarmenutoggle{
-        display: none;
-    }
-
-    .navbarcontainer {
-        width: 400px;
-        height: 100vh;
-        background-color: #021d3f;
-
-        transform: translateX(11%);
-
-
-    }
-
-    .navbar-nav {
-        display: grid;
-    }
-
-    .searchbox {
-        margin-left: -50px;
-    }
-
-
-    .navbar-nav .nav-list-item:hover a {
-        color: #bbb;
-        border-bottom: none;
-
-    }
-
-    .usericon{
-        display: none;
-    }
-
-    .loginbtn{
-        display: none;
-    }
-
-    .setting{
-        display: block;
-        background-color: #021d3f;
-        color: #ffffff;
-    }
-    .settxt{
-        margin-right: 30px;
-    }
-
-   
-
-    .dropdown-menu {
-        background-color: #021d3f;
-        border: none;
-        color: #ffffff;
-    }
-    
-    .dropdown-item{
-        background-color: #021d3f;
-        color: white;
-        font-size: 13px;
-    }
-
-    .dropdown-menu .dropdown-item:hover{
-        background-color: #082950;
-        color: black;
-        font-size: 13px;
-    }
-  
-
-}
-
-
-
-/* Styles for screen widths between 321px and 768px */
-@media (min-width: 201px) and (max-width: 768px) {
-    
-    .navbar-brand{
-        transform: translate(-50%);
-    }
-
-    .shopcardbtn{
-        transform: translate(150%);
-    }
-
-    .lglogin{
-        transform: translate(120%);
-    }
-    
-
-    .menubar {
-        display: block;
-        font-size: 20px;
-        color: #030534;
-
-
-        transform: translate(500%);
-
-    }
-
-
-    .navbackarr {
-        margin: 50px;
-
-    }
-
-    .navbackarr .fa-arrow-left-long {
-        margin-right: 10px;
-    }
-
-    .navbarmenu {
-        width: 100vw;
-        height: 100vh;
-        position: absolute;
-        /* left: -50px; */
-        right: 0;
-        top: 0px;
-        background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5));
-
-        display: flex;
-        justify-content: end;
-
-
-    }
-
-    .navbarmenutoggle {
-        display: none;
-    }
-
-    .navbarcontainer {
-        width: 400px;
-        height: 100vh;
-        background-color: #021d3f;
-
-        transform: translateX(11%);
-
-
-    }
-
-    .navbar-nav {
-        display: grid;
-    }
-
-    .searchbox {
-        margin-left: -50px;
-    }
-
-
-    .navbar-nav .nav-list-item:hover a {
-        color: #bbb;
-        border-bottom: none;
-
-    }
-
-    .usericon {
-        display: none;
-    }
-
-    .loginbtn {
-        display: none;
-    }
-
-    .setting {
-        display: block;
-        background-color: #021d3f;
-        color: #ffffff;
-    }
-
-    .settxt {
-        margin-right: 30px;
-    }
-
-
-
-    .dropdown-menu {
-        background-color: #021d3f;
-        border: none;
-        color: #ffffff;
-    }
-
-    .dropdown-item {
-        background-color: #021d3f;
-        color: white;
-        font-size: 13px;
-    }
-
-    .dropdown-menu .dropdown-item:hover {
-        background-color: #082950;
-        color: black;
-        font-size: 13px;
-    }
-
-}
-
-/* Styles for screen widths between 769px and 1024px */
-@media (min-width: 769px) and (max-width: 1024px) {
-   
-    .navbar-brand{
-        transform: translate(-150%);
-    }
-
-    .shopcardbtn{
-        transform: translate(340%);
-    }
-
-    .lglogin{
-        transform: translate(300%);
-    }
-    
-
-    .menubar {
-        display: block;
-        font-size: 20px;
-        color: #030534;
-
-
-        transform: translate(1400%);
-
-    }
-
-
-    .navbackarr {
-        margin: 50px;
-
-    }
-
-    .navbackarr .fa-arrow-left-long {
-        margin-right: 10px;
-    }
-
-    .navbarmenu {
-        width: 100vw;
-        height: 100vh;
-        position: absolute;
-        /* left: -50px; */
-        right: 0;
-        top: 0px;
-        background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5));
-
-        display: flex;
-        justify-content: end;
-
-
-    }
-
-    .navbarmenutoggle {
-        display: none;
-    }
-
-    .navbarcontainer {
-        width: 400px;
-        height: 100vh;
-        background-color: #021d3f;
-
-        transform: translateX(11%);
-
-
-    }
-
-    .navbar-nav {
-        display: grid;
-    }
-
-    .searchbox {
-        margin-left: -50px;
-    }
-
-
-    .navbar-nav .nav-list-item:hover a {
-        color: #bbb;
-        border-bottom: none;
-
-    }
-
-    .usericon {
-        display: none;
-    }
-
-    .loginbtn {
-        display: none;
-    }
-
-    .setting {
-        display: block;
-        background-color: #021d3f;
-        color: #ffffff;
-    }
-
-    .settxt {
-        margin-right: 30px;
-    }
-
-
-
-    .dropdown-menu {
-        background-color: #021d3f;
-        border: none;
-        color: #ffffff;
-    }
-
-    .dropdown-item {
-        background-color: #021d3f;
-        color: white;
-        font-size: 13px;
-    }
-
-    .dropdown-menu .dropdown-item:hover {
-        background-color: #082950;
-        color: black;
-        font-size: 13px;
-    }
-
-}
-
-
-/* Styles for screen widths greater than 1024px */
-@media (min-width: 1025px) and (max-width:1380px) {
-
-    .navbar-brand{
-        transform: translate(-170%);
-    }
-
-    .shopcardbtn{
-        transform: translate(390%);
-    }
-
-    .lglogin{
-        transform: translate(350%);
-    }
-    
-
-    .menubar {
-        display: block;
-        font-size: 20px;
-        color: #030534;
-
-
-        transform: translate(1700%);
-
-    }
-
-
-
-    .navbackarr {
-        margin: 50px;
-
-    }
-
-    .navbackarr .fa-arrow-left-long {
-        margin-right: 10px;
-    }
-
-    .navbarmenu {
-        width: 100vw;
-        height: 100vh;
-        position: absolute;
-        /* left: -50px; */
-        right: 0;
-        top: 0px;
-        background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5));
-
-        display: flex;
-        justify-content: end;
-
-
-    }
-
-    .navbarmenutoggle {
-        display: none;
-    }
-
-    .navbarcontainer {
-        width: 400px;
-        height: 100vh;
-        background-color: #021d3f;
-
-        transform: translateX(11%);
-
-
-    }
-
-    .navbar-nav {
-        display: grid;
-    }
-
-    .searchbox {
-        margin-left: -50px;
-    }
-
-
-    .navbar-nav .nav-list-item:hover a {
-        color: #bbb;
-        border-bottom: none;
-
-    }
-
-    .usericon {
-        display: none;
-    }
-
-    .loginbtn {
-        display: none;
-    }
-
-    .setting {
-        display: block;
-        background-color: #021d3f;
-        color: #ffffff;
-    }
-
-    .settxt {
-        margin-right: 30px;
-    }
-
-
-
-    .dropdown-menu {
-        background-color: #021d3f;
-        border: none;
-        color: #ffffff;
-    }
-
-    .dropdown-item {
-        background-color: #021d3f;
-        color: white;
-        font-size: 13px;
-    }
-
-    .dropdown-menu .dropdown-item:hover {
-        background-color: #082950;
-        color: black;
-        font-size: 13px;
-    }
-
-
-}
-
-
-
-@media (min-width: 1381px) {
-    .menubar {
-        display: none;
-    }
-
-    .navbackarr {
-        display: none;
-    }
-
-    .setting {
-        display: none;
-    }
-
-    .lglogin {
-        display: none;
-    }
-
-
-}
-
 
 /* End Nav Bar  */
 
@@ -652,24 +146,22 @@ input[type="search"] {
     color: #000;
 }
 
+
+
+.pftitle {
+    margin-left: -15%;
+    margin-top: 10px;
+
+}
+
+
 .textsidebanner .pftitle h1 {
 
     font-size: 75px;
     /* color: #000; */
     color: #021d3f;
-
-
-    /* -webkit-text-stroke: 2px #4488b2; */
-    position: absolute;
-    left: 23%;
-    top: 42%;
-
-
-
     margin-bottom: 0px;
-
-
-
+   
     font-family: capitolina, serif;
     font-style: normal;
     font-weight: 400;
@@ -924,82 +416,6 @@ input[type="search"] {
 }
 
 
-@media (min-width: 201px) and (max-width: 768px) {
-
-
-/* @media only screen and (max-width: 1007px) { */
-    .textsidebanner small {
-        margin-left: -65%;
-        margin-top: 10%;
-    }
-
-    .textsidebanner h1 {
-        position: absolute;
-        left: 5%;
-        top: 34%;
-        z-index: 1;
-
-    }
-
-    .textsidebanner p {
-
-        margin-left: 10%;
-        margin-top: 15%;
-    }
-
-    .textsidebanner .dtl {
-
-        margin-left: -43%;
-    }
-
-
-}
-
-/* @media (min-width: 201px) and (max-width: 768px) { */
-
-@media only screen and (max-width: 768px) {
-    .textsidebanner {
-        position: absolute;
-        bottom: 10px;
-    }
-
-    .textsidebanner small {
-        margin-left: -80%;
-        margin-top: -0%;
-    }
-
-    .textsidebanner h1 {
-        position: absolute;
-        left: 10px;
-        top: 5%;
-        z-index: 1;
-    }
-
-    .textsidebanner p {
-
-        margin-left: -40%;
-        margin-top: 10%;
-    }
-
-    .textsidebanner .dtl {
-
-        margin-left: -77%;
-    }
-
-    .imgcontainer {
-        width: 300px;
-        height: 350px;
-        margin-top: -13%;
-    }
-
-    .cta {
-        /* margin-top: -50%; */
-        position: absolute;
-        left: 30%;
-        bottom: 6px;
-
-    }
-}
 
 /* End Banner Section  */
 
@@ -2129,3 +1545,819 @@ footer {
 }
 
 /* End Item History  */
+
+
+
+
+
+/* Responsive Nav Section  */
+
+/* Styles for iPhone SE screen size (320px width) */
+@media (max-width: 200px) {
+
+
+
+    .navbar-brand {
+        transform: translate(-50%);
+    }
+
+    .shopcardbtn {
+        transform: translate(150%);
+    }
+
+    .lglogin {
+        transform: translate(120%);
+    }
+
+
+    .menubar {
+        display: block;
+        font-size: 20px;
+        color: #030534;
+
+
+        transform: translate(500%);
+
+    }
+
+
+    .navbackarr {
+        margin: 50px;
+
+    }
+
+    .navbackarr .fa-arrow-left-long {
+        margin-right: 10px;
+    }
+
+    .navbarmenu {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        /* left: -50px; */
+        right: 0;
+        top: 0px;
+        background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5));
+
+        display: flex;
+        justify-content: end;
+
+
+    }
+
+    .navbarmenutoggle {
+        display: none;
+    }
+
+    .navbarcontainer {
+        width: 400px;
+        height: 100vh;
+        background-color: #021d3f;
+
+        transform: translateX(11%);
+
+
+    }
+
+    .navbar-nav {
+        display: grid;
+    }
+
+    .searchbox {
+        margin-left: -50px;
+    }
+
+
+    .navbar-nav .nav-list-item:hover a {
+        color: #bbb;
+        border-bottom: none;
+
+    }
+
+    .usericon {
+        display: none;
+    }
+
+    .loginbtn {
+        display: none;
+    }
+
+    .setting {
+        display: block;
+        background-color: #021d3f;
+        color: #ffffff;
+    }
+
+    .settxt {
+        margin-right: 30px;
+    }
+
+
+
+    .dropdown-menu {
+        background-color: #021d3f;
+        border: none;
+        color: #ffffff;
+    }
+
+    .dropdown-item {
+        background-color: #021d3f;
+        color: white;
+        font-size: 13px;
+    }
+
+    .dropdown-menu .dropdown-item:hover {
+        background-color: #082950;
+        color: black;
+        font-size: 13px;
+    }
+
+
+}
+
+
+
+/* Styles for screen widths between 321px and 768px */
+@media (min-width: 201px) and (max-width: 768px) {
+
+    .navbar-brand {
+        transform: translate(-50%);
+    }
+
+    .shopcardbtn {
+        transform: translate(150%);
+    }
+
+    .lglogin {
+        transform: translate(120%);
+    }
+
+
+    .menubar {
+        display: block;
+        font-size: 20px;
+        color: #030534;
+
+
+        transform: translate(500%);
+
+    }
+
+
+    .navbackarr {
+        margin: 50px;
+
+    }
+
+    .navbackarr .fa-arrow-left-long {
+        margin-right: 10px;
+    }
+
+    .navbarmenu {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        /* left: -50px; */
+        right: 0;
+        top: 0px;
+        background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5));
+
+        display: flex;
+        justify-content: end;
+
+
+    }
+
+    .navbarmenutoggle {
+        display: none;
+    }
+
+    .navbarcontainer {
+        width: 400px;
+        height: 100vh;
+        background-color: #021d3f;
+
+        transform: translateX(11%);
+
+
+    }
+
+    .navbar-nav {
+        display: grid;
+    }
+
+    .searchbox {
+        margin-left: -50px;
+    }
+
+
+    .navbar-nav .nav-list-item:hover a {
+        color: #bbb;
+        border-bottom: none;
+
+    }
+
+    .usericon {
+        display: none;
+    }
+
+    .loginbtn {
+        display: none;
+    }
+
+    .setting {
+        display: block;
+        background-color: #021d3f;
+        color: #ffffff;
+    }
+
+    .settxt {
+        margin-right: 30px;
+    }
+
+
+
+    .dropdown-menu {
+        background-color: #021d3f;
+        border: none;
+        color: #ffffff;
+    }
+
+    .dropdown-item {
+        background-color: #021d3f;
+        color: white;
+        font-size: 13px;
+    }
+
+    .dropdown-menu .dropdown-item:hover {
+        background-color: #082950;
+        color: black;
+        font-size: 13px;
+    }
+
+}
+
+/* Styles for screen widths between 769px and 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .navbar-brand {
+        transform: translate(-150%);
+    }
+
+    .shopcardbtn {
+        transform: translate(340%);
+    }
+
+    .lglogin {
+        transform: translate(300%);
+    }
+
+
+    .menubar {
+        display: block;
+        font-size: 20px;
+        color: #030534;
+
+
+        transform: translate(1400%);
+
+    }
+
+
+    .navbackarr {
+        margin: 50px;
+
+    }
+
+    .navbackarr .fa-arrow-left-long {
+        margin-right: 10px;
+    }
+
+    .navbarmenu {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        /* left: -50px; */
+        right: 0;
+        top: 0px;
+        background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5));
+
+        display: flex;
+        justify-content: end;
+
+
+    }
+
+    .navbarmenutoggle {
+        display: none;
+    }
+
+    .navbarcontainer {
+        width: 400px;
+        height: 100vh;
+        background-color: #021d3f;
+
+        transform: translateX(11%);
+
+
+    }
+
+    .navbar-nav {
+        display: grid;
+    }
+
+    .searchbox {
+        margin-left: -50px;
+    }
+
+
+    .navbar-nav .nav-list-item:hover a {
+        color: #bbb;
+        border-bottom: none;
+
+    }
+
+    .usericon {
+        display: none;
+    }
+
+    .loginbtn {
+        display: none;
+    }
+
+    .setting {
+        display: block;
+        background-color: #021d3f;
+        color: #ffffff;
+    }
+
+    .settxt {
+        margin-right: 30px;
+    }
+
+
+
+    .dropdown-menu {
+        background-color: #021d3f;
+        border: none;
+        color: #ffffff;
+    }
+
+    .dropdown-item {
+        background-color: #021d3f;
+        color: white;
+        font-size: 13px;
+    }
+
+    .dropdown-menu .dropdown-item:hover {
+        background-color: #082950;
+        color: black;
+        font-size: 13px;
+    }
+
+}
+
+
+/* Styles for screen widths greater than 1024px */
+@media (min-width: 1025px) and (max-width:1380px) {
+
+    .navbar-brand {
+        transform: translate(-170%);
+    }
+
+    .shopcardbtn {
+        transform: translate(390%);
+    }
+
+    .lglogin {
+        transform: translate(350%);
+    }
+
+
+    .menubar {
+        display: block;
+        font-size: 20px;
+        color: #030534;
+
+
+        transform: translate(1700%);
+
+    }
+
+
+
+    .navbackarr {
+        margin: 50px;
+
+    }
+
+    .navbackarr .fa-arrow-left-long {
+        margin-right: 10px;
+    }
+
+    .navbarmenu {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        /* left: -50px; */
+        right: 0;
+        top: 0px;
+        background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5));
+
+        display: flex;
+        justify-content: end;
+
+
+    }
+
+    .navbarmenutoggle {
+        display: none;
+    }
+
+    .navbarcontainer {
+        width: 400px;
+        height: 100vh;
+        background-color: #021d3f;
+
+        transform: translateX(11%);
+
+
+    }
+
+    .navbar-nav {
+        display: grid;
+    }
+
+    .searchbox {
+        margin-left: -50px;
+    }
+
+
+    .navbar-nav .nav-list-item:hover a {
+        color: #bbb;
+        border-bottom: none;
+
+    }
+
+    .usericon {
+        display: none;
+    }
+
+    .loginbtn {
+        display: none;
+    }
+
+    .setting {
+        display: block;
+        background-color: #021d3f;
+        color: #ffffff;
+    }
+
+    .settxt {
+        margin-right: 30px;
+    }
+
+
+
+    .dropdown-menu {
+        background-color: #021d3f;
+        border: none;
+        color: #ffffff;
+    }
+
+    .dropdown-item {
+        background-color: #021d3f;
+        color: white;
+        font-size: 13px;
+    }
+
+    .dropdown-menu .dropdown-item:hover {
+        background-color: #082950;
+        color: black;
+        font-size: 13px;
+    }
+
+
+}
+
+
+
+@media (min-width: 1381px) {
+    .menubar {
+        display: none;
+    }
+
+    .navbackarr {
+        display: none;
+    }
+
+    .setting {
+        display: none;
+    }
+
+    .lglogin {
+        display: none;
+    }
+
+
+}
+
+
+
+/* Responsive Banner  */
+
+@media (max-width: 200px) {
+
+    .textsidebanner{
+        position: absolute;
+        z-index: -1;
+    }
+
+
+    .textsidebanner small {
+        margin-left: -80%;
+        margin-top: -0%;
+    }
+
+    .textsidebanner h1 {
+        position: absolute;
+        left: 10px;
+        top: 5%;
+        z-index: 1;
+    }
+
+    .textsidebanner p {
+
+        margin-left: -40%;
+        margin-top: 10%;
+    }
+
+    .textsidebanner .dtl {
+
+        margin-left: -77%;
+    }
+
+    .imgcontainer {
+        width: 500px;
+        height: 550px;
+        margin-top: -13%;
+    }
+
+    .cta {
+
+        position: absolute;
+        left: 30%;
+        bottom: 6px;
+
+    }
+}
+
+/* Styles for screen widths between 321px and 768px */
+@media (min-width: 201px) and (max-width: 768px) {
+
+  
+   
+ 
+    .textsidebanner{
+        position: absolute;
+        z-index: -1;
+    }
+
+
+
+    .textsidebanner small {
+        margin-left: -80%;
+        margin-top: -0%;
+    }
+
+    .textsidebanner h1 {
+        position: absolute;
+        left: 10px;
+        top: 5%;
+        z-index: 1;
+    }
+
+    .textsidebanner p {
+
+        margin-left: -40%;
+        margin-top: 10%;
+    }
+
+    .textsidebanner .dtl {
+
+        margin-left: -77%;
+    }
+
+    .imgcontainer {
+        width: 500px;
+        height: 550px;
+        margin-top: -13%;
+    }
+
+    .cta {
+
+        position: absolute;
+        left: 30%;
+        bottom: 6px;
+
+    }
+}
+
+
+
+/* Styles for screen widths between 769px and 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+
+    .textsidebanner{
+        position: absolute;
+        z-index: -1;
+    }
+
+
+
+    .textsidebanner small {
+        margin-left: -80%;
+        margin-top: -0%;
+    }
+
+
+    .textsidebanner h1 {
+        position: absolute;
+        left: 10px;
+        top: 5%;
+        z-index: 1;
+    }
+
+    .textsidebanner p {
+
+        margin-left: -40%;
+        margin-top: 10%;
+    }
+
+    .textsidebanner .dtl {
+
+        margin-left: -77%;
+    }
+
+    .imgcontainer {
+        width: 500px;
+        height: 550px;
+        margin-top: -13%;
+    }
+
+    .cta {
+
+        position: absolute;
+        left: 30%;
+        bottom: 6px;
+
+    }
+}
+
+
+
+/* Styles for screen widths greater than 1024px */
+@media (min-width: 1025px) and (max-width:1380px) {
+    .textsidebanner small {
+        margin-left: -55%;
+        margin-top: 10%;
+    }
+   
+}
+
+
+
+
+
+
+
+
+
+
+/* Responsive About  */
+
+@media (max-width: 200px) {}
+
+/* Styles for screen widths between 321px and 768px */
+@media (min-width: 201px) and (max-width: 768px) {}
+
+
+
+/* Styles for screen widths between 769px and 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {}
+
+
+
+
+/* Styles for screen widths greater than 1024px */
+@media (min-width: 1025px) and (max-width:1380px) {}
+
+
+
+@media (min-width: 1381px) {}
+
+
+
+
+/* Responsive Banner  */
+
+@media (max-width: 200px) {}
+
+/* Styles for screen widths between 321px and 768px */
+@media (min-width: 201px) and (max-width: 768px) {}
+
+
+
+/* Styles for screen widths between 769px and 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {}
+
+
+
+
+/* Styles for screen widths greater than 1024px */
+@media (min-width: 1025px) and (max-width:1380px) {}
+
+
+
+@media (min-width: 1381px) {}
+
+
+
+
+/* Responsive Special Propotion  */
+
+@media (max-width: 200px) {}
+
+/* Styles for screen widths between 321px and 768px */
+@media (min-width: 201px) and (max-width: 768px) {}
+
+
+
+/* Styles for screen widths between 769px and 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {}
+
+
+
+
+/* Styles for screen widths greater than 1024px */
+@media (min-width: 1025px) and (max-width:1380px) {}
+
+
+
+@media (min-width: 1381px) {}
+
+
+
+
+
+
+/* Responsive Products  */
+
+@media (max-width: 200px) {}
+
+/* Styles for screen widths between 321px and 768px */
+@media (min-width: 201px) and (max-width: 768px) {}
+
+
+
+/* Styles for screen widths between 769px and 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {}
+
+
+
+
+/* Styles for screen widths greater than 1024px */
+@media (min-width: 1025px) and (max-width:1380px) {}
+
+
+
+@media (min-width: 1381px) {}
+
+
+
+
+
+
+
+/* Responsive Story of perfume  */
+
+@media (max-width: 200px) {}
+
+/* Styles for screen widths between 321px and 768px */
+@media (min-width: 201px) and (max-width: 768px) {}
+
+
+
+/* Styles for screen widths between 769px and 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {}
+
+
+
+
+/* Styles for screen widths greater than 1024px */
+@media (min-width: 1025px) and (max-width:1380px) {}
+
+
+
+@media (min-width: 1381px) {}

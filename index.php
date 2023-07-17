@@ -25,7 +25,7 @@
     <header>
 
 
-       <?php  require_once("navbar.php")  ?>
+        <?php require_once("navbar.php") ?>
 
 
         <!-- Start Banner Section  -->
@@ -33,50 +33,52 @@
             <div class="container-fluid banner">
 
                 <div class="row">
-                    <div class="col-md-6 col-sm-0 textsidebanner">
+                    <div class="col-lg-6 col-md-12 col-sm-12 textsidebanner ">
                         <small class="text-uppercase">Try it first</small>
-                        <div class="mt-5 mb-2 pftitle">
-                            <h1 class="text-uppercase imgtits imgtitleani">NARS</h1>
-                            <h1 class="text-uppercase imgtits ">BVLGARI</h1>
-                            <h1 class="text-uppercase imgtits ">ACID</h1>
-                            <h1 class="text-uppercase imgtits ">BAKUCHIOL</h1>
-                            <h1 class="text-uppercase imgtits ">HERBIVORE</h1>
-                            <h1 class="text-uppercase imgtits ">CHLOE</h1>
-                            <h1 class="text-uppercase imgtits ">BVLGARI</h1>
-                            <h1 class="text-uppercase imgtits ">FULL FILL</h1>
+                        <div class="bannertxtctn">
+
+                            <div class=" pftitle">
+                                <h1 class="text-uppercase imgtits imgtitleani">NARS</h1>
+                                <h1 class="text-uppercase imgtits ">BVLGARI</h1>
+                                <h1 class="text-uppercase imgtits ">ACID</h1>
+                                <h1 class="text-uppercase imgtits ">BAKUCHIOL</h1>
+                                <h1 class="text-uppercase imgtits ">HERBIVORE</h1>
+                                <h1 class="text-uppercase imgtits ">CHLOE</h1>
+                                <h1 class="text-uppercase imgtits ">BVLGARI</h1>
+                                <h1 class="text-uppercase imgtits ">FULL FILL</h1>
+
+                            </div>
+
+
+                            <div class="">
+                                <p class=" bannertxt">Lorem ipsum is common with typesetting and printing businesses.
+                                    The text did not
+                                    start with
+                                    the age of digital businesses as it has been used since 1500s or even earlier.</p>
+                                <button class="dtl"><a href="#property">Details</a></button>
+
+
+                            </div>
+
+
+
+                            <a href="#products" class="">
+
+                                <button class="cta">
+
+                                    <span class="hover-underline-animation"> Shop now </span>
+                                    <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg"
+                                        id="arrow-horizontal">
+                                        <path transform="translate(30)"
+                                            d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                                            data-name="Path 10" id="Path_10"></path>
+                                    </svg>
+                                </button>
+                            </a>
 
                         </div>
-                        <br>
-                        <br>
-
-                        <div class="">
-                            <p class=" bannertxt">Lorem ipsum is common with typesetting and printing businesses.
-                                The text did not
-                                start with
-                                the age of digital businesses as it has been used since 1500s or even earlier.</p>
-                            <button class="dtl"><a href="#property">Details</a></button>
-
-
-                        </div>
-
-
-
-                        <a href="#products" class="">
-
-                            <button class="cta">
-
-                                <span class="hover-underline-animation"> Shop now </span>
-                                <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg"
-                                    id="arrow-horizontal">
-                                    <path transform="translate(30)"
-                                        d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
-                                        data-name="Path 10" id="Path_10"></path>
-                                </svg>
-                            </button>
-                        </a>
 
                     </div>
-
 
 
                     <!-- <div class="abus">
@@ -89,7 +91,7 @@
 
 
 
-                    <div class="col-md-6 col-sm-12 imgside">
+                    <div class="col-lg-6 col-md-12 col-sm-12 imgside">
                         <div class="imgcontainer">
 
                             <img src="asses/img/pp/pf3.png" class="banner-img bannerimgshow " alt="">
@@ -111,6 +113,11 @@
                     <button id="leftarr" class="leftarr" type="button"><i class="fa-solid fa-arrow-left"></i></button>
                     <button id="rightarr" class="rightarr" type="button"><i
                             class="fa-solid fa-arrow-right"></i></button>
+
+
+
+
+
 
 
                 </div>
