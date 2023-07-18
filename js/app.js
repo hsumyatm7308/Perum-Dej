@@ -97,12 +97,6 @@ $(document).ready(function () {
   // End Scroll 
 
 
-  // Start Product Secction
-  $('.salecontainer').tilt({
-    glare: true,
-    maxGlare: .2
-  })
-
 
 
 

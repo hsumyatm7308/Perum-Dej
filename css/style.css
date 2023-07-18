@@ -161,7 +161,7 @@ input[type="search"] {
     /* color: #000; */
     color: #021d3f;
     margin-bottom: 0px;
-   
+
     font-family: capitolina, serif;
     font-style: normal;
     font-weight: 400;
@@ -423,7 +423,7 @@ input[type="search"] {
 /* Start About Us Section  */
 .aboutuss {
     width: 100%;
-    height: 150vh;
+    height: 120vh;
     background: linear-gradient(rgb(86, 105, 150), rgb(86, 105, 140));
 
     display: flex;
@@ -467,15 +467,22 @@ input[type="search"] {
     }
 }
 
+
+#leftaboutusbox {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
 .left-aboutusbox {
-    width: 500px;
+    width: 600px;
     height: 650px;
     /* background: linear-gradient(10deg,#6580ba,#5c7b9d); */
     background: #425888;
     position: relative;
-    position: absolute;
+    /* position: absolute;
     left: 20%;
-    bottom: 0;
+    bottom: 0; */
 
     overflow: hidden;
 
@@ -505,6 +512,29 @@ input[type="search"] {
     margin-top: 10px;
 }
 
+
+.aboutustextctn {
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(rgb(86, 105, 140), rgb(86, 105, 150));
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.left-aboutusboxtext {
+    width: 450px;
+    height: inherit;
+    margin: auto;
+    text-align: justify;
+    padding: 20px;
+
+
+}
+
+
+
+
 .left-aboutusboxani {
     animation: left-aboutusboxani 2s linear;
 
@@ -522,14 +552,21 @@ input[type="search"] {
 
 
 
+#rightaboutusbox {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+
 
 .right-aboutusbox {
     width: 400px;
     height: 400px;
     background: #1d3568;
-    position: absolute;
+    /* position: absolute;
     right: 20%;
-    bottom: 0;
+    bottom: 0; */
     text-align: justify;
     display: flex;
     justify-content: center;
@@ -582,50 +619,6 @@ input[type="search"] {
         height: 350px;
     }
 }
-
-
-
-
-@media only screen and (max-width: 1007px) {
-    .aboutustext {
-        font-size: 150px;
-        margin-top: 10px;
-    }
-
-    .left-aboutusbox {
-        left: 5%;
-    }
-
-    .right-aboutusbox {
-        right: 5%;
-    }
-
-
-}
-
-@media only screen and (max-width: 768px) {
-    .aboutustext {
-        font-size: 100px;
-        margin-top: 10px;
-    }
-
-    .left-aboutusbox {
-        width: 300px;
-        left: 4%;
-    }
-
-    .right-aboutusbox {
-        width: 300px;
-        right: 4%;
-    }
-
-    .right-aboutusboxtext {
-        width: 200px;
-    }
-
-
-}
-
 
 /* End About Us Section  */
 
@@ -716,7 +709,9 @@ input[type="search"] {
 
 
 .pditemcontainer {
-    transform: translateY(25%);
+    /* transform: translateY(30%); */
+    margin-top: 450px;
+
 }
 
 .productmenus .list-unstyled .productitems {
@@ -847,7 +842,7 @@ input[type="search"] {
 
 .cardhover {
     width: 92.3%;
-    background: #515868;
+    background: #3e5a9c;
     transition: all 1s;
     /* transform: translateY(100%); */
     position: absolute;
@@ -875,6 +870,7 @@ input[type="search"] {
 .show {
     display: block;
     animation: bannershowani .4s linear;
+
 
 }
 
@@ -2068,7 +2064,7 @@ footer {
 
 @media (max-width: 200px) {
 
-    .textsidebanner{
+    .textsidebanner {
         position: absolute;
         z-index: -1;
     }
@@ -2115,10 +2111,10 @@ footer {
 /* Styles for screen widths between 321px and 768px */
 @media (min-width: 201px) and (max-width: 768px) {
 
-  
-   
- 
-    .textsidebanner{
+
+
+
+    .textsidebanner {
         position: absolute;
         z-index: -1;
     }
@@ -2169,7 +2165,7 @@ footer {
 @media (min-width: 769px) and (max-width: 1024px) {
 
 
-    .textsidebanner{
+    .textsidebanner {
         position: absolute;
         z-index: -1;
     }
@@ -2223,7 +2219,7 @@ footer {
         margin-left: -55%;
         margin-top: 10%;
     }
-   
+
 }
 
 
@@ -2237,75 +2233,107 @@ footer {
 
 /* Responsive About  */
 
-@media (max-width: 200px) {}
+@media (max-width: 200px) {
+    .aboutuss {
+        height: 150vh;
+    }
+
+    .aboutustextctn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .aboutustext {
+        font-size: 150px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .left-aboutusbox {
+        height: 1000px;
+    }
+
+    #rightaboutusbox {
+        display: none;
+    }
+}
 
 /* Styles for screen widths between 321px and 768px */
-@media (min-width: 201px) and (max-width: 768px) {}
+@media (min-width: 201px) and (max-width: 768px) {
+    .aboutuss {
+        height: 150vh;
+    }
+
+    .aboutustextctn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .aboutustext {
+        font-size: 150px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .left-aboutusbox {
+        height: 1000px;
+    }
+
+    #rightaboutusbox {
+        display: none;
+    }
+}
 
 
 
 /* Styles for screen widths between 769px and 1024px */
-@media (min-width: 769px) and (max-width: 1024px) {}
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .aboutuss {
+        height: 150vh;
+    }
+
+    .aboutustextctn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .aboutustext {
+        font-size: 150px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .left-aboutusbox {
+        height: 1000px;
+    }
+
+    #rightaboutusbox {
+        display: none;
+    }
+
+
+}
 
 
 
 
 /* Styles for screen widths greater than 1024px */
-@media (min-width: 1025px) and (max-width:1380px) {}
+@media (min-width: 1025px) and (max-width:1380px) {
+
+    .aboutustext {
+        font-size: 150px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+}
 
 
 
-@media (min-width: 1381px) {}
-
-
-
-
-/* Responsive Banner  */
-
-@media (max-width: 200px) {}
-
-/* Styles for screen widths between 321px and 768px */
-@media (min-width: 201px) and (max-width: 768px) {}
-
-
-
-/* Styles for screen widths between 769px and 1024px */
-@media (min-width: 769px) and (max-width: 1024px) {}
-
-
-
-
-/* Styles for screen widths greater than 1024px */
-@media (min-width: 1025px) and (max-width:1380px) {}
-
-
-
-@media (min-width: 1381px) {}
-
-
-
-
-/* Responsive Special Propotion  */
-
-@media (max-width: 200px) {}
-
-/* Styles for screen widths between 321px and 768px */
-@media (min-width: 201px) and (max-width: 768px) {}
-
-
-
-/* Styles for screen widths between 769px and 1024px */
-@media (min-width: 769px) and (max-width: 1024px) {}
-
-
-
-
-/* Styles for screen widths greater than 1024px */
-@media (min-width: 1025px) and (max-width:1380px) {}
-
-
-
-@media (min-width: 1381px) {}
 
 
 
@@ -2317,22 +2345,51 @@ footer {
 @media (max-width: 200px) {}
 
 /* Styles for screen widths between 321px and 768px */
-@media (min-width: 201px) and (max-width: 768px) {}
+@media (min-width: 201px) and (max-width: 768px) {
+    #products {
+        height: 480vh;
+    }
+
+    .pditemcontainer {
+        /* transform: translateY(30%); */
+        margin-top: 350px;
+
+    }
+
+
+    .salecontainer {
+        width: 500px;
+    }
+}
 
 
 
 /* Styles for screen widths between 769px and 1024px */
-@media (min-width: 769px) and (max-width: 1024px) {}
+@media (min-width: 769px) and (max-width: 1024px) {
+    #products {
+        height: 480vh;
+    }
+
+    .pditemcontainer {
+        margin-top: 350px;
+
+    }
+}
 
 
 
 
 /* Styles for screen widths greater than 1024px */
-@media (min-width: 1025px) and (max-width:1380px) {}
+@media (min-width: 1025px) and (max-width:1380px) {
+    #products {
+        height: 380vh;
+    }
+
+
+}
 
 
 
-@media (min-width: 1381px) {}
 
 
 

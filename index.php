@@ -56,8 +56,6 @@
                                     start with
                                     the age of digital businesses as it has been used since 1500s or even earlier.</p>
                                 <button class="dtl"><a href="#property">Details</a></button>
-
-
                             </div>
 
 
@@ -93,7 +91,6 @@
 
                     <div class="col-lg-6 col-md-12 col-sm-12 imgside">
                         <div class="imgcontainer">
-
                             <img src="asses/img/pp/pf3.png" class="banner-img bannerimgshow " alt="">
                             <img src="asses/img/pp/pf4.png" class="banner-img  " alt="">
                             <img src="asses/img/pp/pf5.png" class="banner-img  " alt="">
@@ -102,24 +99,11 @@
                             <img src="asses/img/pp/pf11.png" class="banner-img  " alt="">
                             <img src="asses/img/pp/pf1.png" class="banner-img  " alt="">
                             <img src="asses/img/pp/pf2.png" class="banner-img  " alt="">
-
-
-
                         </div>
-
                     </div>
-
-
                     <button id="leftarr" class="leftarr" type="button"><i class="fa-solid fa-arrow-left"></i></button>
                     <button id="rightarr" class="rightarr" type="button"><i
                             class="fa-solid fa-arrow-right"></i></button>
-
-
-
-
-
-
-
                 </div>
             </div>
 
@@ -135,37 +119,89 @@
     <!-- Start About Us  -->
 
     <section id="aboutus">
-        <div class="container-fluid aboutuss">
+        <div class="aboutustextctn">
             <h1 id="aboutustext" class="aboutustext">ABOUT US</h1>
+        </div>
 
-            <div id="leftaboutusbox" class="left-aboutusbox text-center ">
-                <h3 class="mt-5">About Us</h3>
-                <small>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                    the industry's standard dummy text ever since the 1500s,</small>
+        <div class="container-fluid aboutuss">
 
-                <h3 class="mt-5">Since 1980s</h3>
-                <p>Lorem ipsum dolor, sit amet?</p>
-                <small>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                    the industry's standard dummy text ever since the 1500s,</small>
+            <div class="row">
+                <div id="leftaboutusbox" class="col-lg-6  ">
+                    <div class="left-aboutusbox ">
+                        <div class="left-aboutusboxtext">
+                            <h3 class="mt-5 text-uppercase">About Us</h3>
+                            <small class="smalltxt">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has
+                                been
+                                the industry's standard dummy text ever since the 1500s,</small>
 
-                <h3 class="mt-5 ">How did we start to build?</h3>
-                <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa repellat excepturi, </small>
+                            <h3 class="mt-5 text-uppercase">Since 1980s</h3>
+                            <h5 class="text-start">Lorem ipsum dolor, sit amet?</h5>
+                            <small class="smalltxt">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has
+                                been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                                took a
+                                galley of type and scrambled it to make a type specimen book. It has survived not only
+                                five
+                                centuries, but also the leap into electronic typesetting, remaining essentially
+                                unchanged.</small>
 
-            </div>
+                            <h3 class="mt-5 text-uppercase">How did we start to build?</h3>
+                            <small class="smalltxt">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has
+                                been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                                took a
+                                galley of type and scrambled it to make a type specimen book. </small>
 
-            <div id="rightaboutusbox" class="right-aboutusbox">
-                <div class="right-aboutusboxtext right-aboutusboxtextani">
-                    <h2 class="text-uppercase">What's new?</h2>
 
-                    <h5 class="mb-4 mt-4">After many years, we have developed something new.</h5>
 
-                    <small>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                        been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                        galley of type and scrambled it to make a type specimen book. It has survived not only five
-                        centuries, but also the leap into electronic typesetting, remaining essentially
-                        unchanged.</small>
+                            <div class=" right-aboutusbox mt-5">
+                                <div class="right-aboutusboxtext right-aboutusboxtextani">
+                                    <h2 class="text-uppercase">What's new?</h2>
 
+                                    <h5 class="mb-4 mt-4">After many years, we have developed something new.</h5>
+
+                                    <small>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                        Lorem
+                                        Ipsum
+                                        has
+                                        been the industry's standard dummy text ever since the 1500s, when an unknown
+                                        printer
+                                        took a
+                                        galley of type and scrambled it to make a type specimen book. It has survived
+                                        not only
+                                        five
+                                        centuries, but also the leap into electronic typesetting, remaining essentially
+                                        unchanged.</small>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
+
+                <div id="rightaboutusbox" class="col-lg-6">
+                    <div class=" right-aboutusbox">
+                        <div class="right-aboutusboxtext right-aboutusboxtextani">
+                            <h2 class="text-uppercase">What's new?</h2>
+
+                            <h5 class="mb-4 mt-4">After many years, we have developed something new.</h5>
+
+                            <small>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                Ipsum
+                                has
+                                been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                                took a
+                                galley of type and scrambled it to make a type specimen book. It has survived not only
+                                five
+                                centuries, but also the leap into electronic typesetting, remaining essentially
+                                unchanged.</small>
+
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
 
@@ -177,7 +213,7 @@
         <div class="container-fluid proposition-container">
             <div class="container">
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-lg-4 col-md-12 col-sm-12 text-lg-start  text-md-center text-sm-center">
                         <h1 class="fs-3 me-5">Special </h1>
                         <h1>Proposition</h1>
                         <div class="small">
@@ -185,7 +221,8 @@
                         </div>
                     </div>
 
-                    <div class="col-7">
+                    <div
+                        class="col-lg-7 col-md-12 col-sm-12 text-lg-start mt-lg-0 text-md-center mt-md-5 text-sm-center mt-sm-5">
                         <span class="fs-4">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam necessitatibus, obcaecati
                             placeat
@@ -240,438 +277,463 @@
             </div>
 
 
-            <div class="container-fluid pditemcontainer pt-3 mt-lg-5 mt-md-2">
-                <div class="row d-flex justify-content-center">
-                    <div class="col-lg-3 col-md-6 col-sm-6  mb-5 salecontainer pditems women all" data-aos="flip-left"
-                        data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-                        <div class="">
-                            <div class="card saleproducts">
-                                <span class="ms-3 mt-1">Tom Ford</span>
-                                <img src="./asses/img/pf/pf1.png" alt="" class="mb-5">
+            <div class="pditemcontainer">
+                <div class="container-fluid  pt-3 mt-lg-5 mt-md-2 mt-sm-5">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-lg-3 col-md-6 col-sm-12  mb-5 salecontainer pditems women all"
+                            data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                            <div class="">
+                                <div class="card saleproducts">
+                                    <span class="ms-3 mt-1">Tom Ford</span>
+                                    <img src="./asses/img/pf/pf1.png" alt="" class="mb-5">
 
-                                <div class="card-footer text-light ">
-                                    <h3> Tom Ford</h3>
-                                    <p>Chanel</p>
+                                    <div class="card-footer text-light ">
+                                        <h3> Tom Ford</h3>
+                                        <p>Chanel</p>
+                                    </div>
+
+
                                 </div>
+                                <div class="cardhover p-4">
 
+                                    <p class="d-flex justify-content-between ms-2 small">Lorem ipsum, dolor sit amet
+                                        consectetur . <i
+                                            class="fa-solid fa-cart-shopping text-success fs-5 mt-1 me-3 shopcards"></i>
+                                    </p>
 
-                            </div>
-                            <div class="cardhover p-4">
-
-                                <p class="d-flex justify-content-between ms-2 small">Lorem ipsum, dolor sit amet
-                                    consectetur . <i
-                                        class="fa-solid fa-cart-shopping text-success fs-5 mt-1 me-3 shopcards"></i></p>
-
-                                <span class="d-flex justify-content-between ms-2"><i
-                                        class="fa-solid fa-tag mt-1 text-success"><span class="text-light"> $250</span>
-                                    </i>
-                                    <ul class="list-unstyled d-flex justify-content-end ms-3 me-1">
-                                        <li class="list-item"><i class="fa-regular fa-star"></i></li>
-                                        <li class="list-item"><i class="fa-regular fa-star"></i></li>
-                                        <li class="list-item"><i class="fa-regular fa-star"></i></li>
-                                        <li class="list-item"><i class="fa-regular fa-star"></i></li>
-                                        <li class="list-item"><i class="fa-regular fa-star"></i></li>
-                                    </ul>
-                                </span>
+                                    <span class="d-flex justify-content-between ms-2"><i
+                                            class="fa-solid fa-tag mt-1 text-success"><span class="text-light">
+                                                $250</span>
+                                        </i>
+                                        <ul class="list-unstyled d-flex justify-content-end ms-3 me-1">
+                                            <li class="list-item"><i class="fa-regular fa-star"></i></li>
+                                            <li class="list-item"><i class="fa-regular fa-star"></i></li>
+                                            <li class="list-item"><i class="fa-regular fa-star"></i></li>
+                                            <li class="list-item"><i class="fa-regular fa-star"></i></li>
+                                            <li class="list-item"><i class="fa-regular fa-star"></i></li>
+                                        </ul>
+                                    </span>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-6 col-sm-6 mb-5 salecontainer pditems women all" data-aos="flip-left"
-                        data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-                        <div class="">
-                            <div class="card saleproducts">
-                                <span class="ms-3 mt-1">CoCo Mademoselle</span>
-                                <img src="./asses/img/pf/pf2.png" alt="" class="mb-5">
+                        <div class="col-lg-3 col-md-6 col-sm-12 mb-5 salecontainer pditems women all"
+                            data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                            <div class="">
+                                <div class="card saleproducts">
+                                    <span class="ms-3 mt-1">CoCo Mademoselle</span>
+                                    <img src="./asses/img/pf/pf2.png" alt="" class="mb-5">
 
-                                <div class="card-footer text-light ">
-                                    <h3> CoCo </h3>
-                                    <p>Chanel</p>
+                                    <div class="card-footer text-light ">
+                                        <h3> CoCo </h3>
+                                        <p>Chanel</p>
+                                    </div>
+
+
                                 </div>
+                                <div class="cardhover p-4">
 
+                                    <p class="d-flex justify-content-between ms-2 small">Lorem ipsum, dolor sit amet
+                                        consectetur . <i
+                                            class="fa-solid fa-cart-shopping text-success fs-5 mt-1 me-3 shopcards"></i>
+                                    </p>
 
-                            </div>
-                            <div class="cardhover p-4">
-
-                                <p class="d-flex justify-content-between ms-2 small">Lorem ipsum, dolor sit amet
-                                    consectetur . <i
-                                        class="fa-solid fa-cart-shopping text-success fs-5 mt-1 me-3 shopcards"></i></p>
-
-                                <span class="d-flex justify-content-between ms-2"><i
-                                        class="fa-solid fa-tag mt-1 text-success"><span class="text-light"> $350</span>
-                                    </i>
-                                    <ul class="list-unstyled d-flex justify-content-end ms-3 me-1">
-                                        <li class="list-item"><i class="fa-regular fa-star"></i></li>
-                                        <li class="list-item"><i class="fa-regular fa-star"></i></li>
-                                        <li class="list-item"><i class="fa-regular fa-star"></i></li>
-                                        <li class="list-item"><i class="fa-regular fa-star"></i></li>
-                                        <li class="list-item"><i class="fa-regular fa-star"></i></li>
-                                    </ul>
-                                </span>
+                                    <span class="d-flex justify-content-between ms-2"><i
+                                            class="fa-solid fa-tag mt-1 text-success"><span class="text-light">
+                                                $350</span>
+                                        </i>
+                                        <ul class="list-unstyled d-flex justify-content-end ms-3 me-1">
+                                            <li class="list-item"><i class="fa-regular fa-star"></i></li>
+                                            <li class="list-item"><i class="fa-regular fa-star"></i></li>
+                                            <li class="list-item"><i class="fa-regular fa-star"></i></li>
+                                            <li class="list-item"><i class="fa-regular fa-star"></i></li>
+                                            <li class="list-item"><i class="fa-regular fa-star"></i></li>
+                                        </ul>
+                                    </span>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
 
 
-                    <div class="col-lg-3 col-md-6 col-sm-6 mb-5 salecontainer pditems men all" data-aos="flip-left"
-                        data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-                        <div class="">
-                            <div class="card saleproducts">
-                                <span class="ms-3 mt-1">Avon</span>
-                                <img src="./asses/img/pf/pf3.png" alt="" class="mb-5">
+                        <div class="col-lg-3 col-md-6 col-sm-12 mb-5 salecontainer pditems men all" data-aos="flip-left"
+                            data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                            <div class="">
+                                <div class="card saleproducts">
+                                    <span class="ms-3 mt-1">Avon</span>
+                                    <img src="./asses/img/pf/pf3.png" alt="" class="mb-5">
 
-                                <div class="card-footer text-light ">
-                                    <h3>Avon </h3>
-                                    <p>Little Black Dress.</p>
+                                    <div class="card-footer text-light ">
+                                        <h3>Avon </h3>
+                                        <p>Little Black Dress.</p>
+                                    </div>
+
+
+                                </div>
+                                <div class="cardhover p-4">
+
+                                    <p class="d-flex justify-content-between ms-1 small">Lorem ipsum, dolor sit amet
+                                        consectetur . . <i
+                                            class="fa-solid fa-cart-shopping text-success fs-5 mt-1 me-3 shopcards"></i>
+                                    </p>
+
+                                    <span class="d-flex justify-content-between ms-2"><i
+                                            class="fa-solid fa-tag mt-1 text-success"> <span class="text-light">
+                                                $150</span>
+                                        </i>
+                                        <ul class="list-unstyled d-flex justify-content-end ms-3 me-2">
+                                            <li class="list-item"><i class="fa-regular fa-star"></i></li>
+                                            <li class="list-item"><i class="fa-regular fa-star"></i></li>
+                                            <li class="list-item"><i class="fa-regular fa-star"></i></li>
+                                            <li class="list-item"><i class="fa-regular fa-star"></i></li>
+                                            <li class="list-item"><i class="fa-regular fa-star"></i></li>
+                                        </ul>
+                                    </span>
                                 </div>
 
 
-                            </div>
-                            <div class="cardhover p-4">
-
-                                <p class="d-flex justify-content-between ms-1 small">Lorem ipsum, dolor sit amet
-                                    consectetur . . <i
-                                        class="fa-solid fa-cart-shopping text-success fs-5 mt-1 me-3 shopcards"></i></p>
-
-                                <span class="d-flex justify-content-between ms-2"><i
-                                        class="fa-solid fa-tag mt-1 text-success"> <span class="text-light"> $150</span>
-                                    </i>
-                                    <ul class="list-unstyled d-flex justify-content-end ms-3 me-2">
-                                        <li class="list-item"><i class="fa-regular fa-star"></i></li>
-                                        <li class="list-item"><i class="fa-regular fa-star"></i></li>
-                                        <li class="list-item"><i class="fa-regular fa-star"></i></li>
-                                        <li class="list-item"><i class="fa-regular fa-star"></i></li>
-                                        <li class="list-item"><i class="fa-regular fa-star"></i></li>
-                                    </ul>
-                                </span>
-                            </div>
-
-
-                        </div>
-                    </div>
-
-
-                    <div class="col-lg-3 col-md-6 col-sm-6 mb-5 salecontainer pditems men all" data-aos="flip-left"
-                        data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-                        <div class="">
-                            <div class="card saleproducts">
-                                <span class="ms-3 mt-1">N*5.LEAU</span>
-                                <img src="./asses/img/pf/pf4.png" alt="" class="mb-5">
-
-                                <div class="card-footer text-light ">
-                                    <h3>N*5.LEAU</h3>
-                                    <p> Chanel</p>
-                                </div>
-
-
-                            </div>
-                            <div class="cardhover p-4">
-
-                                <p class="d-flex justify-content-between ms-1 small">Lorem ipsum, dolor sit amet
-                                    consectetur . <i
-                                        class="fa-solid fa-cart-shopping text-success fs-5 mt-1 me-3 shopcards"></i></p>
-
-                                <span class="d-flex justify-content-between ms-2"><i
-                                        class="fa-solid fa-tag mt-1 text-success"> <span class="text-light"> $300</span>
-                                    </i>
-                                    <ul class="list-unstyled d-flex justify-content-end ms-3 me-2">
-                                        <li class="list-item"><i class="fa-regular fa-star"></i></li>
-                                        <li class="list-item"><i class="fa-regular fa-star"></i></li>
-                                        <li class="list-item"><i class="fa-regular fa-star"></i></li>
-                                        <li class="list-item"><i class="fa-regular fa-star"></i></li>
-                                        <li class="list-item"><i class="fa-regular fa-star"></i></li>
-                                    </ul>
-                                </span>
                             </div>
                         </div>
-                    </div>
 
 
-                    <div class="col-lg-3 col-md-6 col-sm-6 mb-5 salecontainer pditems women all" data-aos="flip-left"
-                        data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-                        <div class="">
-                            <div class="card saleproducts">
-                                <span class="ms-3 mt-1">Arizona</span>
-                                <img src="./asses/img/pf/pf5.png" alt="" class="mb-5">
+                        <div class="col-lg-3 col-md-6 col-sm-12 mb-5 salecontainer pditems men all" data-aos="flip-left"
+                            data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                            <div class="">
+                                <div class="card saleproducts">
+                                    <span class="ms-3 mt-1">N*5.LEAU</span>
+                                    <img src="./asses/img/pf/pf4.png" alt="" class="mb-5">
 
-                                <div class="card-footer text-light ">
-                                    <h3>Arizona </h3>
-                                    <p>Proenze Shoulder</p>
+                                    <div class="card-footer text-light ">
+                                        <h3>N*5.LEAU</h3>
+                                        <p> Chanel</p>
+                                    </div>
+
+
                                 </div>
+                                <div class="cardhover p-4">
 
+                                    <p class="d-flex justify-content-between ms-1 small">Lorem ipsum, dolor sit amet
+                                        consectetur . <i
+                                            class="fa-solid fa-cart-shopping text-success fs-5 mt-1 me-3 shopcards"></i>
+                                    </p>
 
-                            </div>
-                            <div class="cardhover p-4">
-
-                                <p class="d-flex justify-content-between ms-2 small">Lorem ipsum, dolor sit amet
-                                    consectetur . <i
-                                        class="fa-solid fa-cart-shopping text-success fs-5 mt-1 me-3 shopcards"></i></p>
-
-                                <span class="d-flex justify-content-between ms-2"><i
-                                        class="fa-solid fa-tag mt-1 text-success"> <span class="text-light"> $200</span>
-                                    </i>
-                                    <ul class="list-unstyled d-flex justify-content-end ms-3 me-2">
-                                        <li class="list-item"><i class="fa-regular fa-star"></i></li>
-                                        <li class="list-item"><i class="fa-regular fa-star"></i></li>
-                                        <li class="list-item"><i class="fa-regular fa-star"></i></li>
-                                        <li class="list-item"><i class="fa-regular fa-star"></i></li>
-                                        <li class="list-item"><i class="fa-regular fa-star"></i></li>
-                                    </ul>
-                                </span>
+                                    <span class="d-flex justify-content-between ms-2"><i
+                                            class="fa-solid fa-tag mt-1 text-success"> <span class="text-light">
+                                                $300</span>
+                                        </i>
+                                        <ul class="list-unstyled d-flex justify-content-end ms-3 me-2">
+                                            <li class="list-item"><i class="fa-regular fa-star"></i></li>
+                                            <li class="list-item"><i class="fa-regular fa-star"></i></li>
+                                            <li class="list-item"><i class="fa-regular fa-star"></i></li>
+                                            <li class="list-item"><i class="fa-regular fa-star"></i></li>
+                                            <li class="list-item"><i class="fa-regular fa-star"></i></li>
+                                        </ul>
+                                    </span>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
 
-                    <div class="col-lg-3 col-md-6 col-sm-6 mb-5 salecontainer pditems men all" data-aos="flip-left"
-                        data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-                        <div class="">
-                            <div class="card saleproducts">
-                                <span class="ms-3 mt-1">Eternity</span>
-                                <img src="./asses/img/pf/pf6.png" alt="" class="mb-5">
+                        <div class="col-lg-3 col-md-6 col-sm-12 mb-5 salecontainer pditems women all"
+                            data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                            <div class="">
+                                <div class="card saleproducts">
+                                    <span class="ms-3 mt-1">Arizona</span>
+                                    <img src="./asses/img/pf/pf5.png" alt="" class="mb-5">
 
-                                <div class="card-footer text-light ">
-                                    <h3>Eternity (Summer) </h3>
-                                    <p>Calvin Klen</p>
+                                    <div class="card-footer text-light ">
+                                        <h3>Arizona </h3>
+                                        <p>Proenze Shoulder</p>
+                                    </div>
+
+
                                 </div>
+                                <div class="cardhover p-4">
 
+                                    <p class="d-flex justify-content-between ms-2 small">Lorem ipsum, dolor sit amet
+                                        consectetur . <i
+                                            class="fa-solid fa-cart-shopping text-success fs-5 mt-1 me-3 shopcards"></i>
+                                    </p>
 
-                            </div>
-                            <div class="cardhover p-4">
-
-                                <p class="d-flex justify-content-between ms-2 small">Lorem ipsum, dolor sit amet
-                                    consectetur . <i
-                                        class="fa-solid fa-cart-shopping text-success fs-5 mt-1 me-3 shopcards"></i></p>
-
-                                <span class="d-flex justify-content-between ms-2"><i
-                                        class="fa-solid fa-tag mt-1 text-success"><span class="text-light"> $350</span>
-                                    </i>
-                                    <ul class="list-unstyled d-flex justify-content-end ms-3 me-2">
-                                        <li class="list-item"><i class="fa-regular fa-star"></i></li>
-                                        <li class="list-item"><i class="fa-regular fa-star"></i></li>
-                                        <li class="list-item"><i class="fa-regular fa-star"></i></li>
-                                        <li class="list-item"><i class="fa-regular fa-star"></i></li>
-                                        <li class="list-item"><i class="fa-regular fa-star"></i></li>
-                                    </ul>
-                                </span>
+                                    <span class="d-flex justify-content-between ms-2"><i
+                                            class="fa-solid fa-tag mt-1 text-success"> <span class="text-light">
+                                                $200</span>
+                                        </i>
+                                        <ul class="list-unstyled d-flex justify-content-end ms-3 me-2">
+                                            <li class="list-item"><i class="fa-regular fa-star"></i></li>
+                                            <li class="list-item"><i class="fa-regular fa-star"></i></li>
+                                            <li class="list-item"><i class="fa-regular fa-star"></i></li>
+                                            <li class="list-item"><i class="fa-regular fa-star"></i></li>
+                                            <li class="list-item"><i class="fa-regular fa-star"></i></li>
+                                        </ul>
+                                    </span>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
 
+                        <div class="col-lg-3 col-md-6 col-sm-12 mb-5 salecontainer pditems men all" data-aos="flip-left"
+                            data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                            <div class="">
+                                <div class="card saleproducts">
+                                    <span class="ms-3 mt-1">Eternity</span>
+                                    <img src="./asses/img/pf/pf6.png" alt="" class="mb-5">
 
-                    <div class="col-lg-3 col-md-6 col-sm-6 mb-5 salecontainer pditems men all" data-aos="flip-left"
-                        data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-                        <div class="">
-                            <div class="card saleproducts">
-                                <span class="ms-3 mt-1">Eternity</span>
-                                <img src="./asses/img/pf/pf7.png" alt="" class="mb-5">
+                                    <div class="card-footer text-light ">
+                                        <h3>Eternity (Summer) </h3>
+                                        <p>Calvin Klen</p>
+                                    </div>
 
-                                <div class="card-footer text-light ">
-                                    <h3> Eternity (Winter)</h3>
-                                    <p>Calvin Klen</p>
+
                                 </div>
+                                <div class="cardhover p-4">
 
+                                    <p class="d-flex justify-content-between ms-2 small">Lorem ipsum, dolor sit amet
+                                        consectetur . <i
+                                            class="fa-solid fa-cart-shopping text-success fs-5 mt-1 me-3 shopcards"></i>
+                                    </p>
 
-                            </div>
-                            <div class="cardhover p-4">
-
-                                <p class="d-flex justify-content-between ms-2 small">Lorem ipsum, dolor sit amet
-                                    consectetur . <i
-                                        class="fa-solid fa-cart-shopping text-success fs-5 mt-1 me-3 shopcards"></i></p>
-
-                                <span class="d-flex justify-content-between ms-2"><i
-                                        class="fa-solid fa-tag mt-1 text-success"> <span class="text-light"> $150</span>
-                                    </i>
-                                    <ul class="list-unstyled d-flex justify-content-end ms-3 me-2">
-                                        <li class="list-item"><i class="fa-regular fa-star"></i></li>
-                                        <li class="list-item"><i class="fa-regular fa-star"></i></li>
-                                        <li class="list-item"><i class="fa-regular fa-star"></i></li>
-                                        <li class="list-item"><i class="fa-regular fa-star"></i></li>
-                                        <li class="list-item"><i class="fa-regular fa-star"></i></li>
-                                    </ul>
-                                </span>
+                                    <span class="d-flex justify-content-between ms-2"><i
+                                            class="fa-solid fa-tag mt-1 text-success"><span class="text-light">
+                                                $350</span>
+                                        </i>
+                                        <ul class="list-unstyled d-flex justify-content-end ms-3 me-2">
+                                            <li class="list-item"><i class="fa-regular fa-star"></i></li>
+                                            <li class="list-item"><i class="fa-regular fa-star"></i></li>
+                                            <li class="list-item"><i class="fa-regular fa-star"></i></li>
+                                            <li class="list-item"><i class="fa-regular fa-star"></i></li>
+                                            <li class="list-item"><i class="fa-regular fa-star"></i></li>
+                                        </ul>
+                                    </span>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
 
-                    <div class="col-lg-3 col-md-6 col-sm-6 mb-5 salecontainer pditems women all" data-aos="flip-left"
-                        data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-                        <div class="">
-                            <div class="card saleproducts">
-                                <span class="ms-3 mt-1">Elie Saab</span>
-                                <img src="./asses/img/pf/pf8.png" alt="" class="mb-5">
 
-                                <div class="card-footer text-light ">
-                                    <h3>Elie Saab </h3>
-                                    <p>L'eau Couture.</p>
+                        <div class="col-lg-3 col-md-6 col-sm-12 mb-5 salecontainer pditems men all" data-aos="flip-left"
+                            data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                            <div class="">
+                                <div class="card saleproducts">
+                                    <span class="ms-3 mt-1">Eternity</span>
+                                    <img src="./asses/img/pf/pf7.png" alt="" class="mb-5">
+
+                                    <div class="card-footer text-light ">
+                                        <h3> Eternity (Winter)</h3>
+                                        <p>Calvin Klen</p>
+                                    </div>
+
+
                                 </div>
+                                <div class="cardhover p-4">
 
+                                    <p class="d-flex justify-content-between ms-2 small">Lorem ipsum, dolor sit amet
+                                        consectetur . <i
+                                            class="fa-solid fa-cart-shopping text-success fs-5 mt-1 me-3 shopcards"></i>
+                                    </p>
 
-                            </div>
-                            <div class="cardhover p-4">
-
-                                <p class="d-flex justify-content-between ms-2 small">Lorem ipsum, dolor sit amet
-                                    consectetur . <i
-                                        class="fa-solid fa-cart-shopping text-success fs-5 mt-1 me-3 shopcards"></i></p>
-
-                                <span class="d-flex justify-content-between ms-2"><i
-                                        class="fa-solid fa-tag mt-1 text-success"> <span class="text-light"> $150</span>
-                                    </i>
-                                    <ul class="list-unstyled d-flex justify-content-end ms-3 me-2">
-                                        <li class="list-item"><i class="fa-regular fa-star"></i></li>
-                                        <li class="list-item"><i class="fa-regular fa-star"></i></li>
-                                        <li class="list-item"><i class="fa-regular fa-star"></i></li>
-                                        <li class="list-item"><i class="fa-regular fa-star"></i></li>
-                                        <li class="list-item"><i class="fa-regular fa-star"></i></li>
-                                    </ul>
-                                </span>
+                                    <span class="d-flex justify-content-between ms-2"><i
+                                            class="fa-solid fa-tag mt-1 text-success"> <span class="text-light">
+                                                $150</span>
+                                        </i>
+                                        <ul class="list-unstyled d-flex justify-content-end ms-3 me-2">
+                                            <li class="list-item"><i class="fa-regular fa-star"></i></li>
+                                            <li class="list-item"><i class="fa-regular fa-star"></i></li>
+                                            <li class="list-item"><i class="fa-regular fa-star"></i></li>
+                                            <li class="list-item"><i class="fa-regular fa-star"></i></li>
+                                            <li class="list-item"><i class="fa-regular fa-star"></i></li>
+                                        </ul>
+                                    </span>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
 
-                    <div class="col-lg-3 col-md-6 col-sm-6 mb-5 salecontainer pditems women all" data-aos="flip-left"
-                        data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-                        <div class="">
-                            <div class="card saleproducts">
-                                <span class="ms-3 mt-1">Dannay</span>
-                                <img src="./asses/img/pf/pf9.png" alt="" class="mb-5">
+                        <div class="col-lg-3 col-md-6 col-sm-12 mb-5 salecontainer pditems women all"
+                            data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                            <div class="">
+                                <div class="card saleproducts">
+                                    <span class="ms-3 mt-1">Elie Saab</span>
+                                    <img src="./asses/img/pf/pf8.png" alt="" class="mb-5">
 
-                                <div class="card-footer text-light ">
-                                    <h3>Dannay </h3>
-                                    <p>Lorem ipsum, dolor sit.</p>
+                                    <div class="card-footer text-light ">
+                                        <h3>Elie Saab </h3>
+                                        <p>L'eau Couture.</p>
+                                    </div>
+
+
                                 </div>
-                            </div>
+                                <div class="cardhover p-4">
 
-                            <div class="cardhover p-4">
+                                    <p class="d-flex justify-content-between ms-2 small">Lorem ipsum, dolor sit amet
+                                        consectetur . <i
+                                            class="fa-solid fa-cart-shopping text-success fs-5 mt-1 me-3 shopcards"></i>
+                                    </p>
 
-                                <p class="d-flex justify-content-between ms-2 small">Lorem ipsum, dolor sit amet
-                                    consectetur . <i
-                                        class="fa-solid fa-cart-shopping text-success fs-5 mt-1 me-3 shopcards"></i></p>
-
-                                <span class="d-flex justify-content-between ms-2"><i
-                                        class="fa-solid fa-tag mt-1 text-success"> <span class="text-light"> $250</span>
-                                    </i>
-                                    <ul class="list-unstyled d-flex justify-content-end ms-3 me-2">
-                                        <li class="list-item"><i class="fa-regular fa-star"></i></li>
-                                        <li class="list-item"><i class="fa-regular fa-star"></i></li>
-                                        <li class="list-item"><i class="fa-regular fa-star"></i></li>
-                                        <li class="list-item"><i class="fa-regular fa-star"></i></li>
-                                        <li class="list-item"><i class="fa-regular fa-star"></i></li>
-                                    </ul>
-                                </span>
+                                    <span class="d-flex justify-content-between ms-2"><i
+                                            class="fa-solid fa-tag mt-1 text-success"> <span class="text-light">
+                                                $150</span>
+                                        </i>
+                                        <ul class="list-unstyled d-flex justify-content-end ms-3 me-2">
+                                            <li class="list-item"><i class="fa-regular fa-star"></i></li>
+                                            <li class="list-item"><i class="fa-regular fa-star"></i></li>
+                                            <li class="list-item"><i class="fa-regular fa-star"></i></li>
+                                            <li class="list-item"><i class="fa-regular fa-star"></i></li>
+                                            <li class="list-item"><i class="fa-regular fa-star"></i></li>
+                                        </ul>
+                                    </span>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-6 col-sm-6 mb-5 salecontainer pditems women all" data-aos="flip-left"
-                        data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-                        <div class="">
-                            <div class="card saleproducts">
-                                <span class="ms-3 mt-1">Tom Ford</span>
-                                <img src="./asses/img/pf/pf1.png" alt="" class="mb-5">
 
-                                <div class="card-footer text-light ">
-                                    <h3>Tom Ford </h3>
-                                    <p>Black of Gam.</p>
+                        <div class="col-lg-3 col-md-6 col-sm-12 mb-5 salecontainer pditems women all"
+                            data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                            <div class="">
+                                <div class="card saleproducts">
+                                    <span class="ms-3 mt-1">Dannay</span>
+                                    <img src="./asses/img/pf/pf9.png" alt="" class="mb-5">
+
+                                    <div class="card-footer text-light ">
+                                        <h3>Dannay </h3>
+                                        <p>Lorem ipsum, dolor sit.</p>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="cardhover p-4">
+                                <div class="cardhover p-4">
 
-                                <p class="d-flex justify-content-between ms-2 small">Lorem ipsum, dolor sit amet
-                                    consectetur . <i
-                                        class="fa-solid fa-cart-shopping text-success fs-5 mt-1 me-3 shopcards"></i></p>
+                                    <p class="d-flex justify-content-between ms-2 small">Lorem ipsum, dolor sit amet
+                                        consectetur . <i
+                                            class="fa-solid fa-cart-shopping text-success fs-5 mt-1 me-3 shopcards"></i>
+                                    </p>
 
-                                <span class="d-flex justify-content-between ms-2"><i
-                                        class="fa-solid fa-tag mt-1 text-success"> <span class="text-light">
-                                            $340</span></i>
-                                    <ul class="list-unstyled d-flex justify-content-end ms-3 me-2">
-                                        <li class="list-item"><i class="fa-regular fa-star"></i></li>
-                                        <li class="list-item"><i class="fa-regular fa-star"></i></li>
-                                        <li class="list-item"><i class="fa-regular fa-star"></i></li>
-                                        <li class="list-item"><i class="fa-regular fa-star"></i></li>
-                                        <li class="list-item"><i class="fa-regular fa-star"></i></li>
-                                    </ul>
-                                </span>
+                                    <span class="d-flex justify-content-between ms-2"><i
+                                            class="fa-solid fa-tag mt-1 text-success"> <span class="text-light">
+                                                $250</span>
+                                        </i>
+                                        <ul class="list-unstyled d-flex justify-content-end ms-3 me-2">
+                                            <li class="list-item"><i class="fa-regular fa-star"></i></li>
+                                            <li class="list-item"><i class="fa-regular fa-star"></i></li>
+                                            <li class="list-item"><i class="fa-regular fa-star"></i></li>
+                                            <li class="list-item"><i class="fa-regular fa-star"></i></li>
+                                            <li class="list-item"><i class="fa-regular fa-star"></i></li>
+                                        </ul>
+                                    </span>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
+                        <div class="col-lg-3 col-md-6 col-sm-12 mb-5 salecontainer pditems women all"
+                            data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                            <div class="">
+                                <div class="card saleproducts">
+                                    <span class="ms-3 mt-1">Tom Ford</span>
+                                    <img src="./asses/img/pf/pf1.png" alt="" class="mb-5">
 
-
-                    <div class="col-lg-3 col-md-6 col-sm-6 mb-5 salecontainer pditems men all" data-aos="flip-left"
-                        data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-                        <div class="">
-                            <div class="card saleproducts">
-                                <span class="ms-3 mt-1">Arizona</span>
-                                <img src="./asses/img/pf/pf5.png" alt="" class="mb-5">
-
-                                <div class="card-footer text-light ">
-                                    <h3>Arizona </h3>
-                                    <p>Proenze Shoulder</p>
+                                    <div class="card-footer text-light ">
+                                        <h3>Tom Ford </h3>
+                                        <p>Black of Gam.</p>
+                                    </div>
                                 </div>
 
+                                <div class="cardhover p-4">
 
-                            </div>
-                            <div class="cardhover p-4">
+                                    <p class="d-flex justify-content-between ms-2 small">Lorem ipsum, dolor sit amet
+                                        consectetur . <i
+                                            class="fa-solid fa-cart-shopping text-success fs-5 mt-1 me-3 shopcards"></i>
+                                    </p>
 
-                                <p class="d-flex justify-content-between ms-2 small">Lorem ipsum, dolor sit amet
-                                    consectetur . <i
-                                        class="fa-solid fa-cart-shopping text-success fs-5 mt-1 me-3 shopcards"></i></p>
-
-                                <span class="d-flex justify-content-between ms-2"><i
-                                        class="fa-solid fa-tag mt-1 text-success"><span class="text-light"> $290</span>
-                                    </i>
-                                    <ul class="list-unstyled d-flex justify-content-end ms-3 me-2">
-                                        <li class="list-item"><i class="fa-regular fa-star"></i></li>
-                                        <li class="list-item"><i class="fa-regular fa-star"></i></li>
-                                        <li class="list-item"><i class="fa-regular fa-star"></i></li>
-                                        <li class="list-item"><i class="fa-regular fa-star"></i></li>
-                                        <li class="list-item"><i class="fa-regular fa-star"></i></li>
-                                    </ul>
-                                </span>
+                                    <span class="d-flex justify-content-between ms-2"><i
+                                            class="fa-solid fa-tag mt-1 text-success"> <span class="text-light">
+                                                $340</span></i>
+                                        <ul class="list-unstyled d-flex justify-content-end ms-3 me-2">
+                                            <li class="list-item"><i class="fa-regular fa-star"></i></li>
+                                            <li class="list-item"><i class="fa-regular fa-star"></i></li>
+                                            <li class="list-item"><i class="fa-regular fa-star"></i></li>
+                                            <li class="list-item"><i class="fa-regular fa-star"></i></li>
+                                            <li class="list-item"><i class="fa-regular fa-star"></i></li>
+                                        </ul>
+                                    </span>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
 
 
-                    <div class="col-lg-3 col-md-6 col-sm-6 mb-5 salecontainer pditems women all" data-aos="flip-left"
-                        data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-                        <div class="">
-                            <div class="card saleproducts">
-                                <span class="ms-3 mt-1">Avon</span>
-                                <img src="./asses/img/pf/pf3.png" alt="" class="mb-5">
+                        <div class="col-lg-3 col-md-6 col-sm-12 mb-5 salecontainer pditems men all" data-aos="flip-left"
+                            data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                            <div class="">
+                                <div class="card saleproducts">
+                                    <span class="ms-3 mt-1">Arizona</span>
+                                    <img src="./asses/img/pf/pf5.png" alt="" class="mb-5">
 
-                                <div class="card-footer text-light ">
-                                    <h3>Avon </h3>
-                                    <p>Little Black Shoulder</p>
+                                    <div class="card-footer text-light ">
+                                        <h3>Arizona </h3>
+                                        <p>Proenze Shoulder</p>
+                                    </div>
+
+
+                                </div>
+                                <div class="cardhover p-4">
+
+                                    <p class="d-flex justify-content-between ms-2 small">Lorem ipsum, dolor sit amet
+                                        consectetur . <i
+                                            class="fa-solid fa-cart-shopping text-success fs-5 mt-1 me-3 shopcards"></i>
+                                    </p>
+
+                                    <span class="d-flex justify-content-between ms-2"><i
+                                            class="fa-solid fa-tag mt-1 text-success"><span class="text-light">
+                                                $290</span>
+                                        </i>
+                                        <ul class="list-unstyled d-flex justify-content-end ms-3 me-2">
+                                            <li class="list-item"><i class="fa-regular fa-star"></i></li>
+                                            <li class="list-item"><i class="fa-regular fa-star"></i></li>
+                                            <li class="list-item"><i class="fa-regular fa-star"></i></li>
+                                            <li class="list-item"><i class="fa-regular fa-star"></i></li>
+                                            <li class="list-item"><i class="fa-regular fa-star"></i></li>
+                                        </ul>
+                                    </span>
                                 </div>
                             </div>
-
-                            <div class="cardhover p-4">
-
-                                <p class="d-flex justify-content-between ms-2 small">Lorem ipsum, dolor sit amet
-                                    consectetur . <i
-                                        class="fa-solid fa-cart-shopping text-success fs-5 mt-1 me-3 shopcards"></i></p>
-
-                                <span class="d-flex justify-content-between ms-2"><i
-                                        class="fa-solid fa-tag mt-1 text-success"> <span class="text-light"> $310</span>
-                                    </i>
-                                    <ul class="list-unstyled d-flex justify-content-end ms-3 me-2">
-                                        <li class="list-item"><i class="fa-regular fa-star"></i></li>
-                                        <li class="list-item"><i class="fa-regular fa-star"></i></li>
-                                        <li class="list-item"><i class="fa-regular fa-star"></i></li>
-                                        <li class="list-item"><i class="fa-regular fa-star"></i></li>
-                                        <li class="list-item"><i class="fa-regular fa-star"></i></li>
-                                    </ul>
-                                </span>
+                        </div>
 
 
+
+                        <div class="col-lg-3 col-md-6 col-sm-12 mb-5 salecontainer pditems women all"
+                            data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                            <div class="">
+                                <div class="card saleproducts">
+                                    <span class="ms-3 mt-1">Avon</span>
+                                    <img src="./asses/img/pf/pf3.png" alt="" class="mb-5">
+
+                                    <div class="card-footer text-light ">
+                                        <h3>Avon </h3>
+                                        <p>Little Black Shoulder</p>
+                                    </div>
+                                </div>
+
+                                <div class="cardhover p-4">
+
+                                    <p class="d-flex justify-content-between ms-2 small">Lorem ipsum, dolor sit amet
+                                        consectetur . <i
+                                            class="fa-solid fa-cart-shopping text-success fs-5 mt-1 me-3 shopcards"></i>
+                                    </p>
+
+                                    <span class="d-flex justify-content-between ms-2"><i
+                                            class="fa-solid fa-tag mt-1 text-success"> <span class="text-light">
+                                                $310</span>
+                                        </i>
+                                        <ul class="list-unstyled d-flex justify-content-end ms-3 me-2">
+                                            <li class="list-item"><i class="fa-regular fa-star"></i></li>
+                                            <li class="list-item"><i class="fa-regular fa-star"></i></li>
+                                            <li class="list-item"><i class="fa-regular fa-star"></i></li>
+                                            <li class="list-item"><i class="fa-regular fa-star"></i></li>
+                                            <li class="list-item"><i class="fa-regular fa-star"></i></li>
+                                        </ul>
+                                    </span>
+
+
+                                </div>
                             </div>
                         </div>
                     </div>
