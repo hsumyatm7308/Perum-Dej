@@ -11,7 +11,7 @@
 
 
         <div id="shopcardbtn" class="text-uppercase text-success small ms-lg-5  p-3  shopcardbtn">
-            <span class="me-1 text-light">Shop</span> <sup id="counts" class="ms-1 fs-6"></sup>
+              <a href="http://localhost/gitclone/smallshopping/index.php?page=1" class="text-white nav-link"> <span class="me-1 text-light">Shop</span> <sup id="counts" class="ms-1 fs-6"></sup></a>
         </div>
         <div id="" class="text-uppercase text-success small me-4   p-3  lglogin">
             <span class="me-1 text-light">Log in</span> <sup id="counts" class="ms-1 fs-6"></sup>

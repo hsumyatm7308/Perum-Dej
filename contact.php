@@ -39,7 +39,7 @@
         /* height: 700px; */
         height: 90vh;
         /* background: #536e8b; */
-        background: rgb(86, 105, 150);
+        /* background: rgb(86, 105, 150); */
 
 
 
